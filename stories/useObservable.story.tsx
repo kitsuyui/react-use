@@ -1,8 +1,30 @@
 import { storiesOf } from '@storybook/react';
 import * as React from 'react';
-import { BehaviorSubject } from 'rxjs';
 import { useObservable } from '../src';
 import ShowDocs from './util/ShowDocs';
+
+class BehaviorSubject<T> {
+  private listeners = new Set<(value: T) => void>();
+
+  constructor(private value: T) {}
+
+  next(value: T) {
+    this.value = value;
+    for (const listener of this.listeners) {
+      listener(value);
+    }
+  }
+
+  subscribe(listener: (value: T) => void) {
+    listener(this.value);
+    this.listeners.add(listener);
+    return {
+      unsubscribe: () => {
+        this.listeners.delete(listener);
+      },
+    };
+  }
+}
 
 const counter$ = new BehaviorSubject(0);
 const Demo = () => {

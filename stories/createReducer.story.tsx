@@ -1,10 +1,17 @@
 import { storiesOf } from '@storybook/react';
 import * as React from 'react';
-import logger from 'redux-logger';
-import thunk from 'redux-thunk';
 
 import { createReducer } from '../src';
 import ShowDocs from './util/ShowDocs';
+
+const thunk = ({ dispatch }) => (next) => (action) =>
+  typeof action === 'function' ? action(dispatch) : next(action);
+
+const logger = () => (next) => (action) => {
+  const result = next(action);
+  console.log(action);
+  return result;
+};
 
 const useThunkReducer = createReducer(thunk, logger);
 

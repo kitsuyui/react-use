@@ -4,12 +4,19 @@ Factory for reducer hooks with custom middleware with an identical API as [React
 
 ## Usage
 
-An example with [`redux-thunk`](https://github.com/reduxjs/redux-thunk) and [`redux-logger`](https://github.com/LogRocket/redux-logger).
+An example with small local middleware functions.
 
 ```jsx
 import { createReducer } from 'react-use';
-import logger from 'redux-logger';
-import thunk from 'redux-thunk';
+
+const thunk = ({ dispatch }) => next => action =>
+  typeof action === 'function' ? action(dispatch) : next(action);
+
+const logger = () => next => action => {
+  const result = next(action);
+  console.log(action);
+  return result;
+};
 
 const useThunkReducer = createReducer(thunk, logger);
 

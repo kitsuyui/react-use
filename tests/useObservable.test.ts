@@ -1,7 +1,25 @@
 import { act, renderHook } from '@testing-library/react-hooks';
-import { Subject } from 'rxjs';
 import * as useIsomorphicLayoutEffect from '../src/useIsomorphicLayoutEffect';
 import useObservable, { Observable } from '../src/useObservable';
+
+class Subject<T = unknown> implements Observable<T> {
+  private listeners = new Set<(value: T) => void>();
+
+  next(value: T) {
+    for (const listener of this.listeners) {
+      listener(value);
+    }
+  }
+
+  subscribe(listener: (value: T) => void) {
+    this.listeners.add(listener);
+    return {
+      unsubscribe: () => {
+        this.listeners.delete(listener);
+      },
+    };
+  }
+}
 
 const setUp = (observable: Observable<any>, initialValue?: any) =>
   renderHook(() => useObservable(observable, initialValue));

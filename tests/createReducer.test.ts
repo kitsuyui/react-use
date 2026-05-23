@@ -1,7 +1,14 @@
 import { act, renderHook } from '@testing-library/react-hooks';
-import logger from 'redux-logger';
-import thunk from 'redux-thunk';
 import createReducer from '../src/factory/createReducer';
+
+const thunk = ({ dispatch }) => (next) => (action) =>
+  typeof action === 'function' ? action(dispatch) : next(action);
+
+const logger = () => (next) => (action) => {
+  const result = next(action);
+  console.log(action);
+  return result;
+};
 
 it('should init reducer hook function', () => {
   const useSomeReducer = createReducer();
