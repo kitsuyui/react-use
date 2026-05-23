@@ -1,0 +1,23 @@
+# https://github.com/k1LoW/octocov?tab=readme-ov-file#configuration
+coverage:
+  paths:
+    - coverage/unit/clover.xml
+codeToTestRatio:
+  code:
+    - 'src/**/*.ts'
+    - 'src/**/*.tsx'
+  test:
+    - 'tests/**/*.test.ts'
+    - 'tests/**/*.test.tsx'
+testExecutionTime:
+  if: true
+diff:
+  datastores:
+    - artifact://${GITHUB_REPOSITORY}
+comment:
+  if: is_pull_request
+  updatePrevious: true
+report:
+  if: is_default_branch
+  datastores:
+    - artifact://${GITHUB_REPOSITORY}

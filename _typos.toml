@@ -1,0 +1,3 @@
+# typos is a source code spell checker.
+[default.extend-words]
+typings = "typings"

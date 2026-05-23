@@ -48,7 +48,7 @@ const mockCreateSpring: Spring = jest.fn().mockImplementation(() => {
   };
 }) as any;
 
-jest.mock('rebound', () => {
+vi.mock('rebound', () => {
   return {
     Sprint: {},
     SpringSystem: jest.fn().mockImplementation(() => {

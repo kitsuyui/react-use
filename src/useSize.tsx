@@ -73,7 +73,7 @@ const useSize = (
     }
 
     return () => {
-      if (window && window.removeEventListener) {
+      if (window) {
         off(window, 'resize', setSize);
       }
     };

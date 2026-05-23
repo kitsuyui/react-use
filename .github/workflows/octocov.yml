@@ -1,18 +1,18 @@
-name: release
+name: octocov
 
 on:
+  pull_request:
   push:
     branches:
       - main
-      - next
 
 permissions:
-  contents: write
-  issues: write
+  contents: read
   pull-requests: write
+  checks: write
 
 jobs:
-  release:
+  octocov:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -24,15 +24,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24.x
-          registry-url: https://registry.npmjs.org
 
       - run: bun install --frozen-lockfile
-      - run: bun run lint
-      - run: bun run test
       - run: bun run build
+      - run: bun run test:coverage
 
-      - name: Semantic Release
-        uses: cycjimmy/semantic-release-action@v4
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - uses: k1LoW/octocov-action@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          config: .octocov.yml

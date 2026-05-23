@@ -3,7 +3,7 @@ import { act, renderHook } from '@testing-library/react-hooks';
 import { useCopyToClipboard } from '../src';
 
 const valueToRaiseMockException = 'fake input causing exception in copy to clipboard';
-jest.mock('copy-to-clipboard', () =>
+vi.mock('copy-to-clipboard', () =>
   jest.fn().mockImplementation((input) => {
     if (input === valueToRaiseMockException) {
       throw new Error(input);
@@ -22,7 +22,7 @@ describe('useCopyToClipboard', () => {
 
   afterAll(() => {
     consoleErrorSpy.mockRestore();
-    jest.unmock('copy-to-clipboard');
+    vi.unmock('copy-to-clipboard');
   });
 
   it('should be defined ', () => {
