@@ -4,7 +4,7 @@
     <br/>
     👍
     <br />
-    react-use
+    @kitsuyui/react-use
     <br />
     <br />
     <br />
@@ -13,14 +13,14 @@
   <sup>
     <br />
     <br />
-    <a href="https://www.npmjs.com/package/react-use">
-       <img src="https://img.shields.io/npm/v/react-use.svg" alt="npm package" />
+    <a href="https://www.npmjs.com/package/@kitsuyui/react-use">
+       <img src="https://img.shields.io/npm/v/@kitsuyui/react-use.svg" alt="npm package" />
     </a>
-    <a href="https://circleci.com/gh/streamich/react-use">
-      <img src="https://img.shields.io/circleci/project/github/streamich/react-use/master.svg" alt="CircleCI master" />
+    <a href="https://github.com/kitsuyui/react-use/actions/workflows/test.yml">
+      <img src="https://github.com/kitsuyui/react-use/actions/workflows/test.yml/badge.svg" alt="Test workflow" />
     </a>
-    <a href="https://www.npmjs.com/package/react-use">
-      <img src="https://img.shields.io/npm/dm/react-use.svg" alt="npm downloads" />
+    <a href="https://www.npmjs.com/package/@kitsuyui/react-use">
+      <img src="https://img.shields.io/npm/dm/@kitsuyui/react-use.svg" alt="npm downloads" />
     </a>
     <a href="http://streamich.github.io/react-use">
       <img src="https://img.shields.io/badge/demos-🚀-yellow.svg" alt="demos" />
@@ -35,7 +35,11 @@
   <br />
   <br />
   <br />
-  <pre>npm i <a href="https://www.npmjs.com/package/react-use">react-use</a></pre>
+  <p>
+    This is <a href="https://github.com/kitsuyui/react-use">kitsuyui/react-use</a>,
+    a fork of <a href="https://github.com/streamich/react-use">streamich/react-use</a>.
+  </p>
+  <pre>bun add <a href="https://www.npmjs.com/package/@kitsuyui/react-use">@kitsuyui/react-use</a></pre>
   <br />
   <br />
   <br />

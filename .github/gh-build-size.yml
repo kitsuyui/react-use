@@ -1,0 +1,15 @@
+version: 1
+publish:
+  enabled: true
+  branch: gh-build-size-assets
+comment:
+  key: package-build-size
+targets:
+  - id: total
+    label: Total package artifacts
+    files:
+      - dist/**
+    compressions: [raw, gzip, brotli]
+    badge:
+      compression: gzip
+      label: package artifacts (gzip)

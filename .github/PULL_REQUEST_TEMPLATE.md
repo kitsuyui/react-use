@@ -17,9 +17,9 @@
 - [ ] Add documentation
 - [ ] Add hook's story at Storybook
 - [ ] Cover changes with tests
-- [ ] Ensure the test suite passes (`yarn test`)
+- [ ] Ensure the test suite passes (`bun run test`)
 - [ ] Provide 100% tests coverage
-- [ ] Make sure code lints (`yarn lint`). Fix it with `yarn lint:fix` in case of failure.
-- [ ] Make sure types are fine (`yarn lint:types`).
+- [ ] Make sure code lints (`bun run lint`).
+- [ ] Make sure the package builds (`bun run build`).
 
 <!-- If you can't check all the checkboxes right now - check what you can, create a Draft PR, make some changes if needed and get back to it when you will be able to put some marks in list. -->

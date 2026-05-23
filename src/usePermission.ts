@@ -13,7 +13,7 @@ interface IMidiPermissionDescriptor extends PermissionDescriptor {
   sysex?: boolean;
 }
 
-interface IDevicePermissionDescriptor extends PermissionDescriptor {
+interface IDevicePermissionDescriptor {
   name: 'camera' | 'microphone' | 'speaker';
   deviceId?: string;
 }
@@ -40,7 +40,7 @@ const usePermission = (permissionDesc: IPermissionDescriptor): IState => {
     };
 
     navigator.permissions
-      .query(permissionDesc)
+      .query(permissionDesc as PermissionDescriptor)
       .then((status) => {
         permissionStatus = status;
         on(permissionStatus, 'change', onChange);
