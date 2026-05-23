@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-23T21:10:46.932Z",
+  "generated_at": "2026-05-23T21:22:19.664Z",
   "repository": "kitsuyui/react-use",
   "default_branch": "main",
   "publish_branch": "gh-build-size-assets",
   "event_name": "push",
-  "head_reference": "38cb335d41e2903a77b1dfda30e468416479e4d4",
+  "head_reference": "a6e40ee8303a009a38c48c188240385b5ca9ed08",
   "files": [
     {
       "path": "dist/chunk-BfJBT4Xj.mjs",
