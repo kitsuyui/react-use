@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-05-23T21:10:36.130Z",
+  "repository": "kitsuyui/react-use",
+  "default_branch": "main",
+  "publish_branch": "gh-counter-assets",
+  "event_name": "push",
+  "base_label": "main",
+  "base_reference": null,
+  "head_label": "main",
+  "head_reference": "38cb335d41e2903a77b1dfda30e468416479e4d4",
+  "bootstrap_message": null,
+  "base_only_paths": [],
+  "counters": [
+    {
+      "id": "maintenance-comments",
+      "label": "TODO/FIXME",
+      "current": 1,
+      "base": null,
+      "delta": null,
+      "dashboard_current": 1,
+      "dashboard_base": null,
+      "dashboard_delta": null,
+      "commentable": true,
+      "touched_files": [],
+      "file_deltas": [
+        {
+          "path": "src/factory/createHTMLMediaHook.ts",
+          "current": 1,
+          "base": 0,
+          "delta": 1
+        }
+      ],
+      "patch_file_deltas": [],
+      "violations": [],
+      "badge_path": ".gh-counter/badges/maintenance-comments.svg",
+      "counter_path": ".gh-counter/counters/maintenance-comments.json"
+    }
+  ]
+}
