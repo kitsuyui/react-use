@@ -7,7 +7,7 @@ clicks outside the target element.
 ## Usage
 
 ```jsx
-import {useClickAway} from 'react-use';
+import {useClickAway} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const ref = useRef(null);

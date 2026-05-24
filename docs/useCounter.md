@@ -8,7 +8,7 @@ React state hook that tracks a numeric value.
 ## Usage
 
 ```jsx
-import {useCounter, useNumber} from 'react-use';
+import {useCounter, useNumber} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const [min, { inc: incMin, dec: decMin }] = useCounter(1);
@@ -49,7 +49,7 @@ const Demo = () => {
 
 ## Reference
 
-```ts 
+```ts
 const [ current, { inc, dec, get, set, reset } ] = useCounter(initial: number, max: number | null = null, min: number | null = null);
 ```
 - `current` - current counter value;

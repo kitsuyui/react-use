@@ -5,7 +5,7 @@ React sensor hook that tracks state of a CSS media query.
 ## Usage
 
 ```jsx
-import {useMedia} from 'react-use';
+import {useMedia} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const isWide = useMedia('(min-width: 480px)');

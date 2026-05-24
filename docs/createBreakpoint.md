@@ -8,7 +8,7 @@ laptopL: 1440, laptop: 1024, tablet: 768
 
 ```jsx
 import React from "react";
-import { createBreakpoint } from "react-use";
+import { createBreakpoint } from "@kitsuyui/react-use";
 
 const useBreakpoint = createBreakpoint();
 
@@ -28,7 +28,7 @@ XL: 1280, L: 768, S: 350
 
 ```jsx
 import React from "react";
-import { createBreakpoint } from "react-use";
+import { createBreakpoint } from "@kitsuyui/react-use";
 
 const useBreakpoint = createBreakpoint({ XL: 1280, L: 768, S: 350 });
 

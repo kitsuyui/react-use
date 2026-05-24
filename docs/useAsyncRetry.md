@@ -5,7 +5,7 @@ Uses `useAsync` with an additional `retry` method to easily retry/refresh the as
 ## Usage
 
 ```jsx
-import {useAsyncRetry} from 'react-use';
+import {useAsyncRetry} from '@kitsuyui/react-use';
 
 const Demo = ({url}) => {
   const state = useAsyncRetry(async () => {

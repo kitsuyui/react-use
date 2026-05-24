@@ -5,7 +5,7 @@ React lifecycle hook that calls a function after the component is mounted. Use `
 ## Usage
 
 ```jsx
-import {useMount} from 'react-use';
+import {useMount} from '@kitsuyui/react-use';
 
 const Demo = () => {
   useMount(() => alert('MOUNTED'));

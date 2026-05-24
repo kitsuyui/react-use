@@ -11,7 +11,7 @@ for a specific element.
 `useDrop`:
 
 ```jsx
-import {useDrop} from 'react-use';
+import {useDrop} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const state = useDrop({
@@ -31,7 +31,7 @@ const Demo = () => {
 `useDropArea`:
 
 ```jsx
-import {useDropArea} from 'react-use';
+import {useDropArea} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const [bond, state] = useDropArea({

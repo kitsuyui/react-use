@@ -11,7 +11,7 @@ Below example uses `useGetSet` to increment a number after 1 second
 on each click.
 
 ```jsx
-import {useGetSet} from 'react-use';
+import {useGetSet} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const [get, set] = useGetSet(0);

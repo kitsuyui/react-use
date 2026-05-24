@@ -9,7 +9,7 @@ This hook is useful in this specific case, it will __ensure__ that you get a val
 ## Usage
 
 ```jsx
-import {ensuredForwardRef} from 'react-use';
+import {ensuredForwardRef} from '@kitsuyui/react-use';
 
 const Demo = () => {
   return (
@@ -31,7 +31,7 @@ const Child = ensuredForwardRef((props, ref) => {
 ## Alternative usage
 
 ```jsx
-import {useEnsuredForwardedRef} from 'react-use';
+import {useEnsuredForwardedRef} from '@kitsuyui/react-use';
 
 const Demo = () => {
   return (

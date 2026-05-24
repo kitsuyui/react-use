@@ -6,7 +6,7 @@ A mix of `useGetSet` and `useGetSetState`.
 ## Usage
 
 ```jsx
-import {useGetSetState} from 'react-use';
+import {useGetSetState} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const [get, setState] = useGetSetState({cnt: 0});

@@ -14,7 +14,7 @@ const Demo = () => {
   return (
     <div>
       <div>You will not be able to enter more than one space</div>
-      <input type="text" min="0" max="10" 
+      <input type="text" min="0" max="10"
              value={state}
              onChange={(ev: React.ChangeEvent<HTMLInputElement>) => {
                setState(ev.target.value);
@@ -35,5 +35,5 @@ const [state, setState] = useMediatedState<S=any>(
 
 > Initial state will be set as-is.
 
-In case mediator expects 2 arguments it will receive the `setState` function as second argument, it is useful for async mediators.  
+In case mediator expects 2 arguments it will receive the `setState` function as second argument, it is useful for async mediators.
 >This hook will not cancel previous mediation when new one been invoked, you have to handle it yourself._

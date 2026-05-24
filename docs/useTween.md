@@ -6,7 +6,7 @@ React animation hook that tweens a number between 0 and 1.
 ## Usage
 
 ```jsx
-import {useTween} from 'react-use';
+import {useTween} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const t = useTween();

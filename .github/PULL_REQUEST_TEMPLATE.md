@@ -11,14 +11,12 @@
 - [ ] **Breaking change** _(fix or feature that would cause existing functionality to not work as before)_
 
 # Checklist
-- [ ] Read the [Contributing Guide](https://github.com/streamich/react-use/blob/master/CONTRIBUTING.md)
+- [ ] Read the [Contributing Guide](../CONTRIBUTING.md)
 - [ ] Perform a code self-review
 - [ ] Comment the code, particularly in hard-to-understand areas
 - [ ] Add documentation
-- [ ] Add hook's story at Storybook
 - [ ] Cover changes with tests
 - [ ] Ensure the test suite passes (`bun run test`)
-- [ ] Provide 100% tests coverage
 - [ ] Make sure code lints (`bun run lint`).
 - [ ] Make sure the package builds (`bun run build`).
 

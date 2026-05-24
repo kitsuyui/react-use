@@ -5,7 +5,7 @@ React state hook that returns the default value when state is null or undefined.
 ## Usage
 
 ```jsx
-import {useDefault} from 'react-use';
+import {useDefault} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const initialUser = { name: 'Marshall' }

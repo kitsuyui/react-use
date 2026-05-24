@@ -6,7 +6,7 @@ React side-effect hook that manages a single `sessionStorage` key.
 ## Usage
 
 ```jsx
-import {useSessionStorage} from 'react-use';
+import {useSessionStorage} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const [value, setValue] = useSessionStorage('my-key', 'foo');

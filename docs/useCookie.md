@@ -6,7 +6,7 @@ and a callback to delete the `cookie.`
 ## Usage
 
 ```jsx
-import { useCookie } from "react-use";
+import { useCookie } from "@kitsuyui/react-use";
 
 const Demo = () => {
   const [value, updateCookie, deleteCookie] = useCookie("my-cookie");

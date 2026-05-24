@@ -7,7 +7,7 @@ component is mounted and un-mounted, respectively.
 ## Usage
 
 ```jsx
-import {useLifecycles} from 'react-use';
+import {useLifecycles} from '@kitsuyui/react-use';
 
 const Demo = () => {
   useLifecycles(() => console.log('MOUNTED'), () => console.log('UNMOUNTED'));

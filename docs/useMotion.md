@@ -6,7 +6,7 @@ React sensor hook that uses device's acceleration sensor to track its motions.
 ## Usage
 
 ```jsx
-import {useMotion} from 'react-use';
+import {useMotion} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const state = useMotion();

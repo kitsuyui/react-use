@@ -5,7 +5,7 @@ A modified useEffect hook that is using shallow comparison on each of its depend
 ## Usage
 
 ```jsx
-import {useCounter, useShallowCompareEffect} from 'react-use';
+import {useCounter, useShallowCompareEffect} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const [count, {inc: inc}] = useCounter(0);

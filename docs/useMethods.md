@@ -5,7 +5,7 @@ React hook that simplifies the `useReducer` implementation.
 ## Usage
 
 ```jsx
-import { useMethods } from 'react-use';
+import { useMethods } from '@kitsuyui/react-use';
 
 const initialState = {
   count: 0,

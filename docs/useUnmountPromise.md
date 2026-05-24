@@ -3,10 +3,10 @@
 A life-cycle hook that provides a higher order promise that does not resolve if component un-mounts.
 
 
-## Usage 
+## Usage
 
 ```ts
-import useUnmountPromise from 'react-use/lib/useUnmountPromise';
+import useUnmountPromise from '@kitsuyui/react-use/useUnmountPromise';
 
 const Demo = () => {
   const mounted = useUnmountPromise();

@@ -1,11 +1,11 @@
 # `useMultiStateValidator`
 
-Each time any of given states changes - validator function is invoked.  
+Each time any of given states changes - validator function is invoked.
 
 ## Usage
-```ts 
+```ts
 import * as React from 'react';
-import { useMultiStateValidator } from 'react-use';
+import { useMultiStateValidator } from '@kitsuyui/react-use';
 
 const DemoStateValidator = (s: number[]) => [s.every((num: number) => !(num % 2))] as [boolean];
 const Demo = () => {
@@ -39,7 +39,7 @@ const Demo = () => {
 ```
 
 ## Reference
-```ts 
+```ts
 const [validity, revalidate] = useStateValidator(
   state: any[] | { [p: string]: any } | { [p: number]: any },
   validator: (state, setValidity?)=>[boolean|null, ...any[]],

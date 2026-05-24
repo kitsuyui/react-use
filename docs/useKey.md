@@ -5,7 +5,7 @@ React UI sensor hook that executes a `handler` when a keyboard key is used.
 ## Usage
 
 ```jsx
-import {useKey} from 'react-use';
+import {useKey} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const [count, set] = useState(0);
@@ -23,7 +23,7 @@ const Demo = () => {
 Or as render-prop:
 
 ```jsx
-import UseKey from 'react-use/lib/component/UseKey';
+import UseKey from '@kitsuyui/react-use/component/UseKey';
 
 <UseKey filter='a' fn={() => alert('"a" key pressed!')} />
 ```

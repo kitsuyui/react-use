@@ -2,15 +2,15 @@
 
 React side-effect hook that locks scrolling on the body element. Useful for modal and other overlay components.
 
-Accepts ref object pointing to any HTML element as second parameter. Parent body element will be found and it's scroll will be locked/unlocked. It is needed to proper iFrame handling.  
-By default it uses body element of script's parent window. 
+Accepts ref object pointing to any HTML element as second parameter. Parent body element will be found and it's scroll will be locked/unlocked. It is needed to proper iFrame handling.
+By default it uses body element of script's parent window.
 
->Note: To improve performance you can pass body's or iframe's ref object, thus no parent lookup will be performed 
+>Note: To improve performance you can pass body's or iframe's ref object, thus no parent lookup will be performed
 
-## Usage 
+## Usage
 
 ```jsx
-import {useLockBodyScroll, useToggle} from 'react-use';
+import {useLockBodyScroll, useToggle} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const [locked, toggleLocked] = useToggle(false)

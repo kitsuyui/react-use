@@ -7,7 +7,7 @@ Factory for reducer hooks with custom middleware with an identical API as [React
 An example with small local middleware functions.
 
 ```jsx
-import { createReducer } from 'react-use';
+import { createReducer } from '@kitsuyui/react-use';
 
 const thunk = ({ dispatch }) => next => action =>
   typeof action === 'function' ? action(dispatch) : next(action);

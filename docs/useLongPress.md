@@ -5,7 +5,7 @@ React sensor hook that fires a callback after long pressing.
 ## Usage
 
 ```jsx
-import { useLongPress } from 'react-use';
+import { useLongPress } from '@kitsuyui/react-use';
 
 const Demo = () => {
   const onLongPress = () => {

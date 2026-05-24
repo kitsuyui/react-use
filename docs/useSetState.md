@@ -8,7 +8,7 @@ current state.
 ## Usage
 
 ```jsx
-import {useSetState} from 'react-use';
+import {useSetState} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const [state, setState] = useSetState({});
@@ -18,7 +18,7 @@ const Demo = () => {
       <pre>{JSON.stringify(state, null, 2)}</pre>
       <button onClick={() => setState({hello: 'world'})}>hello</button>
       <button onClick={() => setState({foo: 'bar'})}>foo</button>
-      <button 
+      <button
         onClick={() => {
           setState((prevState) => ({
             count: (prevState.count || 0) + 1,

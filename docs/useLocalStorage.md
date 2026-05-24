@@ -5,7 +5,7 @@ React side-effect hook that manages a single `localStorage` key.
 ## Usage
 
 ```jsx
-import { useLocalStorage } from 'react-use';
+import { useLocalStorage } from '@kitsuyui/react-use';
 
 const Demo = () => {
   const [value, setValue, remove] = useLocalStorage('my-key', 'foo');

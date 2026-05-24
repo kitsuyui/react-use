@@ -6,7 +6,7 @@ Creates `<video>` element, tracks its state and exposes playback controls.
 ## Usage
 
 ```jsx
-import {useVideo} from 'react-use';
+import {useVideo} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const [video, state, controls, ref] = useVideo(

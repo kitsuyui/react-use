@@ -9,7 +9,7 @@ mouse position; `useMouseHovered` allows you to specify extra options:
 ## Usage
 
 ```jsx
-import {useMouse} from 'react-use';
+import {useMouse} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const ref = React.useRef(null);

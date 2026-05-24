@@ -5,7 +5,7 @@ React sensor hook that tracks brower's location.
 ## Usage
 
 ```jsx
-import {useLocation} from 'react-use';
+import {useLocation} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const state = useLocation();

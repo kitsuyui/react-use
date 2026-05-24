@@ -6,7 +6,7 @@ React sensor hook that tracks connected hardware devices.
 ## Usage
 
 ```jsx
-import {useMediaDevices} from 'react-use';
+import {useMediaDevices} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const state = useMediaDevices();

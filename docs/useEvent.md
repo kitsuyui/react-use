@@ -6,7 +6,7 @@ React sensor hook that subscribes a `handler` to events.
 ## Usage
 
 ```jsx
-import {useEvent, useList} from 'react-use';
+import {useEvent, useList} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const [list, {push, clear}] = useList();

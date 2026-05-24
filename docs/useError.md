@@ -5,7 +5,7 @@ React side-effect hook that returns an error dispatcher.
 ## Usage
 
 ```jsx
-import { useError } from 'react-use';
+import { useError } from '@kitsuyui/react-use';
 
 const Demo = () => {
   const dispatchError = useError();

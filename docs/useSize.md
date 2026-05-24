@@ -5,7 +5,7 @@ React sensor hook that tracks size of an HTML element.
 ## Usage
 
 ```jsx
-import {useSize} from 'react-use';
+import {useSize} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const [sized, {width, height}] = useSize(

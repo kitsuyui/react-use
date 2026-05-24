@@ -5,7 +5,7 @@ React state hook that tracks a value of an object.
 ## Usage
 
 ```jsx
-import {useMap} from 'react-use';
+import {useMap} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const [map, {set, setAll, remove, reset}] = useMap({

@@ -5,7 +5,7 @@ React UI hook that provides slide behavior over any HTML element. Supports both 
 ## Usage
 
 ```jsx
-import {useSlider} from 'react-use';
+import {useSlider} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const ref = React.useRef(null);

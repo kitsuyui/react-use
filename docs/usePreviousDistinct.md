@@ -7,7 +7,7 @@ distinct value
 ## Usage
 
 ```jsx
-import {usePreviousDistinct, useCounter} from 'react-use';
+import {usePreviousDistinct, useCounter} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const [count, { inc: relatedInc }] = useCounter(0);
@@ -28,7 +28,7 @@ const Demo = () => {
 You can also provide a way of identifying the value as unique. By default, a strict equals is used.
 
 ```jsx
-import {usePreviousDistinct} from 'react-use';
+import {usePreviousDistinct} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const [str, setStr] = React.useState("something_lowercase");

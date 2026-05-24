@@ -6,7 +6,7 @@ a promise;
 ## Usage
 
 ```jsx
-import {useAsync} from 'react-use';
+import {useAsync} from '@kitsuyui/react-use';
 
 const Demo = ({url}) => {
   const state = useAsync(async () => {

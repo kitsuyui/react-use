@@ -7,7 +7,7 @@ This is mostly useful to get access to the latest value of some props or state i
 ## Usage
 
 ```jsx
-import { useLatest } from 'react-use';
+import { useLatest } from '@kitsuyui/react-use';
 
 const Demo = () => {
   const [count, setCount] = React.useState(0);

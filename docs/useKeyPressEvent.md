@@ -9,7 +9,7 @@ if you press and hold a key, it will fire `keydown` callback only once.
 
 ```jsx
 import React, { useState } from React;
-import {useKeyPressEvent} from 'react-use';
+import {useKeyPressEvent} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const [count, setCount] = useState(0);

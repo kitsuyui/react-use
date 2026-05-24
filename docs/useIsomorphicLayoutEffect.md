@@ -5,7 +5,7 @@
 ## Usage
 
 ```jsx
-import {useIsomorphicLayoutEffect} from 'react-use';
+import {useIsomorphicLayoutEffect} from '@kitsuyui/react-use';
 
 const Demo = ({value}) => {
   useIsomorphicLayoutEffect(() => {

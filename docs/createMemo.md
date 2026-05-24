@@ -7,7 +7,7 @@ which receives the same arguments and returns the same result as the original fu
 ## Usage
 
 ```jsx
-import {createMemo} from 'react-use';
+import {createMemo} from '@kitsuyui/react-use';
 
 const fibonacci = n => {
   if (n === 0) return 0;

@@ -3,10 +3,10 @@
 Each time given state changes - validator function is invoked.
 
 ## Usage
-```ts 
+```ts
 import * as React from 'react';
 import { useCallback } from 'react';
-import { useStateValidator } from 'react-use';
+import { useStateValidator } from '@kitsuyui/react-use';
 
 const DemoStateValidator = s => [s === '' ? null : (s * 1) % 2 === 0];
 const Demo = () => {
@@ -32,7 +32,7 @@ const Demo = () => {
 ```
 
 ## Reference
-```ts 
+```ts
 const [validity, revalidate] = useStateValidator(
   state: any,
   validator: (state, setValidity?)=>[boolean|null, ...any[]],
