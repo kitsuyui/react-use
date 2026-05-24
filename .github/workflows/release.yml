@@ -1,38 +1,67 @@
-name: release
+name: Release
 
 on:
-  push:
-    branches:
-      - main
-      - next
-
-permissions:
-  contents: write
-  issues: write
-  pull-requests: write
+  pull_request:
+    types: [opened, synchronize, reopened]
+  release:
+    # "released" events are emitted either when directly released or edited from pre-released.
+    types: [prereleased, released]
 
 jobs:
-  release:
+  deploy:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
 
-      - uses: oven-sh/setup-bun@v2
+    permissions:
+      contents: read
+      id-token: write
+
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2
         with:
           bun-version: 1.3.14
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6
         with:
-          node-version: 24.x
-          registry-url: https://registry.npmjs.org
+          # https://nodejs.org/en/about/previous-releases
+          node-version: '24.x'
+          registry-url: 'https://registry.npmjs.org'
 
-      - run: bun install --frozen-lockfile
-      - run: bun run lint
-      - run: bun run test
-      - run: bun run build
+      - name: install and build
+        run: |
+          bun install --frozen-lockfile
+          bun run build
+          bun run validate
 
-      - name: Semantic Release
-        uses: cycjimmy/semantic-release-action@v4
+      - name: Set tag rc
+        if: github.event_name == 'pull_request'
+        run: |
+          git config user.email "dummy@dummy"
+          git config user.name "dummy"
+          # dummy tag for dry-run
+          git tag "v0.0.0-rc.${GITHUB_RUN_NUMBER}"
+
+      - name: set git tag version
+        run: |
+          git config user.email "dummy@dummy"
+          git config user.name "dummy"
+          VERSION="${GITHUB_REF_NAME#v}"
+          if [ "${GITHUB_EVENT_NAME}" = "pull_request" ]; then
+            VERSION="0.0.0-rc.${GITHUB_RUN_NUMBER}"
+          fi
+          bun pm pkg set version="$VERSION"
+          bun run format:package-json
+
+      - name: deploy
+        # https://docs.npmjs.com/generating-provenance-statements
+        run: NPM_CONFIG_PROVENANCE=true bun publish --access public
+        if: github.event_name == 'release' && !github.event.release.prerelease
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_CONFIG_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: deploy (dry-run)
+        run: NPM_CONFIG_PROVENANCE=true bun publish --access public --dry-run
+        if: github.event_name != 'release' || github.event.release.prerelease
+        env:
+          NPM_CONFIG_TOKEN: ${{ secrets.NPM_TOKEN }}
