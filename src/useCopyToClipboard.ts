@@ -1,4 +1,3 @@
-import writeText from 'copy-to-clipboard';
 import { useCallback } from 'react';
 import useMountedState from './useMountedState';
 import useSetState from './useSetState';
@@ -49,7 +48,31 @@ const useCopyToClipboard = (): [CopyToClipboardState, (value: string) => void] =
         return;
       }
       normalizedValue = value.toString();
-      noUserInteraction = writeText(normalizedValue);
+      if (
+        typeof navigator !== 'undefined' &&
+        navigator.clipboard?.writeText
+      ) {
+        void navigator.clipboard.writeText(normalizedValue).catch((error) => {
+          if (isMounted()) {
+            setState({
+              value: normalizedValue,
+              error,
+              noUserInteraction: true,
+            });
+          }
+        });
+        noUserInteraction = true;
+      } else {
+        const textarea = document.createElement('textarea');
+        textarea.value = normalizedValue;
+        textarea.setAttribute('readonly', '');
+        textarea.style.position = 'absolute';
+        textarea.style.left = '-9999px';
+        document.body.appendChild(textarea);
+        textarea.select();
+        noUserInteraction = document.execCommand('copy');
+        document.body.removeChild(textarea);
+      }
       setState({
         value: normalizedValue,
         error: undefined,

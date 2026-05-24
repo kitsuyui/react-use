@@ -1,7 +1,6 @@
 import { renderHook } from '@testing-library/react-hooks';
-import { easing } from 'ts-easing';
 import * as useRaf from '../src/useRaf';
-import useTween from '../src/useTween';
+import useTween, { easing } from '../src/useTween';
 
 let spyUseRaf;
 let spyEasingInCirc;

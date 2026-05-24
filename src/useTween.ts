@@ -1,7 +1,11 @@
-import { easing } from 'ts-easing';
 import useRaf from './useRaf';
 
 export type Easing = (t: number) => number;
+
+export const easing: Record<string, Easing> = {
+  inCirc: (t) => 1 - Math.sqrt(1 - t * t),
+  outCirc: (t) => Math.sqrt(1 - (t - 1) * (t - 1)),
+};
 
 const useTween = (easingName: string = 'inCirc', ms: number = 200, delay: number = 0): number => {
   const fn: Easing = easing[easingName];

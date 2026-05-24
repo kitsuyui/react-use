@@ -39,3 +39,19 @@ it('should run clean-up provided on unmount', () => {
   unmount();
   expect(mockEffectCleanup).toHaveBeenCalledTimes(1);
 });
+
+it('should compare objects without a prototype', () => {
+  const effect = jest.fn();
+  const left = Object.create(null);
+  left.max = 10;
+  const right = Object.create(null);
+  right.max = 10;
+
+  const { rerender } = renderHook(({ value }) => useDeepCompareEffect(effect, [value]), {
+    initialProps: { value: left },
+  });
+
+  rerender({ value: right });
+
+  expect(effect).toHaveBeenCalledTimes(1);
+});

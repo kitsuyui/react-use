@@ -1,31 +1,23 @@
 import { act, renderHook } from '@testing-library/react-hooks';
-import { vi } from 'vitest';
-
-const valueToRaiseMockException = 'fake input causing exception in copy to clipboard';
-const copyToClipboardMock = vi.hoisted(() =>
-	vi.fn((input) => {
-		if (input === valueToRaiseMockException) {
-			throw new Error(input);
-		}
-		return true;
-	})
-);
-vi.doMock('copy-to-clipboard', () => ({ __esModule: true, default: copyToClipboardMock }));
-
-const { default: writeText } = await import('copy-to-clipboard');
-const { default: useCopyToClipboard } = await import('../src/useCopyToClipboard');
+import useCopyToClipboard from '../src/useCopyToClipboard';
 
 describe('useCopyToClipboard', () => {
 	let hook;
 	let consoleErrorSpy = jest.spyOn(global.console, 'error').mockImplementation(() => {});
+	let execCommandSpy;
 
 	beforeEach(() => {
+		document.execCommand = (() => true) as typeof document.execCommand;
+		execCommandSpy = jest.spyOn(document, 'execCommand').mockReturnValue(true);
 		hook = renderHook(() => useCopyToClipboard());
+	});
+
+	afterEach(() => {
+		execCommandSpy.mockRestore();
 	});
 
 	afterAll(() => {
 		consoleErrorSpy.mockRestore();
-		vi.unmock('copy-to-clipboard');
 	});
 
 	it('should be defined ', () => {
@@ -38,19 +30,19 @@ describe('useCopyToClipboard', () => {
 		act(() => copyToClipboard(testValue));
 		[state, copyToClipboard] = hook.result.current;
 
-		expect(writeText).toBeCalled();
+		expect(execCommandSpy).toBeCalledWith('copy');
 		expect(state.value).toBe(testValue);
 		expect(state.noUserInteraction).toBe(true);
 		expect(state.error).not.toBeDefined();
 	});
 
-	it('should not call writeText if passed an invalid input and set state', () => {
+	it('should not call copy command if passed an invalid input and set state', () => {
 		let testValue = {}; // invalid value
 		let [state, copyToClipboard] = hook.result.current;
 		act(() => copyToClipboard(testValue));
 		[state, copyToClipboard] = hook.result.current;
 
-		expect(writeText).not.toBeCalled();
+		expect(execCommandSpy).not.toBeCalled();
 		expect(state.value).toBe(testValue);
 		expect(state.noUserInteraction).toBe(true);
 		expect(state.error).toBeDefined();
@@ -59,21 +51,24 @@ describe('useCopyToClipboard', () => {
 		act(() => copyToClipboard(testValue));
 		[state, copyToClipboard] = hook.result.current;
 
-		expect(writeText).not.toBeCalled();
+		expect(execCommandSpy).not.toBeCalled();
 		expect(state.value).toBe(testValue);
 		expect(state.noUserInteraction).toBe(true);
 		expect(state.error).toBeDefined();
 	});
 
-	it('should catch exception thrown by copy-to-clipboard and set state', () => {
+	it('should catch exception thrown by clipboard command and set state', () => {
+		execCommandSpy.mockImplementation(() => {
+			throw new Error('copy failed');
+		});
 		let [state, copyToClipboard] = hook.result.current;
-		act(() => copyToClipboard(valueToRaiseMockException));
+		act(() => copyToClipboard('value'));
 		[state, copyToClipboard] = hook.result.current;
 
-		expect(writeText).toBeCalledWith(valueToRaiseMockException);
-		expect(state.value).toBe(valueToRaiseMockException);
+		expect(execCommandSpy).toBeCalledWith('copy');
+		expect(state.value).toBe('value');
 		expect(state.noUserInteraction).not.toBeDefined();
-		expect(state.error).toStrictEqual(new Error(valueToRaiseMockException));
+		expect(state.error).toStrictEqual(new Error('copy failed'));
 	});
 
 	it('should return initial state while unmounted', () => {
@@ -97,7 +92,7 @@ describe('useCopyToClipboard', () => {
 
 		[state, copyToClipboard] = hook.result.current;
 
-		expect(writeText).not.toBeCalled();
+		expect(execCommandSpy).not.toBeCalled();
 		expect(consoleErrorSpy).toBeCalled();
 		expect(state.value).toBe(testValue);
 		expect(state.noUserInteraction).toBe(true);
