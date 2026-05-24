@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-23T21:22:13.913Z",
+  "generated_at": "2026-05-24T02:12:08.181Z",
   "repository": "kitsuyui/react-use",
   "default_branch": "main",
   "publish_branch": "gh-counter-assets",
   "event_name": "push",
   "base_label": "main",
-  "base_reference": "38cb335d41e2903a77b1dfda30e468416479e4d4",
+  "base_reference": "a6e40ee8303a009a38c48c188240385b5ca9ed08",
   "head_label": "main",
-  "head_reference": "a6e40ee8303a009a38c48c188240385b5ca9ed08",
+  "head_reference": "688cf66618da40dd52e704271eda6287f0e21983",
   "bootstrap_message": null,
   "base_only_paths": [],
   "counters": [
