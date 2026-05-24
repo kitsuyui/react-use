@@ -7,7 +7,7 @@ to re-render when called.
 ## Usage
 
 ```jsx
-import {useUpdate} from 'react-use';
+import {useUpdate} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const update = useUpdate();

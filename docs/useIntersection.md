@@ -6,7 +6,7 @@ React sensor hook that tracks the changes in the intersection of a target elemen
 
 ```jsx
 import * as React from 'react';
-import { useIntersection } from 'react-use';
+import { useIntersection } from '@kitsuyui/react-use';
 
 const Demo = () => {
   const intersectionRef = React.useRef(null);

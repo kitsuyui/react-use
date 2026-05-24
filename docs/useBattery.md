@@ -2,14 +2,14 @@
 
 React sensor hook that tracks battery status.
 
->**Note:** current `BatteryManager` API state is obsolete.  
+>**Note:** current `BatteryManager` API state is obsolete.
 >Although it may still work in some browsers, its use is discouraged since it could be removed at any time.
 
 
 ## Usage
 
 ```jsx
-import {useBattery} from 'react-use';
+import {useBattery} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const batteryState = useBattery();

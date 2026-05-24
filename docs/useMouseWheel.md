@@ -1,10 +1,10 @@
-# `useMouseWheel` 
-React Hook to get deltaY of mouse scrolled in window. 
+# `useMouseWheel`
+React Hook to get deltaY of mouse scrolled in window.
 
 ## Usage
 
 ```jsx
-import { useMouseWheel } from 'react-use';
+import { useMouseWheel } from '@kitsuyui/react-use';
 
 const Demo = () => {
   const mouseWheel = useMouseWheel()

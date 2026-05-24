@@ -7,7 +7,7 @@ returns percentage of time elapsed.
 ## Usage
 
 ```jsx
-import {useRaf} from 'react-use';
+import {useRaf} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const elapsed = useRaf(5000, 1000);

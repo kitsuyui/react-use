@@ -6,7 +6,7 @@ Tracks component's renders count including the first render.
 
 ```typescript jsx
 import * as React from 'react';
-import { useRendersCount } from "react-use";  
+import { useRendersCount } from "@kitsuyui/react-use";
 
 const Demo = () => {
   const update = useUpdate();

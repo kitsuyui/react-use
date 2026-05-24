@@ -9,7 +9,7 @@ This allows you to have a shared state that any component can update easily.
 An example with two counters that shared the same value.
 
 ```jsx
-import { createReducerContext } from 'react-use';
+import { createReducerContext } from '@kitsuyui/react-use';
 
 type Action = 'increment' | 'decrement';
 

@@ -6,7 +6,7 @@ React state hook that tracks the latest value of an `Observable`.
 ## Usage
 
 ```jsx
-import {useObservable} from 'react-use';
+import {useObservable} from '@kitsuyui/react-use';
 
 const counter$ = new BehaviorSubject(0);
 const Demo = () => {

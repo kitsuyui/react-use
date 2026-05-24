@@ -6,7 +6,7 @@ React UI hook that synthesizes human voice that speaks a given string.
 ## Usage
 
 ```jsx
-import {useSpeech} from 'react-use';
+import {useSpeech} from '@kitsuyui/react-use';
 
 const voices = window.speechSynthesis.getVoices();
 
@@ -16,7 +16,7 @@ const Demo = () => {
   return (
     <pre>
       {JSON.stringify(state, null, 2)}
-    </pre>  
+    </pre>
   );
 };
 ```

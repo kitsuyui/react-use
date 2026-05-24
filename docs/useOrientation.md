@@ -15,7 +15,7 @@ Returns state in the following shape
 ## Usage
 
 ```jsx
-import {useOrientation} from 'react-use';
+import {useOrientation} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const state = useOrientation();

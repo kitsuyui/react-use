@@ -5,14 +5,14 @@ React sensor hook that tracks dimensions of an HTML element using the [Resize Ob
 ## Usage
 
 ```jsx
-import { useMeasure } from "react-use";
+import { useMeasure } from "@kitsuyui/react-use";
 
 const Demo = () => {
   const [ref, { x, y, width, height, top, right, bottom, left }] = useMeasure();
 
   return (
     <div ref={ref}>
-      <div>x: {x}</div>	
+      <div>x: {x}</div>
       <div>y: {y}</div>
       <div>width: {width}</div>
       <div>height: {height}</div>

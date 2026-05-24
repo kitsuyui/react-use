@@ -7,13 +7,13 @@ Several thing about it's work:
 - automatically cancel timeout on cancel;
 - automatically reset timeout on delay change;
 - reset function call will cancel previous timeout;
-- timeout will NOT be reset on function change. It will be called within the timeout, you have to reset it on your own when needed. 
+- timeout will NOT be reset on function change. It will be called within the timeout, you have to reset it on your own when needed.
 
 ## Usage
 
 ```jsx
 import * as React from 'react';
-import { useTimeoutFn } from 'react-use';
+import { useTimeoutFn } from '@kitsuyui/react-use';
 
 const Demo = () => {
   const [state, setState] = React.useState('Not called yet');
@@ -49,7 +49,7 @@ const Demo = () => {
 
 ## Reference
 
-```ts 
+```ts
 const [
     isReady: () => boolean | null,
     cancel: () => void,

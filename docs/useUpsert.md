@@ -1,6 +1,6 @@
 # `useUpsert`
 
-> DEPRECATED!  
+> DEPRECATED!
 > Use `useList` hook's upsert action instead
 
 Superset of [`useList`](./useList.md). Provides an additional method to upsert (update or insert) an element into the list.
@@ -8,7 +8,7 @@ Superset of [`useList`](./useList.md). Provides an additional method to upsert (
 ## Usage
 
 ```jsx
-import {useUpsert} from 'react-use';
+import {useUpsert} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const comparisonFunction = (a: DemoType, b: DemoType) => {

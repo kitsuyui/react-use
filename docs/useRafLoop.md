@@ -9,7 +9,7 @@ Additionally hook provides methods to start/stop loop and check current state.
 
 ```jsx
 import * as React from 'react';
-import { useRafLoop, useUpdate } from 'react-use';
+import { useRafLoop, useUpdate } from '@kitsuyui/react-use';
 
 const Demo = () => {
   const [ticks, setTicks] = React.useState(0);

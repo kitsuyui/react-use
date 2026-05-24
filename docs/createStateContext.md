@@ -9,7 +9,7 @@ This allows you to have a shared state that any component can update easily.
 An example with a shared text between two input fields.
 
 ```jsx
-import { createStateContext } from 'react-use';
+import { createStateContext } from '@kitsuyui/react-use';
 
 const [useSharedText, SharedTextProvider] = createStateContext('');
 

@@ -6,7 +6,7 @@ function that returns a promise. The state is of the same shape as `useAsync`.
 ## Usage
 
 ```jsx
-import {useAsyncFn} from 'react-use';
+import {useAsyncFn} from '@kitsuyui/react-use';
 
 const Demo = ({url}) => {
   const [state, doFetch] = useAsyncFn(async () => {

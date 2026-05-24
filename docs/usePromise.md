@@ -7,7 +7,7 @@ Promises wrapped with this function will resolve only when component is mounted.
 ## Usage
 
 ```jsx
-import {usePromise} from 'react-use';
+import {usePromise} from '@kitsuyui/react-use';
 
 const Demo = ({promise}) => {
   const mounted = usePromise();

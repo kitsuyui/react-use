@@ -6,7 +6,7 @@ React state hook implements simple FIFO queue.
 ## Usage
 
 ```jsx
-import { useQueue } from 'react-use';
+import { useQueue } from '@kitsuyui/react-use';
 
 const Demo = () => {
   const { add, remove, first, last, size } = useQueue();

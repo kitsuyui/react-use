@@ -2,12 +2,12 @@
 
 ## Supported Versions
 
-We release patches for security vulnerabilities. The latest major version
-will support security patches.
+The latest released version of `@kitsuyui/react-use` receives security fixes.
 
 ## Reporting a Vulnerability
 
-Please report (suspected) security vulnerabilities to
-**[streamich@gmail.com](mailto:streamich@gmail.com)**. We will try to respond
-within 48 hours. If the issue is confirmed, we will release a patch as soon
-as possible depending on complexity.
+Please report suspected vulnerabilities through GitHub Security Advisories for
+`kitsuyui/react-use`.
+
+Do not report fork-specific security issues to upstream maintainers unless the
+same issue is independently confirmed in the upstream project.

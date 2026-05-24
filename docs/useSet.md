@@ -10,7 +10,7 @@ The "reset()" method returns the "Set" to the initial value passed during "useSe
 The "clear()" method completely empties the "Set".
 
 ```jsx
-import {useSet} from 'react-use';
+import {useSet} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const [set, { add, has, remove, toggle, reset, clear }] = useSet(new Set(['hello']));

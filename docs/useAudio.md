@@ -6,7 +6,7 @@ Creates `<audio>` element, tracks its state and exposes playback controls.
 ## Usage
 
 ```jsx
-import {useAudio} from 'react-use';
+import {useAudio} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const [audio, state, controls, ref] = useAudio({

@@ -1,12 +1,12 @@
 # `useTimeout`
 
-Re-renders the component after a specified number of milliseconds.  
+Re-renders the component after a specified number of milliseconds.
 Provides handles to cancel and/or reset the timeout.
 
 ## Usage
 
 ```jsx
-import { useTimeout } from 'react-use';
+import { useTimeout } from '@kitsuyui/react-use';
 
 function TestComponent(props: { ms?: number } = {}) {
   const ms = props.ms || 5000;
@@ -32,7 +32,7 @@ const Demo = () => {
 
 ## Reference
 
-```ts 
+```ts
 const [
     isReady: () => boolean | null,
     cancel: () => void,

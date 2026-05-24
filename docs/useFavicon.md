@@ -6,7 +6,7 @@ React side-effect hook sets the favicon of the page.
 ## Usage
 
 ```jsx
-import {useFavicon} from 'react-use';
+import {useFavicon} from '@kitsuyui/react-use';
 
 const Demo = () => {
   useFavicon('https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico');

@@ -8,7 +8,7 @@ The third argument is the array of values that the throttle depends on, in the s
 
 ```jsx
 import React, { useState } from 'react';
-import { useThrottleFn } from 'react-use';
+import { useThrottleFn } from '@kitsuyui/react-use';
 
 const Demo = () => {
   const [status, setStatus] = React.useState('Updating stopped');

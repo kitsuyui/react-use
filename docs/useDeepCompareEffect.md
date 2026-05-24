@@ -5,7 +5,7 @@ A modified useEffect hook that is using deep comparison on its dependencies inst
 ## Usage
 
 ```jsx
-import {useCounter, useDeepCompareEffect} from 'react-use';
+import {useCounter, useDeepCompareEffect} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const [count, {inc: inc}] = useCounter(0);

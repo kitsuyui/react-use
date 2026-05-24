@@ -8,7 +8,7 @@ React side-effect hook that shows browser alert when user try to reload or close
 ### Boolean check
 
 ```jsx
-import {useBeforeUnload} from 'react-use';
+import {useBeforeUnload} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const [dirty, toggleDirty] = useToggle(false);
@@ -30,7 +30,7 @@ Note: Since every `dirtyFn` change registers a new callback, you should use
 if your test value changes often.
 
 ```jsx
-import {useBeforeUnload} from 'react-use';
+import {useBeforeUnload} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const [dirty, toggleDirty] = useToggle(false);

@@ -1,16 +1,16 @@
 # `useList`
 
-Tracks an array and provides methods to modify it.  
+Tracks an array and provides methods to modify it.
 To cause component re-render you have to use these methods instead of direct interaction with array - it won't cause re-render.
 
-We can ensure that actions object and actions itself will not mutate or change between renders, so there is no need to add it to useEffect dependencies and safe to pass them down to children.  
+We can ensure that actions object and actions itself will not mutate or change between renders, so there is no need to add it to useEffect dependencies and safe to pass them down to children.
 
 **Note:** `remove` action is deprecated and actually is a copy of `removeAt` action. Within closest updates it will gain different functionality.
 
 ## Usage
 
 ```jsx
-import {useList} from 'react-use';
+import {useList} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const [list, { set, push, updateAt, insertAt, update, updateFirst, upsert, sort, filter, removeAt, clear, reset }] = useList([1, 2, 3, 4, 5]);
@@ -34,22 +34,22 @@ const Demo = () => {
 
 ## Reference
 ```ts
-import {useList} from "react-use";
+import {useList} from "@kitsuyui/react-use";
 
-const [list, { 
-    set, 
-    push, 
-    updateAt, 
-    insertAt, 
-    update, 
+const [list, {
+    set,
+    push,
+    updateAt,
+    insertAt,
+    update,
     updateFirst,
-    upsert, 
-    sort, 
-    filter, 
-    removeAt, 
-    remove, 
-    clear, 
-    reset 
+    upsert,
+    sort,
+    filter,
+    removeAt,
+    remove,
+    clear,
+    reset
 }] = useList(array: any[] | ()=> any[]);
 ```
 

@@ -8,7 +8,7 @@ connection.
 ## Usage
 
 ```jsx
-import {useNetworkState} from 'react-use';
+import {useNetworkState} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const state = useNetworkState();

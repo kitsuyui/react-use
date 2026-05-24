@@ -12,7 +12,7 @@ by a mouse.
 ## Usage
 
 ```jsx
-import {useHover} from 'react-use';
+import {useHover} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const element = (hovered) =>
