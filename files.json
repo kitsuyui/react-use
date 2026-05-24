@@ -1,25 +1,17 @@
 {
-  "generated_at": "2026-05-23T21:22:19.664Z",
+  "generated_at": "2026-05-24T02:12:18.305Z",
   "repository": "kitsuyui/react-use",
   "default_branch": "main",
   "publish_branch": "gh-build-size-assets",
   "event_name": "push",
-  "head_reference": "a6e40ee8303a009a38c48c188240385b5ca9ed08",
+  "head_reference": "688cf66618da40dd52e704271eda6287f0e21983",
   "files": [
     {
-      "path": "dist/chunk-BfJBT4Xj.mjs",
+      "path": "dist/chunk-BE-pF4vm.js",
       "sizes": {
-        "raw": 1156,
-        "gzip": 571,
-        "brotli": 507
-      }
-    },
-    {
-      "path": "dist/chunk-BW_iTze1.js",
-      "sizes": {
-        "raw": 1350,
-        "gzip": 606,
-        "brotli": 542
+        "raw": 1122,
+        "gzip": 546,
+        "brotli": 485
       }
     },
     {
@@ -90,8 +82,8 @@
       "path": "dist/factory/createBreakpoint.js",
       "sizes": {
         "raw": 1022,
-        "gzip": 493,
-        "brotli": 438
+        "gzip": 495,
+        "brotli": 468
       }
     },
     {
@@ -138,8 +130,8 @@
       "path": "dist/factory/createGlobalState.js",
       "sizes": {
         "raw": 1299,
-        "gzip": 534,
-        "brotli": 448
+        "gzip": 535,
+        "brotli": 447
       }
     },
     {
@@ -155,7 +147,7 @@
       "sizes": {
         "raw": 1035,
         "gzip": 427,
-        "brotli": 366
+        "brotli": 368
       }
     },
     {
@@ -186,8 +178,8 @@
       "path": "dist/factory/createHTMLMediaHook.js",
       "sizes": {
         "raw": 4817,
-        "gzip": 1326,
-        "brotli": 1177
+        "gzip": 1327,
+        "brotli": 1178
       }
     },
     {
@@ -234,8 +226,8 @@
       "path": "dist/factory/createMemo.js",
       "sizes": {
         "raw": 288,
-        "gzip": 203,
-        "brotli": 199
+        "gzip": 205,
+        "brotli": 204
       }
     },
     {
@@ -282,8 +274,8 @@
       "path": "dist/factory/createReducer.js",
       "sizes": {
         "raw": 1330,
-        "gzip": 508,
-        "brotli": 435
+        "gzip": 509,
+        "brotli": 437
       }
     },
     {
@@ -331,7 +323,7 @@
       "sizes": {
         "raw": 928,
         "gzip": 427,
-        "brotli": 356
+        "brotli": 358
       }
     },
     {
@@ -427,7 +419,7 @@
       "sizes": {
         "raw": 324,
         "gzip": 227,
-        "brotli": 182
+        "brotli": 183
       }
     },
     {
@@ -474,8 +466,8 @@
       "path": "dist/factory/createStateContext.js",
       "sizes": {
         "raw": 888,
-        "gzip": 419,
-        "brotli": 347
+        "gzip": 421,
+        "brotli": 348
       }
     },
     {
@@ -505,65 +497,33 @@
     {
       "path": "dist/index.d.mts",
       "sizes": {
-        "raw": 7150,
-        "gzip": 1531,
-        "brotli": 1370
+        "raw": 6988,
+        "gzip": 1499,
+        "brotli": 1335
       }
     },
     {
       "path": "dist/index.d.ts",
       "sizes": {
-        "raw": 7039,
-        "gzip": 1522,
-        "brotli": 1360
+        "raw": 6880,
+        "gzip": 1491,
+        "brotli": 1324
       }
     },
     {
       "path": "dist/index.js",
       "sizes": {
-        "raw": 12290,
-        "gzip": 1953,
-        "brotli": 1700
+        "raw": 12006,
+        "gzip": 1902,
+        "brotli": 1638
       }
     },
     {
       "path": "dist/index.mjs",
       "sizes": {
-        "raw": 7451,
-        "gzip": 1563,
-        "brotli": 1383
-      }
-    },
-    {
-      "path": "dist/keyboard-BJl3MsGC.mjs",
-      "sizes": {
-        "raw": 32548,
-        "gzip": 6625,
-        "brotli": 5764
-      }
-    },
-    {
-      "path": "dist/keyboard-BJl3MsGC.mjs.map",
-      "sizes": {
-        "raw": 144016,
-        "gzip": 34055,
-        "brotli": 29032
-      }
-    },
-    {
-      "path": "dist/keyboard-D-xjwbU9.js",
-      "sizes": {
-        "raw": 32644,
-        "gzip": 6661,
-        "brotli": 5789
-      }
-    },
-    {
-      "path": "dist/keyboard-D-xjwbU9.js.map",
-      "sizes": {
-        "raw": 144015,
-        "gzip": 34053,
-        "brotli": 29087
+        "raw": 7289,
+        "gzip": 1530,
+        "brotli": 1371
       }
     },
     {
@@ -617,49 +577,49 @@
     {
       "path": "dist/misc/isDeepEqual.d.mts",
       "sizes": {
-        "raw": 93,
-        "gzip": 90,
-        "brotli": 79
+        "raw": 189,
+        "gzip": 156,
+        "brotli": 127
       }
     },
     {
       "path": "dist/misc/isDeepEqual.d.ts",
       "sizes": {
-        "raw": 80,
-        "gzip": 78,
-        "brotli": 75
+        "raw": 162,
+        "gzip": 139,
+        "brotli": 116
       }
     },
     {
       "path": "dist/misc/isDeepEqual.js",
       "sizes": {
-        "raw": 370,
-        "gzip": 215,
-        "brotli": 178
+        "raw": 1425,
+        "gzip": 533,
+        "brotli": 440
       }
     },
     {
       "path": "dist/misc/isDeepEqual.js.map",
       "sizes": {
-        "raw": 253,
-        "gzip": 177,
-        "brotli": 145
+        "raw": 2653,
+        "gzip": 962,
+        "brotli": 834
       }
     },
     {
       "path": "dist/misc/isDeepEqual.mjs",
       "sizes": {
-        "raw": 230,
-        "gzip": 158,
-        "brotli": 131
+        "raw": 1430,
+        "gzip": 537,
+        "brotli": 446
       }
     },
     {
       "path": "dist/misc/isDeepEqual.mjs.map",
       "sizes": {
-        "raw": 233,
-        "gzip": 177,
-        "brotli": 146
+        "raw": 2653,
+        "gzip": 962,
+        "brotli": 834
       }
     },
     {
@@ -810,8 +770,8 @@
       "path": "dist/useAsync.js",
       "sizes": {
         "raw": 432,
-        "gzip": 272,
-        "brotli": 218
+        "gzip": 273,
+        "brotli": 246
       }
     },
     {
@@ -906,8 +866,8 @@
       "path": "dist/useAsyncRetry.js",
       "sizes": {
         "raw": 807,
-        "gzip": 433,
-        "brotli": 364
+        "gzip": 434,
+        "brotli": 365
       }
     },
     {
@@ -1003,7 +963,7 @@
       "sizes": {
         "raw": 1900,
         "gzip": 638,
-        "brotli": 590
+        "brotli": 556
       }
     },
     {
@@ -1017,17 +977,17 @@
     {
       "path": "dist/useBattery.mjs",
       "sizes": {
-        "raw": 1672,
-        "gzip": 601,
-        "brotli": 546
+        "raw": 1656,
+        "gzip": 600,
+        "brotli": 544
       }
     },
     {
       "path": "dist/useBattery.mjs.map",
       "sizes": {
-        "raw": 3558,
-        "gzip": 1226,
-        "brotli": 1104
+        "raw": 3543,
+        "gzip": 1221,
+        "brotli": 1102
       }
     },
     {
@@ -1050,8 +1010,8 @@
       "path": "dist/useBeforeUnload.js",
       "sizes": {
         "raw": 760,
-        "gzip": 378,
-        "brotli": 304
+        "gzip": 380,
+        "brotli": 306
       }
     },
     {
@@ -1147,7 +1107,7 @@
       "sizes": {
         "raw": 903,
         "gzip": 419,
-        "brotli": 351
+        "brotli": 354
       }
     },
     {
@@ -1177,49 +1137,49 @@
     {
       "path": "dist/useCookie.d.mts",
       "sizes": {
-        "raw": 291,
-        "gzip": 211,
-        "brotli": 159
+        "raw": 421,
+        "gzip": 273,
+        "brotli": 236
       }
     },
     {
       "path": "dist/useCookie.d.ts",
       "sizes": {
-        "raw": 264,
-        "gzip": 194,
-        "brotli": 156
+        "raw": 420,
+        "gzip": 271,
+        "brotli": 233
       }
     },
     {
       "path": "dist/useCookie.js",
       "sizes": {
-        "raw": 696,
-        "gzip": 342,
-        "brotli": 296
+        "raw": 1736,
+        "gzip": 690,
+        "brotli": 607
       }
     },
     {
       "path": "dist/useCookie.js.map",
       "sizes": {
-        "raw": 1118,
-        "gzip": 537,
-        "brotli": 473
+        "raw": 3275,
+        "gzip": 1256,
+        "brotli": 1103
       }
     },
     {
       "path": "dist/useCookie.mjs",
       "sizes": {
-        "raw": 551,
-        "gzip": 290,
-        "brotli": 268
+        "raw": 1672,
+        "gzip": 657,
+        "brotli": 561
       }
     },
     {
       "path": "dist/useCookie.mjs.map",
       "sizes": {
-        "raw": 1119,
-        "gzip": 540,
-        "brotli": 480
+        "raw": 3290,
+        "gzip": 1259,
+        "brotli": 1110
       }
     },
     {
@@ -1241,33 +1201,33 @@
     {
       "path": "dist/useCopyToClipboard.js",
       "sizes": {
-        "raw": 1724,
-        "gzip": 636,
-        "brotli": 573
+        "raw": 2229,
+        "gzip": 798,
+        "brotli": 680
       }
     },
     {
       "path": "dist/useCopyToClipboard.js.map",
       "sizes": {
-        "raw": 2884,
-        "gzip": 1035,
-        "brotli": 920
+        "raw": 4017,
+        "gzip": 1363,
+        "brotli": 1194
       }
     },
     {
       "path": "dist/useCopyToClipboard.mjs",
       "sizes": {
-        "raw": 1450,
-        "gzip": 554,
-        "brotli": 488
+        "raw": 2049,
+        "gzip": 740,
+        "brotli": 611
       }
     },
     {
       "path": "dist/useCopyToClipboard.mjs.map",
       "sizes": {
-        "raw": 2809,
-        "gzip": 1015,
-        "brotli": 894
+        "raw": 3938,
+        "gzip": 1348,
+        "brotli": 1161
       }
     },
     {
@@ -1291,7 +1251,7 @@
       "sizes": {
         "raw": 2166,
         "gzip": 669,
-        "brotli": 605
+        "brotli": 584
       }
     },
     {
@@ -1319,54 +1279,6 @@
       }
     },
     {
-      "path": "dist/useCss.d.mts",
-      "sizes": {
-        "raw": 153,
-        "gzip": 141,
-        "brotli": 121
-      }
-    },
-    {
-      "path": "dist/useCss.d.ts",
-      "sizes": {
-        "raw": 126,
-        "gzip": 125,
-        "brotli": 107
-      }
-    },
-    {
-      "path": "dist/useCss.js",
-      "sizes": {
-        "raw": 1056,
-        "gzip": 444,
-        "brotli": 391
-      }
-    },
-    {
-      "path": "dist/useCss.js.map",
-      "sizes": {
-        "raw": 1382,
-        "gzip": 653,
-        "brotli": 589
-      }
-    },
-    {
-      "path": "dist/useCss.mjs",
-      "sizes": {
-        "raw": 827,
-        "gzip": 398,
-        "brotli": 361
-      }
-    },
-    {
-      "path": "dist/useCss.mjs.map",
-      "sizes": {
-        "raw": 1429,
-        "gzip": 660,
-        "brotli": 601
-      }
-    },
-    {
       "path": "dist/useCustomCompareEffect.d.mts",
       "sizes": {
         "raw": 461,
@@ -1386,8 +1298,8 @@
       "path": "dist/useCustomCompareEffect.js",
       "sizes": {
         "raw": 1024,
-        "gzip": 486,
-        "brotli": 393
+        "gzip": 485,
+        "brotli": 394
       }
     },
     {
@@ -1435,7 +1347,7 @@
       "sizes": {
         "raw": 431,
         "gzip": 264,
-        "brotli": 223
+        "brotli": 224
       }
     },
     {
@@ -1497,17 +1409,17 @@
     {
       "path": "dist/useDeepCompareEffect.mjs",
       "sizes": {
-        "raw": 757,
-        "gzip": 354,
-        "brotli": 286
+        "raw": 741,
+        "gzip": 351,
+        "brotli": 284
       }
     },
     {
       "path": "dist/useDeepCompareEffect.mjs.map",
       "sizes": {
-        "raw": 1221,
-        "gzip": 589,
-        "brotli": 505
+        "raw": 1206,
+        "gzip": 583,
+        "brotli": 503
       }
     },
     {
@@ -1530,8 +1442,8 @@
       "path": "dist/useDefault.js",
       "sizes": {
         "raw": 413,
-        "gzip": 259,
-        "brotli": 226
+        "gzip": 260,
+        "brotli": 236
       }
     },
     {
@@ -1578,8 +1490,8 @@
       "path": "dist/useDrop.js",
       "sizes": {
         "raw": 2321,
-        "gzip": 720,
-        "brotli": 639
+        "gzip": 719,
+        "brotli": 641
       }
     },
     {
@@ -1675,7 +1587,7 @@
       "sizes": {
         "raw": 277,
         "gzip": 196,
-        "brotli": 185
+        "brotli": 190
       }
     },
     {
@@ -1723,7 +1635,7 @@
       "sizes": {
         "raw": 811,
         "gzip": 397,
-        "brotli": 329
+        "brotli": 333
       }
     },
     {
@@ -1771,7 +1683,7 @@
       "sizes": {
         "raw": 408,
         "gzip": 263,
-        "brotli": 223
+        "brotli": 227
       }
     },
     {
@@ -1818,8 +1730,8 @@
       "path": "dist/useEvent.js",
       "sizes": {
         "raw": 993,
-        "gzip": 410,
-        "brotli": 336
+        "gzip": 412,
+        "brotli": 335
       }
     },
     {
@@ -1867,7 +1779,7 @@
       "sizes": {
         "raw": 507,
         "gzip": 331,
-        "brotli": 251
+        "brotli": 253
       }
     },
     {
@@ -1914,7 +1826,7 @@
       "path": "dist/useFirstMountState.js",
       "sizes": {
         "raw": 473,
-        "gzip": 292,
+        "gzip": 293,
         "brotli": 244
       }
     },
@@ -1943,54 +1855,6 @@
       }
     },
     {
-      "path": "dist/useFullscreen.d.mts",
-      "sizes": {
-        "raw": 491,
-        "gzip": 284,
-        "brotli": 234
-      }
-    },
-    {
-      "path": "dist/useFullscreen.d.ts",
-      "sizes": {
-        "raw": 490,
-        "gzip": 282,
-        "brotli": 228
-      }
-    },
-    {
-      "path": "dist/useFullscreen.js",
-      "sizes": {
-        "raw": 2097,
-        "gzip": 642,
-        "brotli": 573
-      }
-    },
-    {
-      "path": "dist/useFullscreen.js.map",
-      "sizes": {
-        "raw": 3331,
-        "gzip": 1136,
-        "brotli": 1043
-      }
-    },
-    {
-      "path": "dist/useFullscreen.mjs",
-      "sizes": {
-        "raw": 1831,
-        "gzip": 586,
-        "brotli": 532
-      }
-    },
-    {
-      "path": "dist/useFullscreen.mjs.map",
-      "sizes": {
-        "raw": 3316,
-        "gzip": 1128,
-        "brotli": 1027
-      }
-    },
-    {
       "path": "dist/useGeolocation.d.mts",
       "sizes": {
         "raw": 1035,
@@ -2010,8 +1874,8 @@
       "path": "dist/useGeolocation.js",
       "sizes": {
         "raw": 1301,
-        "gzip": 541,
-        "brotli": 461
+        "gzip": 542,
+        "brotli": 465
       }
     },
     {
@@ -2059,7 +1923,7 @@
       "sizes": {
         "raw": 647,
         "gzip": 315,
-        "brotli": 280
+        "brotli": 282
       }
     },
     {
@@ -2107,7 +1971,7 @@
       "sizes": {
         "raw": 884,
         "gzip": 407,
-        "brotli": 336
+        "brotli": 339
       }
     },
     {
@@ -2153,33 +2017,33 @@
     {
       "path": "dist/useHarmonicIntervalFn.js",
       "sizes": {
-        "raw": 717,
-        "gzip": 341,
-        "brotli": 290
+        "raw": 585,
+        "gzip": 316,
+        "brotli": 271
       }
     },
     {
       "path": "dist/useHarmonicIntervalFn.js.map",
       "sizes": {
-        "raw": 949,
-        "gzip": 482,
-        "brotli": 451
+        "raw": 856,
+        "gzip": 463,
+        "brotli": 396
       }
     },
     {
       "path": "dist/useHarmonicIntervalFn.mjs",
       "sizes": {
-        "raw": 617,
-        "gzip": 305,
-        "brotli": 287
+        "raw": 517,
+        "gzip": 283,
+        "brotli": 249
       }
     },
     {
       "path": "dist/useHarmonicIntervalFn.mjs.map",
       "sizes": {
-        "raw": 966,
-        "gzip": 490,
-        "brotli": 429
+        "raw": 862,
+        "gzip": 461,
+        "brotli": 423
       }
     },
     {
@@ -2201,33 +2065,33 @@
     {
       "path": "dist/useHash.js",
       "sizes": {
-        "raw": 923,
-        "gzip": 434,
-        "brotli": 358
+        "raw": 1134,
+        "gzip": 468,
+        "brotli": 384
       }
     },
     {
       "path": "dist/useHash.js.map",
       "sizes": {
-        "raw": 1174,
-        "gzip": 580,
-        "brotli": 510
+        "raw": 1513,
+        "gzip": 646,
+        "brotli": 577
       }
     },
     {
       "path": "dist/useHash.mjs",
       "sizes": {
-        "raw": 708,
-        "gzip": 350,
-        "brotli": 294
+        "raw": 840,
+        "gzip": 379,
+        "brotli": 318
       }
     },
     {
       "path": "dist/useHash.mjs.map",
       "sizes": {
-        "raw": 1183,
-        "gzip": 579,
-        "brotli": 516
+        "raw": 1502,
+        "gzip": 641,
+        "brotli": 591
       }
     },
     {
@@ -2250,8 +2114,8 @@
       "path": "dist/useHover.js",
       "sizes": {
         "raw": 900,
-        "gzip": 405,
-        "brotli": 346
+        "gzip": 404,
+        "brotli": 348
       }
     },
     {
@@ -2299,7 +2163,7 @@
       "sizes": {
         "raw": 1073,
         "gzip": 487,
-        "brotli": 408
+        "brotli": 409
       }
     },
     {
@@ -2345,33 +2209,33 @@
     {
       "path": "dist/useIdle.js",
       "sizes": {
-        "raw": 1456,
-        "gzip": 605,
-        "brotli": 517
+        "raw": 1470,
+        "gzip": 613,
+        "brotli": 520
       }
     },
     {
       "path": "dist/useIdle.js.map",
       "sizes": {
-        "raw": 2320,
-        "gzip": 974,
-        "brotli": 891
+        "raw": 2469,
+        "gzip": 1016,
+        "brotli": 929
       }
     },
     {
       "path": "dist/useIdle.mjs",
       "sizes": {
-        "raw": 1288,
-        "gzip": 564,
-        "brotli": 487
+        "raw": 1333,
+        "gzip": 576,
+        "brotli": 500
       }
     },
     {
       "path": "dist/useIdle.mjs.map",
       "sizes": {
-        "raw": 2323,
-        "gzip": 968,
-        "brotli": 869
+        "raw": 2469,
+        "gzip": 1010,
+        "brotli": 903
       }
     },
     {
@@ -2394,8 +2258,8 @@
       "path": "dist/useIntersection.js",
       "sizes": {
         "raw": 864,
-        "gzip": 397,
-        "brotli": 342
+        "gzip": 398,
+        "brotli": 336
       }
     },
     {
@@ -2443,7 +2307,7 @@
       "sizes": {
         "raw": 555,
         "gzip": 310,
-        "brotli": 251
+        "brotli": 280
       }
     },
     {
@@ -2490,7 +2354,7 @@
       "path": "dist/useIsomorphicLayoutEffect.js",
       "sizes": {
         "raw": 397,
-        "gzip": 218,
+        "gzip": 217,
         "brotli": 202
       }
     },
@@ -2538,8 +2402,8 @@
       "path": "dist/useKey.js",
       "sizes": {
         "raw": 862,
-        "gzip": 426,
-        "brotli": 363
+        "gzip": 424,
+        "brotli": 369
       }
     },
     {
@@ -2567,54 +2431,6 @@
       }
     },
     {
-      "path": "dist/useKeyboardJs.d.mts",
-      "sizes": {
-        "raw": 225,
-        "gzip": 175,
-        "brotli": 135
-      }
-    },
-    {
-      "path": "dist/useKeyboardJs.d.ts",
-      "sizes": {
-        "raw": 198,
-        "gzip": 159,
-        "brotli": 125
-      }
-    },
-    {
-      "path": "dist/useKeyboardJs.js",
-      "sizes": {
-        "raw": 918,
-        "gzip": 444,
-        "brotli": 379
-      }
-    },
-    {
-      "path": "dist/useKeyboardJs.js.map",
-      "sizes": {
-        "raw": 1310,
-        "gzip": 627,
-        "brotli": 566
-      }
-    },
-    {
-      "path": "dist/useKeyboardJs.mjs",
-      "sizes": {
-        "raw": 856,
-        "gzip": 427,
-        "brotli": 369
-      }
-    },
-    {
-      "path": "dist/useKeyboardJs.mjs.map",
-      "sizes": {
-        "raw": 1324,
-        "gzip": 625,
-        "brotli": 564
-      }
-    },
-    {
       "path": "dist/useKeyPress.d.mts",
       "sizes": {
         "raw": 250,
@@ -2635,7 +2451,7 @@
       "sizes": {
         "raw": 536,
         "gzip": 289,
-        "brotli": 248
+        "brotli": 250
       }
     },
     {
@@ -2730,8 +2546,8 @@
       "path": "dist/useLatest.js",
       "sizes": {
         "raw": 299,
-        "gzip": 215,
-        "brotli": 208
+        "gzip": 216,
+        "brotli": 202
       }
     },
     {
@@ -2779,7 +2595,7 @@
       "sizes": {
         "raw": 360,
         "gzip": 241,
-        "brotli": 199
+        "brotli": 202
       }
     },
     {
@@ -2827,7 +2643,7 @@
       "sizes": {
         "raw": 2222,
         "gzip": 697,
-        "brotli": 633
+        "brotli": 635
       }
     },
     {
@@ -2874,8 +2690,8 @@
       "path": "dist/useLocalStorage.js",
       "sizes": {
         "raw": 1956,
-        "gzip": 712,
-        "brotli": 638
+        "gzip": 713,
+        "brotli": 647
       }
     },
     {
@@ -2922,8 +2738,8 @@
       "path": "dist/useLocation.js",
       "sizes": {
         "raw": 1980,
-        "gzip": 734,
-        "brotli": 602
+        "gzip": 735,
+        "brotli": 606
       }
     },
     {
@@ -2970,8 +2786,8 @@
       "path": "dist/useLockBodyScroll.js",
       "sizes": {
         "raw": 2772,
-        "gzip": 990,
-        "brotli": 831
+        "gzip": 992,
+        "brotli": 833
       }
     },
     {
@@ -3067,7 +2883,7 @@
       "sizes": {
         "raw": 1317,
         "gzip": 550,
-        "brotli": 474
+        "brotli": 476
       }
     },
     {
@@ -3114,8 +2930,8 @@
       "path": "dist/useMap.js",
       "sizes": {
         "raw": 725,
-        "gzip": 388,
-        "brotli": 369
+        "gzip": 389,
+        "brotli": 363
       }
     },
     {
@@ -3162,8 +2978,8 @@
       "path": "dist/useMeasure.js",
       "sizes": {
         "raw": 1227,
-        "gzip": 569,
-        "brotli": 517
+        "gzip": 570,
+        "brotli": 494
       }
     },
     {
@@ -3191,54 +3007,6 @@
       }
     },
     {
-      "path": "dist/useMeasureDirty.d.mts",
-      "sizes": {
-        "raw": 386,
-        "gzip": 234,
-        "brotli": 207
-      }
-    },
-    {
-      "path": "dist/useMeasureDirty.d.ts",
-      "sizes": {
-        "raw": 385,
-        "gzip": 233,
-        "brotli": 203
-      }
-    },
-    {
-      "path": "dist/useMeasureDirty.js",
-      "sizes": {
-        "raw": 969,
-        "gzip": 458,
-        "brotli": 393
-      }
-    },
-    {
-      "path": "dist/useMeasureDirty.js.map",
-      "sizes": {
-        "raw": 1637,
-        "gzip": 737,
-        "brotli": 658
-      }
-    },
-    {
-      "path": "dist/useMeasureDirty.mjs",
-      "sizes": {
-        "raw": 793,
-        "gzip": 408,
-        "brotli": 346
-      }
-    },
-    {
-      "path": "dist/useMeasureDirty.mjs.map",
-      "sizes": {
-        "raw": 1630,
-        "gzip": 736,
-        "brotli": 652
-      }
-    },
-    {
       "path": "dist/useMedia.d.mts",
       "sizes": {
         "raw": 188,
@@ -3258,8 +3026,8 @@
       "path": "dist/useMedia.js",
       "sizes": {
         "raw": 1100,
-        "gzip": 528,
-        "brotli": 439
+        "gzip": 530,
+        "brotli": 442
       }
     },
     {
@@ -3306,8 +3074,8 @@
       "path": "dist/useMediaDevices.js",
       "sizes": {
         "raw": 1097,
-        "gzip": 475,
-        "brotli": 410
+        "gzip": 476,
+        "brotli": 409
       }
     },
     {
@@ -3355,7 +3123,7 @@
       "sizes": {
         "raw": 680,
         "gzip": 360,
-        "brotli": 294
+        "brotli": 295
       }
     },
     {
@@ -3402,8 +3170,8 @@
       "path": "dist/useMethods.js",
       "sizes": {
         "raw": 710,
-        "gzip": 361,
-        "brotli": 318
+        "gzip": 363,
+        "brotli": 320
       }
     },
     {
@@ -3451,7 +3219,7 @@
       "sizes": {
         "raw": 1319,
         "gzip": 513,
-        "brotli": 439
+        "brotli": 430
       }
     },
     {
@@ -3546,8 +3314,8 @@
       "path": "dist/useMountedState.js",
       "sizes": {
         "raw": 487,
-        "gzip": 280,
-        "brotli": 238
+        "gzip": 281,
+        "brotli": 240
       }
     },
     {
@@ -3594,8 +3362,8 @@
       "path": "dist/useMouse.js",
       "sizes": {
         "raw": 1297,
-        "gzip": 607,
-        "brotli": 517
+        "gzip": 609,
+        "brotli": 519
       }
     },
     {
@@ -3690,8 +3458,8 @@
       "path": "dist/useMouseWheel.js",
       "sizes": {
         "raw": 668,
-        "gzip": 325,
-        "brotli": 288
+        "gzip": 327,
+        "brotli": 290
       }
     },
     {
@@ -3738,8 +3506,8 @@
       "path": "dist/useMultiStateValidator.js",
       "sizes": {
         "raw": 1095,
-        "gzip": 495,
-        "brotli": 415
+        "gzip": 496,
+        "brotli": 417
       }
     },
     {
@@ -3786,8 +3554,8 @@
       "path": "dist/useNetworkState.js",
       "sizes": {
         "raw": 1561,
-        "gzip": 599,
-        "brotli": 512
+        "gzip": 600,
+        "brotli": 542
       }
     },
     {
@@ -3883,7 +3651,7 @@
       "sizes": {
         "raw": 555,
         "gzip": 305,
-        "brotli": 254
+        "brotli": 256
       }
     },
     {
@@ -3931,7 +3699,7 @@
       "sizes": {
         "raw": 1132,
         "gzip": 501,
-        "brotli": 456
+        "brotli": 426
       }
     },
     {
@@ -3978,8 +3746,8 @@
       "path": "dist/usePageLeave.js",
       "sizes": {
         "raw": 700,
-        "gzip": 374,
-        "brotli": 315
+        "gzip": 375,
+        "brotli": 322
       }
     },
     {
@@ -4026,8 +3794,8 @@
       "path": "dist/usePermission.js",
       "sizes": {
         "raw": 946,
-        "gzip": 426,
-        "brotli": 366
+        "gzip": 427,
+        "brotli": 367
       }
     },
     {
@@ -4074,8 +3842,8 @@
       "path": "dist/usePinchZoom.js",
       "sizes": {
         "raw": 2166,
-        "gzip": 789,
-        "brotli": 682
+        "gzip": 791,
+        "brotli": 683
       }
     },
     {
@@ -4122,8 +3890,8 @@
       "path": "dist/usePrevious.js",
       "sizes": {
         "raw": 342,
-        "gzip": 234,
-        "brotli": 193
+        "gzip": 235,
+        "brotli": 224
       }
     },
     {
@@ -4171,7 +3939,7 @@
       "sizes": {
         "raw": 670,
         "gzip": 335,
-        "brotli": 281
+        "brotli": 282
       }
     },
     {
@@ -4218,8 +3986,8 @@
       "path": "dist/usePromise.js",
       "sizes": {
         "raw": 597,
-        "gzip": 317,
-        "brotli": 295
+        "gzip": 318,
+        "brotli": 275
       }
     },
     {
@@ -4266,8 +4034,8 @@
       "path": "dist/useQueue.js",
       "sizes": {
         "raw": 637,
-        "gzip": 346,
-        "brotli": 298
+        "gzip": 349,
+        "brotli": 304
       }
     },
     {
@@ -4314,8 +4082,8 @@
       "path": "dist/useRaf.js",
       "sizes": {
         "raw": 958,
-        "gzip": 451,
-        "brotli": 407
+        "gzip": 450,
+        "brotli": 424
       }
     },
     {
@@ -4362,8 +4130,8 @@
       "path": "dist/useRafLoop.js",
       "sizes": {
         "raw": 1045,
-        "gzip": 428,
-        "brotli": 359
+        "gzip": 423,
+        "brotli": 360
       }
     },
     {
@@ -4411,7 +4179,7 @@
       "sizes": {
         "raw": 675,
         "gzip": 327,
-        "brotli": 304
+        "brotli": 291
       }
     },
     {
@@ -4458,8 +4226,8 @@
       "path": "dist/useRendersCount.js",
       "sizes": {
         "raw": 362,
-        "gzip": 251,
-        "brotli": 194
+        "gzip": 252,
+        "brotli": 196
       }
     },
     {
@@ -4487,54 +4255,6 @@
       }
     },
     {
-      "path": "dist/useScratch.d.mts",
-      "sizes": {
-        "raw": 1059,
-        "gzip": 390,
-        "brotli": 346
-      }
-    },
-    {
-      "path": "dist/useScratch.d.ts",
-      "sizes": {
-        "raw": 1058,
-        "gzip": 388,
-        "brotli": 344
-      }
-    },
-    {
-      "path": "dist/useScratch.js",
-      "sizes": {
-        "raw": 4882,
-        "gzip": 1308,
-        "brotli": 1169
-      }
-    },
-    {
-      "path": "dist/useScratch.js.map",
-      "sizes": {
-        "raw": 8289,
-        "gzip": 2259,
-        "brotli": 2052
-      }
-    },
-    {
-      "path": "dist/useScratch.mjs",
-      "sizes": {
-        "raw": 4244,
-        "gzip": 1200,
-        "brotli": 1071
-      }
-    },
-    {
-      "path": "dist/useScratch.mjs.map",
-      "sizes": {
-        "raw": 8275,
-        "gzip": 2253,
-        "brotli": 2061
-      }
-    },
-    {
       "path": "dist/useScroll.d.mts",
       "sizes": {
         "raw": 269,
@@ -4554,8 +4274,8 @@
       "path": "dist/useScroll.js",
       "sizes": {
         "raw": 981,
-        "gzip": 480,
-        "brotli": 406
+        "gzip": 481,
+        "brotli": 408
       }
     },
     {
@@ -4601,33 +4321,33 @@
     {
       "path": "dist/useScrollbarWidth.js",
       "sizes": {
-        "raw": 737,
-        "gzip": 397,
-        "brotli": 326
+        "raw": 1021,
+        "gzip": 506,
+        "brotli": 401
       }
     },
     {
       "path": "dist/useScrollbarWidth.js.map",
       "sizes": {
-        "raw": 886,
-        "gzip": 509,
-        "brotli": 432
+        "raw": 1584,
+        "gzip": 747,
+        "brotli": 623
       }
     },
     {
       "path": "dist/useScrollbarWidth.mjs",
       "sizes": {
-        "raw": 518,
-        "gzip": 299,
-        "brotli": 251
+        "raw": 871,
+        "gzip": 426,
+        "brotli": 347
       }
     },
     {
       "path": "dist/useScrollbarWidth.mjs.map",
       "sizes": {
-        "raw": 900,
-        "gzip": 513,
-        "brotli": 440
+        "raw": 1586,
+        "gzip": 749,
+        "brotli": 625
       }
     },
     {
@@ -4649,33 +4369,33 @@
     {
       "path": "dist/useScrolling.js",
       "sizes": {
-        "raw": 891,
-        "gzip": 378,
-        "brotli": 336
+        "raw": 929,
+        "gzip": 386,
+        "brotli": 341
       }
     },
     {
       "path": "dist/useScrolling.js.map",
       "sizes": {
-        "raw": 1358,
-        "gzip": 601,
-        "brotli": 537
+        "raw": 1433,
+        "gzip": 635,
+        "brotli": 566
       }
     },
     {
       "path": "dist/useScrolling.mjs",
       "sizes": {
-        "raw": 790,
-        "gzip": 345,
-        "brotli": 313
+        "raw": 828,
+        "gzip": 359,
+        "brotli": 317
       }
     },
     {
       "path": "dist/useScrolling.mjs.map",
       "sizes": {
-        "raw": 1362,
-        "gzip": 600,
-        "brotli": 535
+        "raw": 1437,
+        "gzip": 630,
+        "brotli": 563
       }
     },
     {
@@ -4698,8 +4418,8 @@
       "path": "dist/useSearchParam.js",
       "sizes": {
         "raw": 1139,
-        "gzip": 425,
-        "brotli": 358
+        "gzip": 426,
+        "brotli": 363
       }
     },
     {
@@ -4746,8 +4466,8 @@
       "path": "dist/useSessionStorage.js",
       "sizes": {
         "raw": 1022,
-        "gzip": 447,
-        "brotli": 391
+        "gzip": 448,
+        "brotli": 393
       }
     },
     {
@@ -4794,7 +4514,7 @@
       "path": "dist/useSet.js",
       "sizes": {
         "raw": 958,
-        "gzip": 432,
+        "gzip": 433,
         "brotli": 383
       }
     },
@@ -4843,7 +4563,7 @@
       "sizes": {
         "raw": 470,
         "gzip": 291,
-        "brotli": 244
+        "brotli": 245
       }
     },
     {
@@ -4891,7 +4611,7 @@
       "sizes": {
         "raw": 1031,
         "gzip": 476,
-        "brotli": 388
+        "brotli": 391
       }
     },
     {
@@ -4938,8 +4658,8 @@
       "path": "dist/useSize.js",
       "sizes": {
         "raw": 1919,
-        "gzip": 806,
-        "brotli": 675
+        "gzip": 807,
+        "brotli": 707
       }
     },
     {
@@ -4986,8 +4706,8 @@
       "path": "dist/useSlider.js",
       "sizes": {
         "raw": 3457,
-        "gzip": 971,
-        "brotli": 849
+        "gzip": 972,
+        "brotli": 853
       }
     },
     {
@@ -5034,8 +4754,8 @@
       "path": "dist/useSpeech.js",
       "sizes": {
         "raw": 2095,
-        "gzip": 728,
-        "brotli": 658
+        "gzip": 729,
+        "brotli": 632
       }
     },
     {
@@ -5060,54 +4780,6 @@
         "raw": 3579,
         "gzip": 1174,
         "brotli": 1059
-      }
-    },
-    {
-      "path": "dist/useSpring.d.mts",
-      "sizes": {
-        "raw": 211,
-        "gzip": 160,
-        "brotli": 134
-      }
-    },
-    {
-      "path": "dist/useSpring.d.ts",
-      "sizes": {
-        "raw": 184,
-        "gzip": 144,
-        "brotli": 119
-      }
-    },
-    {
-      "path": "dist/useSpring.js",
-      "sizes": {
-        "raw": 39447,
-        "gzip": 10164,
-        "brotli": 8684
-      }
-    },
-    {
-      "path": "dist/useSpring.js.map",
-      "sizes": {
-        "raw": 56928,
-        "gzip": 14562,
-        "brotli": 12579
-      }
-    },
-    {
-      "path": "dist/useSpring.mjs",
-      "sizes": {
-        "raw": 39413,
-        "gzip": 10175,
-        "brotli": 8687
-      }
-    },
-    {
-      "path": "dist/useSpring.mjs.map",
-      "sizes": {
-        "raw": 56941,
-        "gzip": 14561,
-        "brotli": 12598
       }
     },
     {
@@ -5179,7 +4851,7 @@
       "sizes": {
         "raw": 1586,
         "gzip": 573,
-        "brotli": 503
+        "brotli": 531
       }
     },
     {
@@ -5227,7 +4899,7 @@
       "sizes": {
         "raw": 843,
         "gzip": 372,
-        "brotli": 318
+        "brotli": 319
       }
     },
     {
@@ -5274,8 +4946,8 @@
       "path": "dist/useStateWithHistory.js",
       "sizes": {
         "raw": 2835,
-        "gzip": 816,
-        "brotli": 730
+        "gzip": 818,
+        "brotli": 703
       }
     },
     {
@@ -5322,8 +4994,8 @@
       "path": "dist/useThrottle.js",
       "sizes": {
         "raw": 1035,
-        "gzip": 420,
-        "brotli": 365
+        "gzip": 421,
+        "brotli": 368
       }
     },
     {
@@ -5371,7 +5043,7 @@
       "sizes": {
         "raw": 955,
         "gzip": 404,
-        "brotli": 355
+        "brotli": 356
       }
     },
     {
@@ -5467,7 +5139,7 @@
       "sizes": {
         "raw": 956,
         "gzip": 386,
-        "brotli": 325
+        "brotli": 327
       }
     },
     {
@@ -5515,7 +5187,7 @@
       "sizes": {
         "raw": 680,
         "gzip": 387,
-        "brotli": 308
+        "brotli": 311
       }
     },
     {
@@ -5562,8 +5234,8 @@
       "path": "dist/useToggle.js",
       "sizes": {
         "raw": 389,
-        "gzip": 250,
-        "brotli": 209
+        "gzip": 253,
+        "brotli": 210
       }
     },
     {
@@ -5593,49 +5265,49 @@
     {
       "path": "dist/useTween.d.mts",
       "sizes": {
-        "raw": 243,
-        "gzip": 179,
-        "brotli": 156
+        "raw": 297,
+        "gzip": 197,
+        "brotli": 170
       }
     },
     {
       "path": "dist/useTween.d.ts",
       "sizes": {
-        "raw": 242,
-        "gzip": 177,
-        "brotli": 147
+        "raw": 296,
+        "gzip": 196,
+        "brotli": 166
       }
     },
     {
       "path": "dist/useTween.js",
       "sizes": {
-        "raw": 692,
-        "gzip": 411,
-        "brotli": 365
+        "raw": 828,
+        "gzip": 489,
+        "brotli": 405
       }
     },
     {
       "path": "dist/useTween.js.map",
       "sizes": {
-        "raw": 1098,
-        "gzip": 597,
-        "brotli": 535
+        "raw": 1318,
+        "gzip": 685,
+        "brotli": 612
       }
     },
     {
       "path": "dist/useTween.mjs",
       "sizes": {
-        "raw": 548,
-        "gzip": 347,
-        "brotli": 285
+        "raw": 632,
+        "gzip": 388,
+        "brotli": 325
       }
     },
     {
       "path": "dist/useTween.mjs.map",
       "sizes": {
-        "raw": 1049,
-        "gzip": 571,
-        "brotli": 505
+        "raw": 1282,
+        "gzip": 667,
+        "brotli": 591
       }
     },
     {
@@ -5658,8 +5330,8 @@
       "path": "dist/useUnmount.js",
       "sizes": {
         "raw": 399,
-        "gzip": 238,
-        "brotli": 238
+        "gzip": 239,
+        "brotli": 214
       }
     },
     {
@@ -5706,8 +5378,8 @@
       "path": "dist/useUnmountPromise.js",
       "sizes": {
         "raw": 836,
-        "gzip": 378,
-        "brotli": 332
+        "gzip": 379,
+        "brotli": 333
       }
     },
     {
@@ -5754,7 +5426,7 @@
       "path": "dist/useUpdate.js",
       "sizes": {
         "raw": 341,
-        "gzip": 239,
+        "gzip": 241,
         "brotli": 203
       }
     },
@@ -5802,8 +5474,8 @@
       "path": "dist/useUpdateEffect.js",
       "sizes": {
         "raw": 477,
-        "gzip": 257,
-        "brotli": 241
+        "gzip": 258,
+        "brotli": 249
       }
     },
     {
@@ -5899,7 +5571,7 @@
       "sizes": {
         "raw": 928,
         "gzip": 450,
-        "brotli": 381
+        "brotli": 384
       }
     },
     {
@@ -5975,38 +5647,6 @@
       }
     },
     {
-      "path": "dist/useWait.d.mts",
-      "sizes": {
-        "raw": 11,
-        "gzip": 31,
-        "brotli": 15
-      }
-    },
-    {
-      "path": "dist/useWait.d.ts",
-      "sizes": {
-        "raw": 11,
-        "gzip": 31,
-        "brotli": 15
-      }
-    },
-    {
-      "path": "dist/useWait.js",
-      "sizes": {
-        "raw": 0,
-        "gzip": 20,
-        "brotli": 1
-      }
-    },
-    {
-      "path": "dist/useWait.mjs",
-      "sizes": {
-        "raw": 0,
-        "gzip": 20,
-        "brotli": 1
-      }
-    },
-    {
       "path": "dist/useWindowScroll.d.mts",
       "sizes": {
         "raw": 230,
@@ -6026,8 +5666,8 @@
       "path": "dist/useWindowScroll.js",
       "sizes": {
         "raw": 1003,
-        "gzip": 447,
-        "brotli": 378
+        "gzip": 448,
+        "brotli": 383
       }
     },
     {
@@ -6074,8 +5714,8 @@
       "path": "dist/useWindowSize.js",
       "sizes": {
         "raw": 1040,
-        "gzip": 447,
-        "brotli": 383
+        "gzip": 448,
+        "brotli": 385
       }
     },
     {
