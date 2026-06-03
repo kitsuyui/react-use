@@ -1,8 +1,8 @@
 # gh-build-size report
 
 - Repository: **kitsuyui/react-use**
-- Head: `5e3bda50ae50b6973e532891bc26033c57bc8da3`
-- Generated at: 2026-06-03T12:46:08.903Z
+- Head: `a48fd3a3250a3859427293cf4b9f366382a9cf5d`
+- Generated at: 2026-06-03T12:47:00.935Z
 
 | File | Raw | Gzip | Brotli |
 | --- | ---: | ---: | ---: |
@@ -161,10 +161,10 @@
 | `dist/useCopyToClipboard.mjs.map` | 3,938 B | 1,348 B | 1,161 B |
 | `dist/useCounter.d.mts` | 584 B | 291 B | 242 B |
 | `dist/useCounter.d.ts` | 582 B | 289 B | 276 B |
-| `dist/useCounter.js` | 2,166 B | 669 B | 584 B |
-| `dist/useCounter.js.map` | 4,222 B | 1,225 B | 1,106 B |
-| `dist/useCounter.mjs` | 1,969 B | 633 B | 559 B |
-| `dist/useCounter.mjs.map` | 4,189 B | 1,216 B | 1,088 B |
+| `dist/useCounter.js` | 2,621 B | 804 B | 721 B |
+| `dist/useCounter.js.map` | 5,036 B | 1,459 B | 1,303 B |
+| `dist/useCounter.mjs` | 2,424 B | 768 B | 662 B |
+| `dist/useCounter.mjs.map` | 5,003 B | 1,450 B | 1,297 B |
 | `dist/useCustomCompareEffect.d.mts` | 461 B | 253 B | 215 B |
 | `dist/useCustomCompareEffect.d.ts` | 434 B | 239 B | 213 B |
 | `dist/useCustomCompareEffect.js` | 1,024 B | 485 B | 394 B |
