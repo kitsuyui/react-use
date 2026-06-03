@@ -4,6 +4,9 @@ import { useCookie } from '../src';
 const setup = (cookieName: string) => renderHook(() => useCookie(cookieName));
 
 afterEach(() => {
+  vi.restoreAllMocks();
+  vi.useRealTimers();
+
   document.cookie.split(';').forEach((cookie) => {
     document.cookie = cookie.replace(/^ +/, '').replace(/=.*/, '=;expires=' + new Date(0).toUTCString());
   });
@@ -37,6 +40,25 @@ it('should update the cookie on call to updateCookie', () => {
 
   expect(result.current[0]).toBe(newValue);
   expect(document.cookie).toContain(`${cookieName}=${newValue}`);
+});
+
+it('should treat numeric expires as days when updating the cookie', () => {
+  const cookieName = 'some-cookie';
+  const now = new Date('2026-06-03T00:00:00.000Z');
+  vi.useFakeTimers();
+  vi.setSystemTime(now);
+  const cookieSetter = vi.spyOn(Document.prototype, 'cookie', 'set');
+  const { result } = setup(cookieName);
+
+  act(() => {
+    result.current[1]('some-new-value', { expires: 1 });
+  });
+
+  const lastCookieWrite = cookieSetter.mock.calls[cookieSetter.mock.calls.length - 1]?.[0];
+  const expectedExpires = new Date(now.getTime() + 864e5).toUTCString();
+
+  expect(lastCookieWrite).toContain(`${cookieName}=some-new-value`);
+  expect(lastCookieWrite).toContain(`expires=${expectedExpires}`);
 });
 
 it('should delete the cookie on call to deleteCookie', () => {
