@@ -1,8 +1,8 @@
 # gh-build-size report
 
 - Repository: **kitsuyui/react-use**
-- Head: `3546bc066956e53e9b8fc3c39c8dd3d6a65f17f3`
-- Generated at: 2026-06-03T12:45:05.601Z
+- Head: `5e3bda50ae50b6973e532891bc26033c57bc8da3`
+- Generated at: 2026-06-03T12:46:08.903Z
 
 | File | Raw | Gzip | Brotli |
 | --- | ---: | ---: | ---: |
@@ -503,10 +503,10 @@
 | `dist/usePreviousDistinct.mjs.map` | 1,014 B | 523 B | 475 B |
 | `dist/usePromise.d.mts` | 232 B | 161 B | 136 B |
 | `dist/usePromise.d.ts` | 231 B | 159 B | 132 B |
-| `dist/usePromise.js` | 597 B | 318 B | 275 B |
-| `dist/usePromise.js.map` | 989 B | 475 B | 431 B |
-| `dist/usePromise.mjs` | 525 B | 290 B | 254 B |
-| `dist/usePromise.mjs.map` | 975 B | 476 B | 423 B |
+| `dist/usePromise.js` | 755 B | 386 B | 324 B |
+| `dist/usePromise.js.map` | 1,199 B | 566 B | 499 B |
+| `dist/usePromise.mjs` | 683 B | 358 B | 298 B |
+| `dist/usePromise.mjs.map` | 1,185 B | 567 B | 523 B |
 | `dist/useQueue.d.mts` | 308 B | 222 B | 182 B |
 | `dist/useQueue.d.ts` | 307 B | 221 B | 178 B |
 | `dist/useQueue.js` | 637 B | 349 B | 304 B |

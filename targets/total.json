@@ -3981,33 +3981,33 @@
     {
       "path": "dist/usePromise.js",
       "sizes": {
-        "raw": 597,
-        "gzip": 318,
-        "brotli": 275
+        "raw": 755,
+        "gzip": 386,
+        "brotli": 324
       }
     },
     {
       "path": "dist/usePromise.js.map",
       "sizes": {
-        "raw": 989,
-        "gzip": 475,
-        "brotli": 431
+        "raw": 1199,
+        "gzip": 566,
+        "brotli": 499
       }
     },
     {
       "path": "dist/usePromise.mjs",
       "sizes": {
-        "raw": 525,
-        "gzip": 290,
-        "brotli": 254
+        "raw": 683,
+        "gzip": 358,
+        "brotli": 298
       }
     },
     {
       "path": "dist/usePromise.mjs.map",
       "sizes": {
-        "raw": 975,
-        "gzip": 476,
-        "brotli": 423
+        "raw": 1185,
+        "gzip": 567,
+        "brotli": 523
       }
     },
     {
@@ -5740,8 +5740,8 @@
     }
   ],
   "totals": {
-    "raw": 778757,
-    "gzip": 332402,
-    "brotli": 289980
+    "raw": 779493,
+    "gzip": 332720,
+    "brotli": 290241
   }
 }
