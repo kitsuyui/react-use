@@ -55,7 +55,7 @@
   - [`useMediaDevices`](./docs/useMediaDevices.md) &mdash; tracks state of connected hardware devices.
   - [`useMotion`](./docs/useMotion.md) &mdash; tracks state of device's motion sensor.
   - [`useMouse` and `useMouseHovered`](./docs/useMouse.md) &mdash; tracks state of mouse position.
-  - [`useMouseWheel`](./docs/useMouseWheel.md) &mdash; tracks deltaY of scrolled mouse wheel.
+  - [`useMouseWheel`](./docs/useMouseWheel.md) &mdash; tracks normalized vertical wheel delta.
   - [`useNetworkState`](./docs/useNetworkState.md) &mdash; tracks the state of browser's network connection.
   - [`useOrientation`](./docs/useOrientation.md) &mdash; tracks state of device's screen orientation.
   - [`usePageLeave`](./docs/usePageLeave.md) &mdash; triggers when mouse leaves page boundaries.
