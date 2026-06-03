@@ -1,8 +1,8 @@
 # gh-build-size report
 
 - Repository: **kitsuyui/react-use**
-- Head: `a48fd3a3250a3859427293cf4b9f366382a9cf5d`
-- Generated at: 2026-06-03T12:47:00.935Z
+- Head: `ef5648ea097dea7254b5721534cbfe726c8018a7`
+- Generated at: 2026-06-03T12:49:56.324Z
 
 | File | Raw | Gzip | Brotli |
 | --- | ---: | ---: | ---: |
@@ -647,10 +647,10 @@
 | `dist/useTimeout.mjs.map` | 490 B | 298 B | 252 B |
 | `dist/useTimeoutFn.d.mts` | 296 B | 194 B | 162 B |
 | `dist/useTimeoutFn.d.ts` | 295 B | 193 B | 157 B |
-| `dist/useTimeoutFn.js` | 956 B | 386 B | 327 B |
-| `dist/useTimeoutFn.js.map` | 1,677 B | 710 B | 621 B |
-| `dist/useTimeoutFn.mjs` | 846 B | 352 B | 305 B |
-| `dist/useTimeoutFn.mjs.map` | 1,703 B | 709 B | 621 B |
+| `dist/useTimeoutFn.js` | 956 B | 385 B | 328 B |
+| `dist/useTimeoutFn.js.map` | 1,676 B | 711 B | 623 B |
+| `dist/useTimeoutFn.mjs` | 846 B | 351 B | 308 B |
+| `dist/useTimeoutFn.mjs.map` | 1,702 B | 708 B | 625 B |
 | `dist/useTitle.d.mts` | 305 B | 207 B | 162 B |
 | `dist/useTitle.d.ts` | 304 B | 205 B | 159 B |
 | `dist/useTitle.js` | 680 B | 387 B | 311 B |

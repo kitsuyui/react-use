@@ -5134,32 +5134,32 @@
       "path": "dist/useTimeoutFn.js",
       "sizes": {
         "raw": 956,
-        "gzip": 386,
-        "brotli": 327
+        "gzip": 385,
+        "brotli": 328
       }
     },
     {
       "path": "dist/useTimeoutFn.js.map",
       "sizes": {
-        "raw": 1677,
-        "gzip": 710,
-        "brotli": 621
+        "raw": 1676,
+        "gzip": 711,
+        "brotli": 623
       }
     },
     {
       "path": "dist/useTimeoutFn.mjs",
       "sizes": {
         "raw": 846,
-        "gzip": 352,
-        "brotli": 305
+        "gzip": 351,
+        "brotli": 308
       }
     },
     {
       "path": "dist/useTimeoutFn.mjs.map",
       "sizes": {
-        "raw": 1703,
-        "gzip": 709,
-        "brotli": 621
+        "raw": 1702,
+        "gzip": 708,
+        "brotli": 625
       }
     },
     {
@@ -5740,8 +5740,8 @@
     }
   ],
   "totals": {
-    "raw": 782031,
-    "gzip": 333458,
-    "brotli": 290887
+    "raw": 782029,
+    "gzip": 333456,
+    "brotli": 290897
   }
 }
