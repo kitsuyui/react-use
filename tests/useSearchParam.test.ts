@@ -41,7 +41,7 @@ it('tracks the latest search param value', () => {
   let callback;
   const window$addEventListener = window.addEventListener;
   window.addEventListener = (event, cb) => {
-    if (event === 'pushstate') {
+    if (event === 'popstate') {
       callback = cb;
     }
   };
