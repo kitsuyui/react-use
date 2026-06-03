@@ -1,7 +1,10 @@
 # `usePromise`
 
 React Lifecycle hook that returns a helper function for wrapping promises.
-Promises wrapped with this function will resolve only when component is mounted.
+Promises wrapped with this function resolve only while the component is mounted.
+If the component unmounts before the wrapped promise resolves, the wrapper rejects
+so awaiting callers can run `catch` and `finally` handlers instead of staying
+pending forever. Source promise rejections are forwarded as-is.
 
 
 ## Usage
@@ -15,9 +18,12 @@ const Demo = ({promise}) => {
 
   useEffect(() => {
     (async () => {
-      const value = await mounted(promise);
-      // This line will not execute if <Demo> component gets unmounted.
-      setValue(value);
+      try {
+        const value = await mounted(promise);
+        setValue(value);
+      } catch (error) {
+        // Handle source errors and unmount-before-resolve cancellation.
+      }
     })();
   });
 };
