@@ -101,6 +101,37 @@ describe('useAsyncFn', () => {
     });
   });
 
+  it('captures synchronous errors in state', async () => {
+    const error = new Error('sync validation failed');
+    const throwingFn = (): Promise<number> => {
+      throw error;
+    };
+
+    const hook = renderHook<
+      { fn: () => Promise<number> },
+      [AsyncState<number>, () => Promise<number>]
+    >(({ fn }) => useAsyncFn(fn, [fn]), {
+      initialProps: { fn: throwingFn },
+    });
+
+    let callbackResult: Promise<number> | undefined;
+
+    expect(() => {
+      act(() => {
+        callbackResult = hook.result.current[1]();
+      });
+    }).not.toThrow();
+
+    await act(async () => {
+      await callbackResult;
+    });
+
+    expect(hook.result.current[0]).toEqual({
+      loading: false,
+      error,
+    });
+  });
+
   it('should only consider last call and discard previous ones', async () => {
     const queuedPromises: { id: number; resolve: () => void }[] = [];
     const delayedFunction1 = () => {

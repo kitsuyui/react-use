@@ -49,18 +49,22 @@ export default function useAsyncFn<T extends FunctionReturningPromise>(
       set((prevState) => ({ ...prevState, loading: true }));
     }
 
-    return fn(...args).then(
-      (value) => {
-        isMounted() && callId === lastCallId.current && set({ value, loading: false });
+    const onResolve = (value: PromiseType<ReturnType<T>>) => {
+      isMounted() && callId === lastCallId.current && set({ value, loading: false });
 
-        return value;
-      },
-      (error) => {
-        isMounted() && callId === lastCallId.current && set({ error, loading: false });
+      return value;
+    };
+    const onReject = (error) => {
+      isMounted() && callId === lastCallId.current && set({ error, loading: false });
 
-        return error;
-      }
-    ) as ReturnType<T>;
+      return error;
+    };
+
+    try {
+      return fn(...args).then(onResolve, onReject) as ReturnType<T>;
+    } catch (error) {
+      return Promise.resolve(onReject(error)) as ReturnType<T>;
+    }
   }, deps);
 
   return [state, callback as unknown as T];

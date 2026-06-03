@@ -1,4 +1,4 @@
-import { renderHook } from '@testing-library/react-hooks';
+import { act, renderHook } from '@testing-library/react-hooks';
 import { useCallback } from 'react';
 import useAsync from '../src/useAsync';
 
@@ -87,6 +87,39 @@ describe('useAsync', () => {
 			expect(callCount).toEqual(1);
 			expect(hook.result.current.loading).toBeFalsy();
 			expect(hook.result.current.error).toEqual('yay');
+			expect(hook.result.current.value).toEqual(undefined);
+		});
+	});
+
+	describe('a synchronous error', () => {
+		let hook;
+		let callCount = 0;
+		const error = new Error('sync validation failed');
+
+		const syncThrow = (): Promise<string> => {
+			callCount++;
+			throw error;
+		};
+
+		beforeEach(() => {
+			callCount = 0;
+			hook = renderHook(({ fn }) => useAsync(fn, [fn]), {
+				initialProps: {
+					fn: syncThrow,
+				},
+			});
+		});
+
+		it('stores the error and clears loading', async () => {
+			expect.assertions(4);
+
+			await act(async () => {
+				await Promise.resolve();
+			});
+
+			expect(callCount).toEqual(1);
+			expect(hook.result.current.loading).toBeFalsy();
+			expect(hook.result.current.error).toBe(error);
 			expect(hook.result.current.value).toEqual(undefined);
 		});
 	});
