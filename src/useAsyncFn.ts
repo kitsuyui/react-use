@@ -10,7 +10,7 @@ export type AsyncState<T> =
     }
   | {
       loading: true;
-      error?: Error | undefined;
+      error?: undefined;
       value?: T;
     }
   | {
@@ -46,7 +46,7 @@ export default function useAsyncFn<T extends FunctionReturningPromise>(
     const callId = ++lastCallId.current;
 
     if (!state.loading) {
-      set((prevState) => ({ ...prevState, loading: true }));
+      set((prevState) => ({ ...prevState, loading: true, error: undefined }));
     }
 
     return fn(...args).then(
