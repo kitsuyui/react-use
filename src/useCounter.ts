@@ -10,6 +10,22 @@ export interface CounterActions {
   reset: (value?: IHookStateSetAction<number>) => void;
 }
 
+const resolveCounterBounds = (max: number | null, min: number | null) => {
+  if (typeof max === 'number' && typeof min === 'number' && min > max) {
+    console.error('min has to be less than or equal to max, got min ' + min + ' and max ' + max);
+
+    return {
+      max: min,
+      min: max,
+    };
+  }
+
+  return {
+    max,
+    min,
+  };
+};
+
 export default function useCounter(
   initialValue: IHookStateInitAction<number> = 0,
   max: number | null = null,
@@ -20,16 +36,22 @@ export default function useCounter(
   typeof init !== 'number' &&
     console.error('initialValue has to be a number, got ' + typeof initialValue);
 
-  if (typeof min === 'number') {
-    init = Math.max(init, min);
-  } else if (min !== null) {
+  if (typeof min !== 'number' && min !== null) {
     console.error('min has to be a number, got ' + typeof min);
   }
 
-  if (typeof max === 'number') {
-    init = Math.min(init, max);
-  } else if (max !== null) {
+  if (typeof max !== 'number' && max !== null) {
     console.error('max has to be a number, got ' + typeof max);
+  }
+
+  const { max: maxLimit, min: minLimit } = resolveCounterBounds(max, min);
+
+  if (typeof minLimit === 'number') {
+    init = Math.max(init, minLimit);
+  }
+
+  if (typeof maxLimit === 'number') {
+    init = Math.min(init, maxLimit);
   }
 
   const [get, setInternal] = useGetSet(init);
@@ -42,11 +64,11 @@ export default function useCounter(
         let rState = resolveHookState(newState, prevState);
 
         if (prevState !== rState) {
-          if (typeof min === 'number') {
-            rState = Math.max(rState, min);
+          if (typeof minLimit === 'number') {
+            rState = Math.max(rState, minLimit);
           }
-          if (typeof max === 'number') {
-            rState = Math.min(rState, max);
+          if (typeof maxLimit === 'number') {
+            rState = Math.min(rState, maxLimit);
           }
 
           prevState !== rState && setInternal(rState);
@@ -92,6 +114,6 @@ export default function useCounter(
           set(rValue);
         },
       };
-    }, [init, min, max]),
+    }, [init, minLimit, maxLimit]),
   ];
 }

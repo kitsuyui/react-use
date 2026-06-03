@@ -53,6 +53,8 @@ const Demo = () => {
 const [ current, { inc, dec, get, set, reset } ] = useCounter(initial: number, max: number | null = null, min: number | null = null);
 ```
 - `current` - current counter value;
+- `max` - maximum counter value. When both bounds are numbers, `max` must be greater than or equal to `min`;
+- `min` - minimum counter value. If `min` is greater than `max`, the hook reports the invalid range and normalizes the bounds;
 - `get(): number` - getter of current counter value;
 - `inc(delta: number): void` - increment current value;
 - `dec(delta: number): void` - decrement current value;
