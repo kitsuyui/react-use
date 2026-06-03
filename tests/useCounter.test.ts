@@ -160,6 +160,31 @@ it('should not exceed min value', () => {
   expect(get()).toBe(5);
 });
 
+it('should report and normalize inverted min and max values', () => {
+  const spy = jest.spyOn(console, 'error').mockImplementation(() => {});
+  const { result } = setUp(7, 5, 10);
+  expect(spy.mock.calls[0][0]).toBe(
+    'min has to be less than or equal to max, got min 10 and max 5'
+  );
+  expect(result.current[0]).toBe(7);
+
+  const { get, inc, dec, set, reset } = result.current[1];
+
+  act(() => inc(10));
+  expect(get()).toBe(10);
+
+  act(() => dec(10));
+  expect(get()).toBe(5);
+
+  act(() => set(8));
+  expect(get()).toBe(8);
+
+  act(() => reset(100));
+  expect(get()).toBe(10);
+
+  spy.mockRestore();
+});
+
 describe('should `console.error` on unexpected inputs', () => {
   it('on any of call parameters', () => {
     const spy = jest.spyOn(console, 'error').mockImplementation(() => {});
