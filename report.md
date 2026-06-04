@@ -1,8 +1,8 @@
 # gh-build-size report
 
 - Repository: **kitsuyui/react-use**
-- Head: `67874c84f9d75cbb5b6d3d0625c579fe9211b5ba`
-- Generated at: 2026-06-04T12:53:54.125Z
+- Head: `d1ed32376bede7a8bbeef6f7fd7916a8e78e396e`
+- Generated at: 2026-06-04T12:54:06.953Z
 
 | File | Raw | Gzip | Brotli |
 | --- | ---: | ---: | ---: |
@@ -515,10 +515,10 @@
 | `dist/useQueue.mjs.map` | 1,201 B | 582 B | 509 B |
 | `dist/useRaf.d.mts` | 169 B | 146 B | 130 B |
 | `dist/useRaf.d.ts` | 142 B | 131 B | 113 B |
-| `dist/useRaf.js` | 958 B | 450 B | 424 B |
-| `dist/useRaf.js.map` | 1,551 B | 696 B | 643 B |
-| `dist/useRaf.mjs` | 883 B | 426 B | 385 B |
-| `dist/useRaf.mjs.map` | 1,555 B | 699 B | 646 B |
+| `dist/useRaf.js` | 978 B | 454 B | 426 B |
+| `dist/useRaf.js.map` | 1,619 B | 739 B | 671 B |
+| `dist/useRaf.mjs` | 903 B | 430 B | 384 B |
+| `dist/useRaf.mjs.map` | 1,623 B | 741 B | 671 B |
 | `dist/useRafLoop.d.mts` | 301 B | 206 B | 160 B |
 | `dist/useRafLoop.d.ts` | 300 B | 204 B | 156 B |
 | `dist/useRafLoop.js` | 1,045 B | 423 B | 360 B |

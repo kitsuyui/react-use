@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-04T12:53:54.125Z",
+  "generated_at": "2026-06-04T12:54:06.953Z",
   "repository": "kitsuyui/react-use",
   "default_branch": "main",
   "publish_branch": "gh-build-size-assets",
   "event_name": "push",
-  "head_reference": "67874c84f9d75cbb5b6d3d0625c579fe9211b5ba",
+  "head_reference": "d1ed32376bede7a8bbeef6f7fd7916a8e78e396e",
   "files": [
     {
       "path": "dist/chunk-BE-pF4vm.js",
@@ -4081,33 +4081,33 @@
     {
       "path": "dist/useRaf.js",
       "sizes": {
-        "raw": 958,
-        "gzip": 450,
-        "brotli": 424
+        "raw": 978,
+        "gzip": 454,
+        "brotli": 426
       }
     },
     {
       "path": "dist/useRaf.js.map",
       "sizes": {
-        "raw": 1551,
-        "gzip": 696,
-        "brotli": 643
+        "raw": 1619,
+        "gzip": 739,
+        "brotli": 671
       }
     },
     {
       "path": "dist/useRaf.mjs",
       "sizes": {
-        "raw": 883,
-        "gzip": 426,
-        "brotli": 385
+        "raw": 903,
+        "gzip": 430,
+        "brotli": 384
       }
     },
     {
       "path": "dist/useRaf.mjs.map",
       "sizes": {
-        "raw": 1555,
-        "gzip": 699,
-        "brotli": 646
+        "raw": 1623,
+        "gzip": 741,
+        "brotli": 671
       }
     },
     {

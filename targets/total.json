@@ -4077,33 +4077,33 @@
     {
       "path": "dist/useRaf.js",
       "sizes": {
-        "raw": 958,
-        "gzip": 450,
-        "brotli": 424
+        "raw": 978,
+        "gzip": 454,
+        "brotli": 426
       }
     },
     {
       "path": "dist/useRaf.js.map",
       "sizes": {
-        "raw": 1551,
-        "gzip": 696,
-        "brotli": 643
+        "raw": 1619,
+        "gzip": 739,
+        "brotli": 671
       }
     },
     {
       "path": "dist/useRaf.mjs",
       "sizes": {
-        "raw": 883,
-        "gzip": 426,
-        "brotli": 385
+        "raw": 903,
+        "gzip": 430,
+        "brotli": 384
       }
     },
     {
       "path": "dist/useRaf.mjs.map",
       "sizes": {
-        "raw": 1555,
-        "gzip": 699,
-        "brotli": 646
+        "raw": 1623,
+        "gzip": 741,
+        "brotli": 671
       }
     },
     {
@@ -5740,8 +5740,8 @@
     }
   ],
   "totals": {
-    "raw": 794393,
-    "gzip": 338358,
-    "brotli": 295015
+    "raw": 794569,
+    "gzip": 338451,
+    "brotli": 295069
   }
 }
