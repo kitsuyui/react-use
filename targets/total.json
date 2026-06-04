@@ -173,33 +173,33 @@
     {
       "path": "dist/factory/createHTMLMediaHook.js",
       "sizes": {
-        "raw": 4817,
-        "gzip": 1327,
-        "brotli": 1178
+        "raw": 4885,
+        "gzip": 1333,
+        "brotli": 1192
       }
     },
     {
       "path": "dist/factory/createHTMLMediaHook.js.map",
       "sizes": {
-        "raw": 9943,
-        "gzip": 2763,
-        "brotli": 2420
+        "raw": 10121,
+        "gzip": 2827,
+        "brotli": 2475
       }
     },
     {
       "path": "dist/factory/createHTMLMediaHook.mjs",
       "sizes": {
-        "raw": 4641,
-        "gzip": 1254,
-        "brotli": 1119
+        "raw": 4698,
+        "gzip": 1260,
+        "brotli": 1125
       }
     },
     {
       "path": "dist/factory/createHTMLMediaHook.mjs.map",
       "sizes": {
-        "raw": 9884,
-        "gzip": 2745,
-        "brotli": 2402
+        "raw": 10066,
+        "gzip": 2808,
+        "brotli": 2457
       }
     },
     {
@@ -5740,8 +5740,8 @@
     }
   ],
   "totals": {
-    "raw": 785315,
-    "gzip": 334613,
-    "brotli": 291879
+    "raw": 785800,
+    "gzip": 334752,
+    "brotli": 292009
   }
 }

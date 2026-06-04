@@ -1,8 +1,8 @@
 # gh-build-size report
 
 - Repository: **kitsuyui/react-use**
-- Head: `4a18e18f874b2f1d7ef50fd6914d3e92e87a2cf8`
-- Generated at: 2026-06-04T12:51:12.444Z
+- Head: `242f6caf6b83611f2009d081f026f01fa3466648`
+- Generated at: 2026-06-04T12:51:30.241Z
 
 | File | Raw | Gzip | Brotli |
 | --- | ---: | ---: | ---: |
@@ -27,10 +27,10 @@
 | `dist/factory/createGlobalState.mjs.map` | 2,011 B | 788 B | 720 B |
 | `dist/factory/createHTMLMediaHook.d.mts` | 1,318 B | 533 B | 457 B |
 | `dist/factory/createHTMLMediaHook.d.ts` | 1,301 B | 529 B | 451 B |
-| `dist/factory/createHTMLMediaHook.js` | 4,817 B | 1,327 B | 1,178 B |
-| `dist/factory/createHTMLMediaHook.js.map` | 9,943 B | 2,763 B | 2,420 B |
-| `dist/factory/createHTMLMediaHook.mjs` | 4,641 B | 1,254 B | 1,119 B |
-| `dist/factory/createHTMLMediaHook.mjs.map` | 9,884 B | 2,745 B | 2,402 B |
+| `dist/factory/createHTMLMediaHook.js` | 4,885 B | 1,333 B | 1,192 B |
+| `dist/factory/createHTMLMediaHook.js.map` | 10,121 B | 2,827 B | 2,475 B |
+| `dist/factory/createHTMLMediaHook.mjs` | 4,698 B | 1,260 B | 1,125 B |
+| `dist/factory/createHTMLMediaHook.mjs.map` | 10,066 B | 2,808 B | 2,457 B |
 | `dist/factory/createMemo.d.mts` | 239 B | 183 B | 159 B |
 | `dist/factory/createMemo.d.ts` | 212 B | 166 B | 136 B |
 | `dist/factory/createMemo.js` | 288 B | 205 B | 204 B |
