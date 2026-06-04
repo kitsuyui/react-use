@@ -2685,33 +2685,33 @@
     {
       "path": "dist/useLocalStorage.js",
       "sizes": {
-        "raw": 1956,
-        "gzip": 713,
-        "brotli": 647
+        "raw": 2342,
+        "gzip": 828,
+        "brotli": 722
       }
     },
     {
       "path": "dist/useLocalStorage.js.map",
       "sizes": {
-        "raw": 4290,
-        "gzip": 1498,
-        "brotli": 1356
+        "raw": 5082,
+        "gzip": 1730,
+        "brotli": 1552
       }
     },
     {
       "path": "dist/useLocalStorage.mjs",
       "sizes": {
-        "raw": 1839,
-        "gzip": 685,
-        "brotli": 612
+        "raw": 2225,
+        "gzip": 802,
+        "brotli": 702
       }
     },
     {
       "path": "dist/useLocalStorage.mjs.map",
       "sizes": {
-        "raw": 4286,
-        "gzip": 1498,
-        "brotli": 1341
+        "raw": 5078,
+        "gzip": 1727,
+        "brotli": 1541
       }
     },
     {
@@ -5740,8 +5740,8 @@
     }
   ],
   "totals": {
-    "raw": 790944,
-    "gzip": 337213,
-    "brotli": 293982
+    "raw": 793300,
+    "gzip": 337906,
+    "brotli": 294543
   }
 }
