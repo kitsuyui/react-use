@@ -2,6 +2,8 @@
 
 React side-effect hook that manages a single `localStorage` key.
 
+State is synchronized across same-origin tabs and windows via the `storage` event: when another tab writes to the same key, the component re-renders with the updated value.
+
 ## Usage
 
 ```jsx
