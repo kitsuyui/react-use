@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-04T12:52:28.842Z",
+  "generated_at": "2026-06-04T12:52:47.514Z",
   "repository": "kitsuyui/react-use",
   "default_branch": "main",
   "publish_branch": "gh-build-size-assets",
   "event_name": "push",
-  "head_reference": "a18ba674c66d66225a11f0d5974758a3261a345e",
+  "head_reference": "2190e4e9edf961cebf997a865fea6d5c69d1d084",
   "files": [
     {
       "path": "dist/chunk-BE-pF4vm.js",

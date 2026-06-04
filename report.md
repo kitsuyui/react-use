@@ -1,8 +1,8 @@
 # gh-build-size report
 
 - Repository: **kitsuyui/react-use**
-- Head: `a18ba674c66d66225a11f0d5974758a3261a345e`
-- Generated at: 2026-06-04T12:52:28.842Z
+- Head: `2190e4e9edf961cebf997a865fea6d5c69d1d084`
+- Generated at: 2026-06-04T12:52:47.514Z
 
 | File | Raw | Gzip | Brotli |
 | --- | ---: | ---: | ---: |
