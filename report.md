@@ -1,8 +1,8 @@
 # gh-build-size report
 
 - Repository: **kitsuyui/react-use**
-- Head: `a45a4fa373b0f2723beef8e8ffc09c6af32c490e`
-- Generated at: 2026-06-04T12:54:15.004Z
+- Head: `76c6fbf901b71aef591563b3479d8ff0b5f2ea9d`
+- Generated at: 2026-06-04T12:54:29.104Z
 
 | File | Raw | Gzip | Brotli |
 | --- | ---: | ---: | ---: |
@@ -101,16 +101,16 @@
 | `dist/misc/util.mjs.map` | 1,157 B | 497 B | 434 B |
 | `dist/useAsync.d.mts` | 723 B | 324 B | 284 B |
 | `dist/useAsync.d.ts` | 720 B | 322 B | 282 B |
-| `dist/useAsync.js` | 432 B | 273 B | 246 B |
-| `dist/useAsync.js.map` | 777 B | 445 B | 386 B |
-| `dist/useAsync.mjs` | 358 B | 240 B | 195 B |
-| `dist/useAsync.mjs.map` | 763 B | 446 B | 404 B |
+| `dist/useAsync.js` | 448 B | 280 B | 227 B |
+| `dist/useAsync.js.map` | 1,079 B | 576 B | 488 B |
+| `dist/useAsync.mjs` | 374 B | 246 B | 204 B |
+| `dist/useAsync.mjs.map` | 1,065 B | 577 B | 486 B |
 | `dist/useAsyncFn.d.mts` | 933 B | 372 B | 343 B |
 | `dist/useAsyncFn.d.ts` | 931 B | 370 B | 343 B |
-| `dist/useAsyncFn.js` | 971 B | 450 B | 387 B |
-| `dist/useAsyncFn.js.map` | 2,487 B | 928 B | 835 B |
-| `dist/useAsyncFn.mjs` | 895 B | 424 B | 362 B |
-| `dist/useAsyncFn.mjs.map` | 2,479 B | 926 B | 828 B |
+| `dist/useAsyncFn.js` | 970 B | 455 B | 393 B |
+| `dist/useAsyncFn.js.map` | 2,486 B | 935 B | 855 B |
+| `dist/useAsyncFn.mjs` | 894 B | 428 B | 373 B |
+| `dist/useAsyncFn.mjs.map` | 2,478 B | 932 B | 842 B |
 | `dist/useAsyncRetry.d.mts` | 715 B | 314 B | 305 B |
 | `dist/useAsyncRetry.d.ts` | 713 B | 311 B | 268 B |
 | `dist/useAsyncRetry.js` | 807 B | 434 B | 365 B |
