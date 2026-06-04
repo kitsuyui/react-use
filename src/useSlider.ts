@@ -1,5 +1,6 @@
 import { CSSProperties, RefObject, useEffect, useRef } from 'react';
 import { isBrowser, noop, off, on } from './misc/util';
+import useLatest from './useLatest';
 import useMountedState from './useMountedState';
 import useSetState from './useSetState';
 
@@ -22,6 +23,7 @@ const useSlider = (ref: RefObject<HTMLElement>, options: Partial<Options> = {}):
   const isSliding = useRef(false);
   const valueRef = useRef(0);
   const frame = useRef(0);
+  const optionsRef = useLatest(options);
   const [state, setState] = useSetState<State>({
     isSliding: false,
     value: 0,
@@ -32,15 +34,20 @@ const useSlider = (ref: RefObject<HTMLElement>, options: Partial<Options> = {}):
   useEffect(() => {
     if (isBrowser) {
       const styles = options.styles === undefined ? true : options.styles;
-      const reverse = options.reverse === undefined ? false : options.reverse;
 
       if (ref.current && styles) {
         ref.current.style.userSelect = 'none';
       }
+    }
+  }, [ref, options.styles]);
+
+  useEffect(() => {
+    if (isBrowser) {
+      const element = ref.current;
 
       const startScrubbing = () => {
         if (!isSliding.current && isMounted()) {
-          (options.onScrubStart || noop)();
+          (optionsRef.current.onScrubStart || noop)();
           isSliding.current = true;
           setState({ isSliding: true });
           bindEvents();
@@ -49,7 +56,7 @@ const useSlider = (ref: RefObject<HTMLElement>, options: Partial<Options> = {}):
 
       const stopScrubbing = () => {
         if (isSliding.current && isMounted()) {
-          (options.onScrubStop || noop)(valueRef.current);
+          (optionsRef.current.onScrubStop || noop)(valueRef.current);
           isSliding.current = false;
           setState({ isSliding: false });
           unbindEvents();
@@ -60,17 +67,16 @@ const useSlider = (ref: RefObject<HTMLElement>, options: Partial<Options> = {}):
         startScrubbing();
         onMouseMove(event);
       };
-      const onMouseMove = options.vertical
-        ? (event: MouseEvent) => onScrub(event.clientY)
-        : (event: MouseEvent) => onScrub(event.clientX);
+      const onMouseMove = (event: MouseEvent) => onScrub(event.clientX, event.clientY);
 
       const onTouchStart = (event: TouchEvent) => {
         startScrubbing();
         onTouchMove(event);
       };
-      const onTouchMove = options.vertical
-        ? (event: TouchEvent) => onScrub(event.changedTouches[0].clientY)
-        : (event: TouchEvent) => onScrub(event.changedTouches[0].clientX);
+      const onTouchMove = (event: TouchEvent) => {
+        const touch = event.changedTouches[0];
+        onScrub(touch.clientX, touch.clientY);
+      };
 
       const bindEvents = () => {
         on(document, 'mousemove', onMouseMove);
@@ -88,20 +94,22 @@ const useSlider = (ref: RefObject<HTMLElement>, options: Partial<Options> = {}):
         off(document, 'touchend', stopScrubbing);
       };
 
-      const onScrub = (clientXY: number) => {
+      const onScrub = (clientX: number, clientY: number) => {
         cancelAnimationFrame(frame.current);
 
         frame.current = requestAnimationFrame(() => {
           if (isMounted() && ref.current) {
+            const { onScrub, reverse: latestReverse = false, vertical } = optionsRef.current;
             const rect = ref.current.getBoundingClientRect();
-            const pos = options.vertical ? rect.top : rect.left;
-            const length = options.vertical ? rect.height : rect.width;
+            const pos = vertical ? rect.top : rect.left;
+            const length = vertical ? rect.height : rect.width;
 
             // Prevent returning 0 when element is hidden by CSS
             if (!length) {
               return;
             }
 
+            const clientXY = vertical ? clientY : clientX;
             let value = (clientXY - pos) / length;
 
             if (value > 1) {
@@ -110,7 +118,7 @@ const useSlider = (ref: RefObject<HTMLElement>, options: Partial<Options> = {}):
               value = 0;
             }
 
-            if (reverse) {
+            if (latestReverse) {
               value = 1 - value;
             }
 
@@ -118,22 +126,23 @@ const useSlider = (ref: RefObject<HTMLElement>, options: Partial<Options> = {}):
               value,
             });
 
-            (options.onScrub || noop)(value);
+            (onScrub || noop)(value);
           }
         });
       };
 
-      on(ref.current, 'mousedown', onMouseDown);
-      on(ref.current, 'touchstart', onTouchStart);
+      on(element, 'mousedown', onMouseDown);
+      on(element, 'touchstart', onTouchStart);
 
       return () => {
-        off(ref.current, 'mousedown', onMouseDown);
-        off(ref.current, 'touchstart', onTouchStart);
+        off(element, 'mousedown', onMouseDown);
+        off(element, 'touchstart', onTouchStart);
+        unbindEvents();
       };
     } else {
       return undefined;
     }
-  }, [ref, options.vertical]);
+  }, [ref, optionsRef, isMounted, setState]);
 
   return state;
 };
