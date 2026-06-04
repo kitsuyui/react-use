@@ -1869,33 +1869,33 @@
     {
       "path": "dist/useGeolocation.js",
       "sizes": {
-        "raw": 1301,
-        "gzip": 542,
-        "brotli": 465
+        "raw": 1618,
+        "gzip": 653,
+        "brotli": 566
       }
     },
     {
       "path": "dist/useGeolocation.js.map",
       "sizes": {
-        "raw": 3009,
-        "gzip": 1129,
-        "brotli": 1002
+        "raw": 3603,
+        "gzip": 1307,
+        "brotli": 1172
       }
     },
     {
       "path": "dist/useGeolocation.mjs",
       "sizes": {
-        "raw": 1246,
-        "gzip": 507,
-        "brotli": 434
+        "raw": 1563,
+        "gzip": 620,
+        "brotli": 555
       }
     },
     {
       "path": "dist/useGeolocation.mjs.map",
       "sizes": {
-        "raw": 3013,
-        "gzip": 1127,
-        "brotli": 996
+        "raw": 3607,
+        "gzip": 1306,
+        "brotli": 1173
       }
     },
     {
@@ -5740,8 +5740,8 @@
     }
   ],
   "totals": {
-    "raw": 794569,
-    "gzip": 338451,
-    "brotli": 295069
+    "raw": 796391,
+    "gzip": 339032,
+    "brotli": 295638
   }
 }

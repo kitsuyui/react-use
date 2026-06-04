@@ -1,8 +1,8 @@
 # gh-build-size report
 
 - Repository: **kitsuyui/react-use**
-- Head: `d1ed32376bede7a8bbeef6f7fd7916a8e78e396e`
-- Generated at: 2026-06-04T12:54:06.953Z
+- Head: `a45a4fa373b0f2723beef8e8ffc09c6af32c490e`
+- Generated at: 2026-06-04T12:54:15.004Z
 
 | File | Raw | Gzip | Brotli |
 | --- | ---: | ---: | ---: |
@@ -239,10 +239,10 @@
 | `dist/useFirstMountState.mjs.map` | 477 B | 304 B | 275 B |
 | `dist/useGeolocation.d.mts` | 1,035 B | 455 B | 366 B |
 | `dist/useGeolocation.d.ts` | 1,034 B | 453 B | 362 B |
-| `dist/useGeolocation.js` | 1,301 B | 542 B | 465 B |
-| `dist/useGeolocation.js.map` | 3,009 B | 1,129 B | 1,002 B |
-| `dist/useGeolocation.mjs` | 1,246 B | 507 B | 434 B |
-| `dist/useGeolocation.mjs.map` | 3,013 B | 1,127 B | 996 B |
+| `dist/useGeolocation.js` | 1,618 B | 653 B | 566 B |
+| `dist/useGeolocation.js.map` | 3,603 B | 1,307 B | 1,172 B |
+| `dist/useGeolocation.mjs` | 1,563 B | 620 B | 555 B |
+| `dist/useGeolocation.mjs.map` | 3,607 B | 1,306 B | 1,173 B |
 | `dist/useGetSet.d.mts` | 357 B | 233 B | 194 B |
 | `dist/useGetSet.d.ts` | 329 B | 217 B | 217 B |
 | `dist/useGetSet.js` | 647 B | 315 B | 282 B |

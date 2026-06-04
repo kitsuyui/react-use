@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-04T12:54:06.953Z",
+  "generated_at": "2026-06-04T12:54:15.004Z",
   "repository": "kitsuyui/react-use",
   "default_branch": "main",
   "publish_branch": "gh-build-size-assets",
   "event_name": "push",
-  "head_reference": "d1ed32376bede7a8bbeef6f7fd7916a8e78e396e",
+  "head_reference": "a45a4fa373b0f2723beef8e8ffc09c6af32c490e",
   "files": [
     {
       "path": "dist/chunk-BE-pF4vm.js",
@@ -1873,33 +1873,33 @@
     {
       "path": "dist/useGeolocation.js",
       "sizes": {
-        "raw": 1301,
-        "gzip": 542,
-        "brotli": 465
+        "raw": 1618,
+        "gzip": 653,
+        "brotli": 566
       }
     },
     {
       "path": "dist/useGeolocation.js.map",
       "sizes": {
-        "raw": 3009,
-        "gzip": 1129,
-        "brotli": 1002
+        "raw": 3603,
+        "gzip": 1307,
+        "brotli": 1172
       }
     },
     {
       "path": "dist/useGeolocation.mjs",
       "sizes": {
-        "raw": 1246,
-        "gzip": 507,
-        "brotli": 434
+        "raw": 1563,
+        "gzip": 620,
+        "brotli": 555
       }
     },
     {
       "path": "dist/useGeolocation.mjs.map",
       "sizes": {
-        "raw": 3013,
-        "gzip": 1127,
-        "brotli": 996
+        "raw": 3607,
+        "gzip": 1306,
+        "brotli": 1173
       }
     },
     {
