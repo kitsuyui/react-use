@@ -8,7 +8,7 @@ import useRaf from '../src/useRaf';
 interface RequestAnimationFrame {
 	reset(): void;
 
-	step(): void;
+	step(timestamp?: DOMHighResTimeStamp): void;
 }
 
 declare var requestAnimationFrame: RequestAnimationFrame;
@@ -17,6 +17,7 @@ const fixedStart = 1564949709496;
 
 const installRafStub = () => {
 	let id = 0;
+	let timestamp: DOMHighResTimeStamp = fixedStart;
 	const callbacks = new Map<number, FrameRequestCallback>();
 	const raf = Object.assign(
 		vi.fn((callback: FrameRequestCallback) => {
@@ -27,13 +28,15 @@ const installRafStub = () => {
 		{
 			reset() {
 				id = 0;
+				timestamp = fixedStart;
 				callbacks.clear();
 			},
-			step() {
+			step(nextTimestamp = timestamp) {
+				timestamp = nextTimestamp;
 				const pendingCallbacks = [...callbacks.values()];
 				callbacks.clear();
 				for (const callback of pendingCallbacks) {
-					callback(Date.now());
+					callback(timestamp);
 				}
 			},
 		}
@@ -58,6 +61,11 @@ afterEach(() => {
 	requestAnimationFrame.reset();
 });
 
+const startRaf = () => {
+	jest.runOnlyPendingTimers(); // start after delay
+	requestAnimationFrame.step(fixedStart);
+};
+
 it('should init percentage of time elapsed', () => {
 	const { result } = renderHook(() => useRaf());
 	const timeElapsed = result.current;
@@ -70,27 +78,23 @@ it('should return corresponding percentage of time elapsed for default ms', () =
 	expect(result.current).toBe(0);
 
 	act(() => {
-		jest.runOnlyPendingTimers(); // start after delay
-		vi.setSystemTime(fixedStart + 1e12 * 0.25); // 25%
-		requestAnimationFrame.step();
+		startRaf();
+		requestAnimationFrame.step(fixedStart + 1e12 * 0.25); // 25%
 	});
 	expect(result.current).toBe(0.25);
 
 	act(() => {
-		vi.setSystemTime(fixedStart + 1e12 * 0.5); // 50%
-		requestAnimationFrame.step();
+		requestAnimationFrame.step(fixedStart + 1e12 * 0.5); // 50%
 	});
 	expect(result.current).toBe(0.5);
 
 	act(() => {
-		vi.setSystemTime(fixedStart + 1e12 * 0.75); // 75%
-		requestAnimationFrame.step();
+		requestAnimationFrame.step(fixedStart + 1e12 * 0.75); // 75%
 	});
 	expect(result.current).toBe(0.75);
 
 	act(() => {
-		vi.setSystemTime(fixedStart + 1e12); // 100%
-		requestAnimationFrame.step();
+		requestAnimationFrame.step(fixedStart + 1e12); // 100%
 	});
 	expect(result.current).toBe(1);
 });
@@ -102,29 +106,45 @@ it('should return corresponding percentage of time elapsed for custom ms', () =>
 	expect(result.current).toBe(0);
 
 	act(() => {
-		jest.runOnlyPendingTimers(); // start after delay
-		vi.setSystemTime(fixedStart + customMs * 0.25); // 25%
-		requestAnimationFrame.step();
+		startRaf();
+		requestAnimationFrame.step(fixedStart + customMs * 0.25); // 25%
 	});
 	expect(result.current).toBe(0.25);
 
 	act(() => {
-		vi.setSystemTime(fixedStart + customMs * 0.5); // 50%
-		requestAnimationFrame.step();
+		requestAnimationFrame.step(fixedStart + customMs * 0.5); // 50%
 	});
 	expect(result.current).toBe(0.5);
 
 	act(() => {
-		vi.setSystemTime(fixedStart + customMs * 0.75); // 75%
-		requestAnimationFrame.step();
+		requestAnimationFrame.step(fixedStart + customMs * 0.75); // 75%
 	});
 	expect(result.current).toBe(0.75);
 
 	act(() => {
-		vi.setSystemTime(fixedStart + customMs); // 100%
-		requestAnimationFrame.step();
+		requestAnimationFrame.step(fixedStart + customMs); // 100%
 	});
 	expect(result.current).toBe(1);
+});
+
+it('should calculate elapsed percentage from RAF timestamps instead of wall clock time', () => {
+	const customMs = 2000;
+
+	const { result } = renderHook(() => useRaf(customMs));
+	expect(result.current).toBe(0);
+
+	act(() => {
+		startRaf();
+		vi.setSystemTime(fixedStart + customMs * 10);
+		requestAnimationFrame.step(fixedStart + customMs * 0.25);
+	});
+	expect(result.current).toBe(0.25);
+
+	act(() => {
+		vi.setSystemTime(fixedStart - customMs * 10);
+		requestAnimationFrame.step(fixedStart + customMs * 0.5);
+	});
+	expect(result.current).toBe(0.5);
 });
 
 it('should return always 1 after corresponding ms reached', () => {
@@ -132,21 +152,18 @@ it('should return always 1 after corresponding ms reached', () => {
 	expect(result.current).toBe(0);
 
 	act(() => {
-		jest.runOnlyPendingTimers(); // start after delay
-		vi.setSystemTime(fixedStart + 1e12); // 100%
-		requestAnimationFrame.step();
+		startRaf();
+		requestAnimationFrame.step(fixedStart + 1e12); // 100%
 	});
 	expect(result.current).toBe(1);
 
 	act(() => {
-		vi.setSystemTime(fixedStart + 1e12 * 1.1); // 110%
-		requestAnimationFrame.step();
+		requestAnimationFrame.step(fixedStart + 1e12 * 1.1); // 110%
 	});
 	expect(result.current).toBe(1);
 
 	act(() => {
-		vi.setSystemTime(fixedStart + 1e12 * 3); // 300%
-		requestAnimationFrame.step();
+		requestAnimationFrame.step(fixedStart + 1e12 * 3); // 300%
 	});
 	expect(result.current).toBe(1);
 });
@@ -168,8 +185,8 @@ it('should wait until delay reached to start calculating elapsed percentage', ()
 
 	act(() => {
 		jest.advanceTimersByTime(1); // fast-forward exactly to custom delay
-		vi.setSystemTime(fixedStart + 501);
-		requestAnimationFrame.step();
+		requestAnimationFrame.step(fixedStart);
+		requestAnimationFrame.step(fixedStart + 1);
 	});
 	expect(result.current).not.toBe(0);
 });
