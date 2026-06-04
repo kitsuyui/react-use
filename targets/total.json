@@ -4701,33 +4701,33 @@
     {
       "path": "dist/useSlider.js",
       "sizes": {
-        "raw": 3457,
-        "gzip": 972,
-        "brotli": 853
+        "raw": 3707,
+        "gzip": 1063,
+        "brotli": 950
       }
     },
     {
       "path": "dist/useSlider.js.map",
       "sizes": {
-        "raw": 6078,
-        "gzip": 1875,
-        "brotli": 1663
+        "raw": 6383,
+        "gzip": 2004,
+        "brotli": 1800
       }
     },
     {
       "path": "dist/useSlider.mjs",
       "sizes": {
-        "raw": 3057,
-        "gzip": 936,
-        "brotli": 830
+        "raw": 3258,
+        "gzip": 1024,
+        "brotli": 917
       }
     },
     {
       "path": "dist/useSlider.mjs.map",
       "sizes": {
-        "raw": 6015,
-        "gzip": 1843,
-        "brotli": 1633
+        "raw": 6304,
+        "gzip": 1954,
+        "brotli": 1745
       }
     },
     {
@@ -5740,8 +5740,8 @@
     }
   ],
   "totals": {
-    "raw": 793300,
-    "gzip": 337906,
-    "brotli": 294543
+    "raw": 794345,
+    "gzip": 338325,
+    "brotli": 294976
   }
 }

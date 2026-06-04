@@ -1,8 +1,8 @@
 # gh-build-size report
 
 - Repository: **kitsuyui/react-use**
-- Head: `f559dc422a75a48ae16da57fc7c13b8ad404f4d4`
-- Generated at: 2026-06-04T12:53:24.045Z
+- Head: `a07a875afc459bbf549d25a73b6b3a0efab6606c`
+- Generated at: 2026-06-04T12:53:39.241Z
 
 | File | Raw | Gzip | Brotli |
 | --- | ---: | ---: | ---: |
@@ -593,10 +593,10 @@
 | `dist/useSize.mjs.map` | 3,923 B | 1,574 B | 1,376 B |
 | `dist/useSlider.d.mts` | 537 B | 309 B | 249 B |
 | `dist/useSlider.d.ts` | 536 B | 307 B | 245 B |
-| `dist/useSlider.js` | 3,457 B | 972 B | 853 B |
-| `dist/useSlider.js.map` | 6,078 B | 1,875 B | 1,663 B |
-| `dist/useSlider.mjs` | 3,057 B | 936 B | 830 B |
-| `dist/useSlider.mjs.map` | 6,015 B | 1,843 B | 1,633 B |
+| `dist/useSlider.js` | 3,707 B | 1,063 B | 950 B |
+| `dist/useSlider.js.map` | 6,383 B | 2,004 B | 1,800 B |
+| `dist/useSlider.mjs` | 3,258 B | 1,024 B | 917 B |
+| `dist/useSlider.mjs.map` | 6,304 B | 1,954 B | 1,745 B |
 | `dist/useSpeech.d.mts` | 576 B | 303 B | 254 B |
 | `dist/useSpeech.d.ts` | 575 B | 301 B | 254 B |
 | `dist/useSpeech.js` | 2,095 B | 729 B | 632 B |
