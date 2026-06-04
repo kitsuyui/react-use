@@ -1,8 +1,8 @@
 # gh-build-size report
 
 - Repository: **kitsuyui/react-use**
-- Head: `2190e4e9edf961cebf997a865fea6d5c69d1d084`
-- Generated at: 2026-06-04T12:52:47.514Z
+- Head: `74c247f0b6e5ba12a435af41ad1b973287f71977`
+- Generated at: 2026-06-04T12:53:11.035Z
 
 | File | Raw | Gzip | Brotli |
 | --- | ---: | ---: | ---: |
@@ -393,12 +393,12 @@
 | `dist/useMediaDevices.js.map` | 1,659 B | 728 B | 677 B |
 | `dist/useMediaDevices.mjs` | 979 B | 443 B | 381 B |
 | `dist/useMediaDevices.mjs.map` | 1,636 B | 714 B | 646 B |
-| `dist/useMediatedState.d.mts` | 656 B | 289 B | 256 B |
-| `dist/useMediatedState.d.ts` | 655 B | 287 B | 243 B |
+| `dist/useMediatedState.d.mts` | 1,294 B | 592 B | 503 B |
+| `dist/useMediatedState.d.ts` | 1,293 B | 590 B | 487 B |
 | `dist/useMediatedState.js` | 680 B | 360 B | 295 B |
-| `dist/useMediatedState.js.map` | 1,467 B | 602 B | 540 B |
+| `dist/useMediatedState.js.map` | 2,121 B | 918 B | 791 B |
 | `dist/useMediatedState.mjs` | 530 B | 274 B | 260 B |
-| `dist/useMediatedState.mjs.map` | 1,478 B | 604 B | 543 B |
+| `dist/useMediatedState.mjs.map` | 2,132 B | 918 B | 817 B |
 | `dist/useMethods.d.mts` | 386 B | 236 B | 200 B |
 | `dist/useMethods.d.ts` | 359 B | 220 B | 215 B |
 | `dist/useMethods.js` | 710 B | 363 B | 320 B |
@@ -615,12 +615,12 @@
 | `dist/useStateList.js.map` | 3,374 B | 1,266 B | 1,109 B |
 | `dist/useStateList.mjs` | 1,467 B | 546 B | 529 B |
 | `dist/useStateList.mjs.map` | 3,350 B | 1,254 B | 1,132 B |
-| `dist/useStateValidator.d.mts` | 629 B | 321 B | 276 B |
-| `dist/useStateValidator.d.ts` | 628 B | 319 B | 272 B |
+| `dist/useStateValidator.d.mts` | 1,254 B | 623 B | 513 B |
+| `dist/useStateValidator.d.ts` | 1,253 B | 621 B | 510 B |
 | `dist/useStateValidator.js` | 843 B | 372 B | 319 B |
-| `dist/useStateValidator.js.map` | 1,655 B | 723 B | 657 B |
+| `dist/useStateValidator.js.map` | 2,296 B | 1,035 B | 923 B |
 | `dist/useStateValidator.mjs` | 776 B | 345 B | 295 B |
-| `dist/useStateValidator.mjs.map` | 1,671 B | 726 B | 666 B |
+| `dist/useStateValidator.mjs.map` | 2,312 B | 1,039 B | 901 B |
 | `dist/useStateWithHistory.d.mts` | 808 B | 369 B | 304 B |
 | `dist/useStateWithHistory.d.ts` | 806 B | 367 B | 298 B |
 | `dist/useStateWithHistory.js` | 2,835 B | 818 B | 703 B |
