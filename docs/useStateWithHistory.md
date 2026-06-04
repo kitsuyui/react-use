@@ -20,7 +20,7 @@ const [state, setState, stateHistory] = useStateWithHistory<S = undefined>(
 Initial state will not be pushed to initial history.
 If entries amount is greater than `capacity` parameter it won't be modified on init but will be trimmed on the next call to `setState`;
 - **`stateHistory`** - an object containing history state:
-    - **`history`**_`: S[]`_ - an array holding history entries. _It will have the same ref all the time so be careful with that one!_;
+    - **`history`**_`: S[]`_ - a snapshot array holding history entries for the current render;
     - **`position`**_`: number`_ - current position _index_ in history;
     - **`capacity`**_`: number = 10`_ - maximum amount of history entries;
     - **`back`**_`: (amount?: number) => void`_ - go back in state history, it will cause `setState` to be invoked and component re-render.
@@ -30,4 +30,3 @@ If entries amount is greater than `capacity` parameter it won't be modified on i
     - **`go`**_`: (position: number) => void`_ - go to arbitrary position in history.
     In case `position` is non-negative ot will count elements from beginning.
     Negative `position` will cause elements counting from the end, so `go(-2)` equals `go(history.length - 1)`;
-
