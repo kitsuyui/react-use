@@ -1,8 +1,8 @@
 # gh-build-size report
 
 - Repository: **kitsuyui/react-use**
-- Head: `068ea1accca1b547953008bbaa83f4202da28c60`
-- Generated at: 2026-06-04T12:52:06.628Z
+- Head: `a18ba674c66d66225a11f0d5974758a3261a345e`
+- Generated at: 2026-06-04T12:52:28.842Z
 
 | File | Raw | Gzip | Brotli |
 | --- | ---: | ---: | ---: |
@@ -99,20 +99,20 @@
 | `dist/misc/util.js.map` | 1,158 B | 498 B | 431 B |
 | `dist/misc/util.mjs` | 447 B | 251 B | 219 B |
 | `dist/misc/util.mjs.map` | 1,157 B | 497 B | 434 B |
-| `dist/useAsync.d.mts` | 731 B | 329 B | 302 B |
-| `dist/useAsync.d.ts` | 728 B | 327 B | 293 B |
+| `dist/useAsync.d.mts` | 723 B | 324 B | 284 B |
+| `dist/useAsync.d.ts` | 720 B | 322 B | 282 B |
 | `dist/useAsync.js` | 432 B | 273 B | 246 B |
 | `dist/useAsync.js.map` | 777 B | 445 B | 386 B |
 | `dist/useAsync.mjs` | 358 B | 240 B | 195 B |
 | `dist/useAsync.mjs.map` | 763 B | 446 B | 404 B |
-| `dist/useAsyncFn.d.mts` | 941 B | 377 B | 346 B |
-| `dist/useAsyncFn.d.ts` | 939 B | 374 B | 342 B |
-| `dist/useAsyncFn.js` | 953 B | 441 B | 382 B |
-| `dist/useAsyncFn.js.map` | 2,467 B | 924 B | 833 B |
-| `dist/useAsyncFn.mjs` | 877 B | 415 B | 354 B |
-| `dist/useAsyncFn.mjs.map` | 2,459 B | 921 B | 828 B |
-| `dist/useAsyncRetry.d.mts` | 723 B | 320 B | 304 B |
-| `dist/useAsyncRetry.d.ts` | 721 B | 317 B | 272 B |
+| `dist/useAsyncFn.d.mts` | 933 B | 372 B | 343 B |
+| `dist/useAsyncFn.d.ts` | 931 B | 370 B | 343 B |
+| `dist/useAsyncFn.js` | 971 B | 450 B | 387 B |
+| `dist/useAsyncFn.js.map` | 2,487 B | 928 B | 835 B |
+| `dist/useAsyncFn.mjs` | 895 B | 424 B | 362 B |
+| `dist/useAsyncFn.mjs.map` | 2,479 B | 926 B | 828 B |
+| `dist/useAsyncRetry.d.mts` | 715 B | 314 B | 305 B |
+| `dist/useAsyncRetry.d.ts` | 713 B | 311 B | 268 B |
 | `dist/useAsyncRetry.js` | 807 B | 434 B | 365 B |
 | `dist/useAsyncRetry.js.map` | 1,334 B | 679 B | 600 B |
 | `dist/useAsyncRetry.mjs` | 690 B | 371 B | 306 B |
