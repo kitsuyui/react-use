@@ -3453,33 +3453,33 @@
     {
       "path": "dist/useMouseWheel.js",
       "sizes": {
-        "raw": 668,
-        "gzip": 327,
-        "brotli": 290
+        "raw": 1234,
+        "gzip": 532,
+        "brotli": 459
       }
     },
     {
       "path": "dist/useMouseWheel.js.map",
       "sizes": {
-        "raw": 787,
-        "gzip": 432,
-        "brotli": 415
+        "raw": 1791,
+        "gzip": 766,
+        "brotli": 694
       }
     },
     {
       "path": "dist/useMouseWheel.mjs",
       "sizes": {
-        "raw": 567,
-        "gzip": 295,
-        "brotli": 256
+        "raw": 1133,
+        "gzip": 499,
+        "brotli": 433
       }
     },
     {
       "path": "dist/useMouseWheel.mjs.map",
       "sizes": {
-        "raw": 784,
-        "gzip": 428,
-        "brotli": 406
+        "raw": 1788,
+        "gzip": 765,
+        "brotli": 686
       }
     },
     {
@@ -5740,8 +5740,8 @@
     }
   ],
   "totals": {
-    "raw": 782029,
-    "gzip": 333456,
-    "brotli": 290897
+    "raw": 785169,
+    "gzip": 334536,
+    "brotli": 291802
   }
 }

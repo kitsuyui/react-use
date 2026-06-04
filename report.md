@@ -1,8 +1,8 @@
 # gh-build-size report
 
 - Repository: **kitsuyui/react-use**
-- Head: `ef5648ea097dea7254b5721534cbfe726c8018a7`
-- Generated at: 2026-06-03T12:49:56.324Z
+- Head: `59349026f9ed5de5ca0522ffb701d3804bcf29f1`
+- Generated at: 2026-06-04T12:50:36.348Z
 
 | File | Raw | Gzip | Brotli |
 | --- | ---: | ---: | ---: |
@@ -437,10 +437,10 @@
 | `dist/useMouseHovered.mjs.map` | 1,275 B | 568 B | 506 B |
 | `dist/useMouseWheel.d.mts` | 160 B | 140 B | 123 B |
 | `dist/useMouseWheel.d.ts` | 133 B | 126 B | 116 B |
-| `dist/useMouseWheel.js` | 668 B | 327 B | 290 B |
-| `dist/useMouseWheel.js.map` | 787 B | 432 B | 415 B |
-| `dist/useMouseWheel.mjs` | 567 B | 295 B | 256 B |
-| `dist/useMouseWheel.mjs.map` | 784 B | 428 B | 406 B |
+| `dist/useMouseWheel.js` | 1,234 B | 532 B | 459 B |
+| `dist/useMouseWheel.js.map` | 1,791 B | 766 B | 694 B |
+| `dist/useMouseWheel.mjs` | 1,133 B | 499 B | 433 B |
+| `dist/useMouseWheel.mjs.map` | 1,788 B | 765 B | 686 B |
 | `dist/useMultiStateValidator.d.mts` | 694 B | 281 B | 242 B |
 | `dist/useMultiStateValidator.d.ts` | 692 B | 280 B | 260 B |
 | `dist/useMultiStateValidator.js` | 1,095 B | 496 B | 417 B |
