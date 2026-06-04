@@ -1,8 +1,8 @@
 # gh-build-size report
 
 - Repository: **kitsuyui/react-use**
-- Head: `76c6fbf901b71aef591563b3479d8ff0b5f2ea9d`
-- Generated at: 2026-06-04T12:54:29.104Z
+- Head: `3aab613dc73dd1f8f1287dd27b7da0e872b240d8`
+- Generated at: 2026-06-04T12:54:50.617Z
 
 | File | Raw | Gzip | Brotli |
 | --- | ---: | ---: | ---: |
@@ -557,10 +557,10 @@
 | `dist/useScrolling.mjs.map` | 1,437 B | 630 B | 563 B |
 | `dist/useSearchParam.d.mts` | 233 B | 171 B | 136 B |
 | `dist/useSearchParam.d.ts` | 232 B | 169 B | 132 B |
-| `dist/useSearchParam.js` | 1,139 B | 426 B | 363 B |
-| `dist/useSearchParam.js.map` | 1,597 B | 663 B | 594 B |
-| `dist/useSearchParam.mjs` | 959 B | 395 B | 332 B |
-| `dist/useSearchParam.mjs.map` | 1,582 B | 657 B | 583 B |
+| `dist/useSearchParam.js` | 909 B | 403 B | 343 B |
+| `dist/useSearchParam.js.map` | 1,313 B | 610 B | 545 B |
+| `dist/useSearchParam.mjs` | 801 B | 370 B | 318 B |
+| `dist/useSearchParam.mjs.map` | 1,302 B | 605 B | 564 B |
 | `dist/useSessionStorage.d.mts` | 250 B | 187 B | 161 B |
 | `dist/useSessionStorage.d.ts` | 223 B | 169 B | 139 B |
 | `dist/useSessionStorage.js` | 1,050 B | 464 B | 404 B |
