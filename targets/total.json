@@ -4461,33 +4461,33 @@
     {
       "path": "dist/useSessionStorage.js",
       "sizes": {
-        "raw": 1022,
-        "gzip": 448,
-        "brotli": 393
+        "raw": 1050,
+        "gzip": 464,
+        "brotli": 404
       }
     },
     {
       "path": "dist/useSessionStorage.js.map",
       "sizes": {
-        "raw": 2022,
-        "gzip": 841,
-        "brotli": 786
+        "raw": 2067,
+        "gzip": 861,
+        "brotli": 808
       }
     },
     {
       "path": "dist/useSessionStorage.mjs",
       "sizes": {
-        "raw": 941,
-        "gzip": 410,
-        "brotli": 359
+        "raw": 969,
+        "gzip": 431,
+        "brotli": 372
       }
     },
     {
       "path": "dist/useSessionStorage.mjs.map",
       "sizes": {
-        "raw": 2013,
-        "gzip": 841,
-        "brotli": 786
+        "raw": 2058,
+        "gzip": 861,
+        "brotli": 817
       }
     },
     {
@@ -5740,8 +5740,8 @@
     }
   ],
   "totals": {
-    "raw": 785169,
-    "gzip": 334536,
-    "brotli": 291802
+    "raw": 785315,
+    "gzip": 334613,
+    "brotli": 291879
   }
 }
