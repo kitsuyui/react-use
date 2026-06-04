@@ -4013,17 +4013,17 @@
     {
       "path": "dist/useQueue.d.mts",
       "sizes": {
-        "raw": 308,
-        "gzip": 222,
-        "brotli": 182
+        "raw": 320,
+        "gzip": 230,
+        "brotli": 198
       }
     },
     {
       "path": "dist/useQueue.d.ts",
       "sizes": {
-        "raw": 307,
-        "gzip": 221,
-        "brotli": 178
+        "raw": 319,
+        "gzip": 228,
+        "brotli": 182
       }
     },
     {
@@ -4037,9 +4037,9 @@
     {
       "path": "dist/useQueue.js.map",
       "sizes": {
-        "raw": 1186,
-        "gzip": 574,
-        "brotli": 499
+        "raw": 1198,
+        "gzip": 583,
+        "brotli": 514
       }
     },
     {
@@ -4053,9 +4053,9 @@
     {
       "path": "dist/useQueue.mjs.map",
       "sizes": {
-        "raw": 1189,
-        "gzip": 573,
-        "brotli": 505
+        "raw": 1201,
+        "gzip": 582,
+        "brotli": 509
       }
     },
     {
@@ -5740,8 +5740,8 @@
     }
   ],
   "totals": {
-    "raw": 794345,
-    "gzip": 338325,
-    "brotli": 294976
+    "raw": 794393,
+    "gzip": 338358,
+    "brotli": 295015
   }
 }
