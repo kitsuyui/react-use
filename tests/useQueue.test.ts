@@ -1,4 +1,5 @@
 import { act, renderHook } from '@testing-library/react-hooks';
+import { expectTypeOf } from 'vitest';
 import useQueue from '../src/useQueue';
 
 const setUp = (initialQueue?: any[]) => renderHook(() => useQueue(initialQueue));
@@ -30,4 +31,21 @@ it('pops oldest member', () => {
   const { first, size } = result.current;
   expect(first).toEqual(2);
   expect(size).toEqual(1);
+});
+
+it('returns undefined when removing from an empty queue', () => {
+  const { result } = setUp();
+  let value;
+  act(() => {
+    value = result.current.remove();
+  });
+
+  expect(value).toBeUndefined();
+  expect(result.current.size).toBe(0);
+});
+
+it('types remove as possibly undefined', () => {
+  const { result } = renderHook(() => useQueue<number>());
+
+  expectTypeOf(result.current.remove).returns.toEqualTypeOf<number | undefined>();
 });

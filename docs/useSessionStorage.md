@@ -33,3 +33,5 @@ useSessionStorage(key, initialValue, raw);
 - `key` &mdash; `sessionStorage` key to manage.
 - `initialValue` &mdash; initial value to set, if value in `sessionStorage` is empty.
 - `raw` &mdash; boolean, if set to `true`, hook will not attempt to JSON serialize stored values.
+
+The hook writes to `sessionStorage` on mount and when `key`, `raw`, or the stored state changes.

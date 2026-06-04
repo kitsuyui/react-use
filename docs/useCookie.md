@@ -35,5 +35,19 @@ const Demo = () => {
 ## Reference
 
 ```ts
+interface CookieAttributes {
+  // A number is interpreted as days from now, not milliseconds.
+  expires?: number | Date;
+  path?: string;
+  domain?: string;
+  secure?: boolean;
+  sameSite?: "strict" | "lax" | "none";
+}
+
 const [value, updateCookie, deleteCookie] = useCookie(cookieName: string);
+updateCookie(newValue: string, options?: CookieAttributes);
+deleteCookie();
 ```
+
+`expires` accepts either a `Date` or a number of days. For example,
+`updateCookie("value", { expires: 7 })` expires the cookie seven days from now.

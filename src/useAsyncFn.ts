@@ -10,7 +10,7 @@ export type AsyncState<T> =
     }
   | {
       loading: true;
-      error?: Error | undefined;
+      error?: undefined;
       value?: T;
     }
   | {
@@ -46,7 +46,7 @@ export default function useAsyncFn<T extends FunctionReturningPromise>(
     const callId = ++lastCallId.current;
 
     if (!state.loading) {
-      set((prevState) => ({ ...prevState, loading: true }));
+      set((prevState) => ({ ...prevState, loading: true, error: undefined }));
     }
 
     const onResolve = (value: PromiseType<ReturnType<T>>) => {
@@ -54,16 +54,21 @@ export default function useAsyncFn<T extends FunctionReturningPromise>(
 
       return value;
     };
-    const onReject = (error) => {
+    const recordError = (error) => {
       isMounted() && callId === lastCallId.current && set({ error, loading: false });
+    };
+    const onReject = (error) => {
+      recordError(error);
 
-      return error;
+      throw error;
     };
 
     try {
       return fn(...args).then(onResolve, onReject) as ReturnType<T>;
     } catch (error) {
-      return Promise.resolve(onReject(error)) as ReturnType<T>;
+      recordError(error);
+
+      return Promise.resolve() as ReturnType<T>;
     }
   }, deps);
 

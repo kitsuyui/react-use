@@ -15,13 +15,9 @@ const useSearchParam: UseQueryParam = (param) => {
     };
 
     on(window, 'popstate', onChange);
-    on(window, 'pushstate', onChange);
-    on(window, 'replacestate', onChange);
 
     return () => {
       off(window, 'popstate', onChange);
-      off(window, 'pushstate', onChange);
-      off(window, 'replacestate', onChange);
     };
   }, []);
 

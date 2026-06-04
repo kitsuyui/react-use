@@ -194,4 +194,48 @@ describe('useAsyncFn', () => {
     expect(hook.result.current[0].loading).toBe(false);
     expect(hook.result.current[0].value).toBe('new state');
   });
+
+  it('clears the previous error when retrying', async () => {
+    const error = new Error('first call failed');
+    const pendingCalls: {
+      resolve: (value: number) => void;
+      reject: (error: Error) => void;
+    }[] = [];
+    const fn = () =>
+      new Promise<number>((resolve, reject) => {
+        pendingCalls.push({ resolve, reject });
+      });
+
+    const hook = renderHook<
+      { fn: () => Promise<number> },
+      [AsyncState<number>, () => Promise<number>]
+    >(({ fn }) => useAsyncFn(fn, [fn]), {
+      initialProps: { fn },
+    });
+
+    await act(async () => {
+      const result = hook.result.current[1]();
+      pendingCalls[0].reject(error);
+      await result;
+    });
+
+    expect(hook.result.current[0]).toEqual({ loading: false, error });
+
+    act(() => {
+      hook.result.current[1]();
+    });
+
+    expect(hook.result.current[0]).toEqual({
+      loading: true,
+      error: undefined,
+      value: undefined,
+    });
+
+    await act(async () => {
+      pendingCalls[1].resolve(2);
+      await hook.waitForNextUpdate();
+    });
+
+    expect(hook.result.current[0]).toEqual({ loading: false, value: 2 });
+  });
 });

@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useCallback, useState, useRef, useLayoutEffect } from 'react';
+import { Dispatch, SetStateAction, useCallback, useEffect, useState, useRef, useLayoutEffect } from 'react';
 import { isBrowser, noop } from './misc/util';
 
 type parserOptions<T> =
@@ -54,6 +54,20 @@ const useLocalStorage = <T>(
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
   useLayoutEffect(() => setState(initializer.current(key)), [key]);
+
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  useEffect(() => {
+    const onStorageChange = (event: StorageEvent) => {
+      if (event.storageArea !== localStorage || event.key !== key) return;
+      try {
+        setState(event.newValue !== null ? deserializer(event.newValue) : undefined);
+      } catch {
+        // deserializer can throw on malformed values
+      }
+    };
+    window.addEventListener('storage', onStorageChange);
+    return () => window.removeEventListener('storage', onStorageChange);
+  }, [key]);
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const set: Dispatch<SetStateAction<T | undefined>> = useCallback(

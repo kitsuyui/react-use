@@ -55,7 +55,7 @@
   - [`useMediaDevices`](./docs/useMediaDevices.md) &mdash; tracks state of connected hardware devices.
   - [`useMotion`](./docs/useMotion.md) &mdash; tracks state of device's motion sensor.
   - [`useMouse` and `useMouseHovered`](./docs/useMouse.md) &mdash; tracks state of mouse position.
-  - [`useMouseWheel`](./docs/useMouseWheel.md) &mdash; tracks deltaY of scrolled mouse wheel.
+  - [`useMouseWheel`](./docs/useMouseWheel.md) &mdash; tracks normalized vertical wheel delta.
   - [`useNetworkState`](./docs/useNetworkState.md) &mdash; tracks the state of browser's network connection.
   - [`useOrientation`](./docs/useOrientation.md) &mdash; tracks state of device's screen orientation.
   - [`usePageLeave`](./docs/usePageLeave.md) &mdash; triggers when mouse leaves page boundaries.
@@ -111,7 +111,7 @@
   - [`useEvent`](./docs/useEvent.md) &mdash; subscribe to events.
   - [`useLifecycles`](./docs/useLifecycles.md) &mdash; calls `mount` and `unmount` callbacks.
   - [`useMountedState`](./docs/useMountedState.md) and [`useUnmountPromise`](./docs/useUnmountPromise.md) &mdash; track if component is mounted.
-  - [`usePromise`](./docs/usePromise.md) &mdash; resolves promise only while component is mounted.
+  - [`usePromise`](./docs/usePromise.md) &mdash; settles wrapped promises without resolving after unmount.
   - [`useLogger`](./docs/useLogger.md) &mdash; logs in console as component goes through life-cycles.
   - [`useMount`](./docs/useMount.md) &mdash; calls `mount` callbacks.
   - [`useUnmount`](./docs/useUnmount.md) &mdash; calls `unmount` callbacks.

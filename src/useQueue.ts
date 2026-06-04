@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 export interface QueueMethods<T> {
   add: (item: T) => void;
-  remove: () => T;
+  remove: () => T | undefined;
   first: T;
   last: T;
   size: number;

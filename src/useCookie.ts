@@ -1,6 +1,10 @@
 import { useCallback, useState } from 'react';
 
 export interface CookieAttributes {
+  /**
+   * Cookie expiration. A number is interpreted as days from now; a Date is used
+   * as the exact expiration timestamp.
+   */
   expires?: number | Date;
   path?: string;
   domain?: string;
@@ -10,6 +14,7 @@ export interface CookieAttributes {
 
 const encode = encodeURIComponent;
 const decode = decodeURIComponent;
+const millisecondsPerDay = 864e5;
 
 const getCookie = (cookieName: string): string | null => {
   if (typeof document === 'undefined') {
@@ -32,7 +37,7 @@ const setCookie = (cookieName: string, value: string, options: CookieAttributes 
   let cookie = `${encode(cookieName)}=${encode(value)}`;
   if (typeof options.expires === 'number') {
     const date = new Date();
-    date.setTime(date.getTime() + options.expires * 864e5);
+    date.setTime(date.getTime() + options.expires * millisecondsPerDay);
     cookie += `; expires=${date.toUTCString()}`;
   } else if (options.expires instanceof Date) {
     cookie += `; expires=${options.expires.toUTCString()}`;

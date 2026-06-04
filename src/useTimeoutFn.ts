@@ -14,8 +14,8 @@ export default function useTimeoutFn(fn: Function, ms: number = 0): UseTimeoutFn
     timeout.current && clearTimeout(timeout.current);
 
     timeout.current = setTimeout(() => {
-      ready.current = true;
       callback.current();
+      ready.current = true;
     }, ms);
   }, [ms]);
 

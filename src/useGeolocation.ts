@@ -38,34 +38,50 @@ const useGeolocation = (options?: PositionOptions): GeoLocationSensorState => {
     speed: null,
     timestamp: Date.now(),
   });
-  let mounted = true;
-  let watchId: any;
-
-  const onEvent = (event: any) => {
-    if (mounted) {
-      setState({
-        loading: false,
-        accuracy: event.coords.accuracy,
-        altitude: event.coords.altitude,
-        altitudeAccuracy: event.coords.altitudeAccuracy,
-        heading: event.coords.heading,
-        latitude: event.coords.latitude,
-        longitude: event.coords.longitude,
-        speed: event.coords.speed,
-        timestamp: event.timestamp,
-      });
-    }
-  };
-  const onEventError = (error: IGeolocationPositionError) =>
-    mounted && setState((oldState) => ({ ...oldState, loading: false, error }));
-
   useEffect(() => {
-    navigator.geolocation.getCurrentPosition(onEvent, onEventError, options);
-    watchId = navigator.geolocation.watchPosition(onEvent, onEventError, options);
+    let mounted = true;
+    let watchId: number | undefined;
+    const geolocation =
+      typeof navigator === 'undefined' ? undefined : navigator.geolocation;
+
+    const onEvent = (event: GeolocationPosition) => {
+      if (mounted) {
+        setState({
+          loading: false,
+          accuracy: event.coords.accuracy,
+          altitude: event.coords.altitude,
+          altitudeAccuracy: event.coords.altitudeAccuracy,
+          heading: event.coords.heading,
+          latitude: event.coords.latitude,
+          longitude: event.coords.longitude,
+          speed: event.coords.speed,
+          timestamp: event.timestamp,
+        });
+      }
+    };
+    const onEventError = (error: IGeolocationPositionError) =>
+      mounted && setState((oldState) => ({ ...oldState, loading: false, error }));
+
+    if (!geolocation) {
+      setState((oldState) => ({
+        ...oldState,
+        loading: false,
+        error: new Error('Geolocation is not supported'),
+      }));
+
+      return () => {
+        mounted = false;
+      };
+    }
+
+    geolocation.getCurrentPosition(onEvent, onEventError, options);
+    watchId = geolocation.watchPosition(onEvent, onEventError, options);
 
     return () => {
       mounted = false;
-      navigator.geolocation.clearWatch(watchId);
+      if (watchId !== undefined) {
+        geolocation.clearWatch(watchId);
+      }
     };
   }, []);
 
