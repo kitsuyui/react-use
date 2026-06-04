@@ -13,7 +13,11 @@ export default function useAsync<T extends FunctionReturningPromise>(
   });
 
   useEffect(() => {
-    callback();
+    // useAsyncFn's callback now re-throws on rejection, so the promise it
+    // returns rejects when fn rejects. useAsync surfaces errors via
+    // state.error rather than the promise, so swallow the rejection here to
+    // avoid an unhandled promise rejection.
+    callback().catch(() => {});
   }, [callback]);
 
   return state;
