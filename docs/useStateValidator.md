@@ -43,5 +43,5 @@ const [validity, revalidate] = useStateValidator(
 - **`revalidate`**_`: ()=>void`_ runs validator once again
 - **`validator`**_`: (state, setValidity?)=>[boolean|null, ...any[]]`_ should return an array suitable for validity state described above;
     - `state` - current state;
-    - `setValidity` - if defined hook will not trigger validity change automatically. Useful for async validators;
+    - `setValidity` - if the validator function is declared with **2 or more parameters** (`Function.length >= 2`), the hook passes the state setter as the second argument and ignores the return value. This mode is useful for async validators. **Note**: a function declared as `(state, _unused) => value` has `length === 2` and will trigger this dispatch mode even if `_unused` is never called, leaving validity state unchanged.
 - `initialValidity` - validity value which set when validity is nt calculated yet;
