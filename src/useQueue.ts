@@ -8,11 +8,16 @@ export interface QueueMethods<T> {
   size: number;
 }
 
-const useQueue = <T>(initialValue: T[] = []): QueueMethods<T> => {
+const useQueue = <T>(initialValue: T[] = [], maxSize?: number): QueueMethods<T> => {
   const [state, set] = useState(initialValue);
   return {
     add: (value) => {
-      set((queue) => [...queue, value]);
+      set((queue) => {
+        if (maxSize !== undefined && queue.length >= maxSize) {
+          return queue;
+        }
+        return [...queue, value];
+      });
     },
     remove: () => {
       let result;
