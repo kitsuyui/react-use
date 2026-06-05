@@ -1,8 +1,8 @@
 # gh-build-size report
 
 - Repository: **kitsuyui/react-use**
-- Head: `3aab613dc73dd1f8f1287dd27b7da0e872b240d8`
-- Generated at: 2026-06-04T12:54:50.617Z
+- Head: `64d4645f93efe8029f72ab986953a6eace213edb`
+- Generated at: 2026-06-05T14:47:35.753Z
 
 | File | Raw | Gzip | Brotli |
 | --- | ---: | ---: | ---: |
@@ -359,10 +359,10 @@
 | `dist/useLockBodyScroll.mjs.map` | 5,222 B | 1,783 B | 1,560 B |
 | `dist/useLogger.d.mts` | 189 B | 160 B | 130 B |
 | `dist/useLogger.d.ts` | 162 B | 143 B | 115 B |
-| `dist/useLogger.js` | 520 B | 247 B | 210 B |
-| `dist/useLogger.js.map` | 732 B | 370 B | 326 B |
-| `dist/useLogger.mjs` | 486 B | 246 B | 201 B |
-| `dist/useLogger.mjs.map` | 733 B | 365 B | 325 B |
+| `dist/useLogger.js` | 639 B | 301 B | 245 B |
+| `dist/useLogger.js.map` | 979 B | 462 B | 420 B |
+| `dist/useLogger.mjs` | 572 B | 275 B | 222 B |
+| `dist/useLogger.mjs.map` | 965 B | 456 B | 422 B |
 | `dist/useLongPress.d.mts` | 513 B | 275 B | 228 B |
 | `dist/useLongPress.d.ts` | 486 B | 263 B | 211 B |
 | `dist/useLongPress.js` | 1,317 B | 550 B | 476 B |

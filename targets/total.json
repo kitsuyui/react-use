@@ -2829,33 +2829,33 @@
     {
       "path": "dist/useLogger.js",
       "sizes": {
-        "raw": 520,
-        "gzip": 247,
-        "brotli": 210
+        "raw": 639,
+        "gzip": 301,
+        "brotli": 245
       }
     },
     {
       "path": "dist/useLogger.js.map",
       "sizes": {
-        "raw": 732,
-        "gzip": 370,
-        "brotli": 326
+        "raw": 979,
+        "gzip": 462,
+        "brotli": 420
       }
     },
     {
       "path": "dist/useLogger.mjs",
       "sizes": {
-        "raw": 486,
-        "gzip": 246,
-        "brotli": 201
+        "raw": 572,
+        "gzip": 275,
+        "brotli": 222
       }
     },
     {
       "path": "dist/useLogger.mjs.map",
       "sizes": {
-        "raw": 733,
-        "gzip": 365,
-        "brotli": 325
+        "raw": 965,
+        "gzip": 456,
+        "brotli": 422
       }
     },
     {
@@ -5740,8 +5740,8 @@
     }
   ],
   "totals": {
-    "raw": 796071,
-    "gzip": 339176,
-    "brotli": 295761
+    "raw": 796755,
+    "gzip": 339442,
+    "brotli": 296008
   }
 }
