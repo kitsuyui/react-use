@@ -1,6 +1,6 @@
 # `useLogger`
 
-React lifecycle hook that console logs parameters as component transitions through lifecycles.
+React lifecycle hook that console logs parameters outside production builds as component transitions through lifecycles.
 
 ## Usage
 
@@ -14,6 +14,8 @@ const Demo = (props) => {
 ```
 
 ## Example Output
+
+`useLogger` is silent when `process.env.NODE_ENV === 'production'`.
 
 ```
 Demo mounted {}
