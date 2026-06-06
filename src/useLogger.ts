@@ -1,15 +1,25 @@
 import useEffectOnce from './useEffectOnce';
 import useUpdateEffect from './useUpdateEffect';
 
-const useLogger = (componentName: string, ...rest) => {
-  useEffectOnce(() => {
-    console.log(`${componentName} mounted`, ...rest);
-    return () => console.log(`${componentName} unmounted`);
-  });
+const shouldLog = () => process.env.NODE_ENV !== 'production';
 
-  useUpdateEffect(() => {
-    console.log(`${componentName} updated`, ...rest);
-  });
+const useLogger = (componentName: string, ...rest) => {
+	useEffectOnce(() => {
+		if (!shouldLog()) {
+			return;
+		}
+
+		console.log(`${componentName} mounted`, ...rest);
+		return () => console.log(`${componentName} unmounted`);
+	});
+
+	useUpdateEffect(() => {
+		if (!shouldLog()) {
+			return;
+		}
+
+		console.log(`${componentName} updated`, ...rest);
+	});
 };
 
 export default useLogger;

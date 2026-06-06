@@ -185,7 +185,7 @@ describe('useAsyncFn', () => {
     await act(async () => {
       const result = hook.result.current[1]();
       pendingCalls[0].reject(error);
-      await result;
+      await expect(result).rejects.toBe(error);
     });
 
     expect(hook.result.current[0]).toEqual({ loading: false, error });
