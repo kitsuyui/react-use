@@ -181,6 +181,14 @@ describe('useStateList', () => {
       expect(getHook([]).result.current.state).toBe(undefined);
     });
 
+    it('should not expose a selected item', () => {
+      expect(getHook([]).result.current).toMatchObject({
+        currentIndex: -1,
+        isFirst: false,
+        isLast: false,
+      });
+    });
+
     it('should do nothing on next() call', () => {
       const hook = getHook([]);
       act(() => {
@@ -188,6 +196,9 @@ describe('useStateList', () => {
       });
 
       expect(hook.result.current.state).toBe(undefined);
+      expect(hook.result.current.currentIndex).toBe(-1);
+      expect(hook.result.current.isFirst).toBe(false);
+      expect(hook.result.current.isLast).toBe(false);
     });
 
     it('should do nothing on prev() call', () => {
@@ -197,6 +208,20 @@ describe('useStateList', () => {
       });
 
       expect(hook.result.current.state).toBe(undefined);
+      expect(hook.result.current.currentIndex).toBe(-1);
+      expect(hook.result.current.isFirst).toBe(false);
+      expect(hook.result.current.isLast).toBe(false);
+    });
+
+    it('should select the first state after the list becomes non-empty', () => {
+      const hook = getHook([]);
+
+      hook.rerender({ states: ['a', 'b'] });
+
+      expect(hook.result.current.state).toBe('a');
+      expect(hook.result.current.currentIndex).toBe(0);
+      expect(hook.result.current.isFirst).toBe(true);
+      expect(hook.result.current.isLast).toBe(false);
     });
   });
 
@@ -223,6 +248,21 @@ describe('useStateList', () => {
       hook.rerender({ states: ['a', 'b', 'c', 'd'] });
 
       expect(hook.result.current.state).toBe('c');
+    });
+
+    it('should not expose a selected item when the list shrinks to empty', () => {
+      const hook = getHook();
+      act(() => {
+        hook.result.current.prev();
+      });
+      expect(hook.result.current.state).toBe('c');
+
+      hook.rerender({ states: [] });
+
+      expect(hook.result.current.state).toBe(undefined);
+      expect(hook.result.current.currentIndex).toBe(-1);
+      expect(hook.result.current.isFirst).toBe(false);
+      expect(hook.result.current.isLast).toBe(false);
     });
   });
 

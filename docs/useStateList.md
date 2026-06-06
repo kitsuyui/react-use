@@ -42,9 +42,10 @@ const { state, currentIndex, prev, next, setStateAt, setState, isFirst, isLast }
 ```
 
 If `stateSet` changed, became shorter than before and `currentIndex` left in shrunk gap - the last element of list will be taken as current.
+If `stateSet` is empty, no item is selected: `state` is `undefined`, `currentIndex` is `-1`, and both `isFirst` and `isLast` are `false`.
 
-- **`state`**_`: T`_ &mdash; current state value;
-- **`currentIndex`**_`: number`_ &mdash; current state index;
+- **`state`**_`: T | undefined`_ &mdash; current state value, or `undefined` when `stateSet` is empty;
+- **`currentIndex`**_`: number`_ &mdash; current state index, or `-1` when `stateSet` is empty;
 - **`prev()`**_`: void`_ &mdash; switches state to the previous one. If first element selected it will switch to the last one;
 - **`next()`**_`: void`_ &mdash; switches state to the next one. If last element selected it will switch to the first one;
 - **`setStateAt(newIndex: number)`**_`: void`_ &mdash; set the arbitrary state by index. Indexes are looped, and can be negative.
