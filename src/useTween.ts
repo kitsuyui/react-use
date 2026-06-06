@@ -7,9 +7,13 @@ export const easing: Record<string, Easing> = {
   outCirc: (t) => Math.sqrt(1 - (t - 1) * (t - 1)),
 };
 
-const useTween = (easingName: string = 'inCirc', ms: number = 200, delay: number = 0): number => {
+const useTween = (
+  easingName: string = 'inCirc',
+  durationMs: number = 200,
+  delayMs: number = 0
+): number => {
   const fn: Easing = easing[easingName];
-  const t = useRaf(ms, delay);
+  const t = useRaf(durationMs, delayMs);
 
   if (process.env.NODE_ENV !== 'production') {
     if (typeof fn !== 'function') {

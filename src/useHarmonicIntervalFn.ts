@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-const useHarmonicIntervalFn = (fn: Function, delay: number | null = 0) => {
+const useHarmonicIntervalFn = (fn: Function, delayMs: number | null = 0) => {
   const latestCallback = useRef<Function>(() => {});
 
   useEffect(() => {
@@ -8,12 +8,12 @@ const useHarmonicIntervalFn = (fn: Function, delay: number | null = 0) => {
   });
 
   useEffect(() => {
-    if (delay !== null) {
-      const interval = setInterval(() => latestCallback.current(), delay);
+    if (delayMs !== null) {
+      const interval = setInterval(() => latestCallback.current(), delayMs);
       return () => clearInterval(interval);
     }
     return undefined;
-  }, [delay]);
+  }, [delayMs]);
 };
 
 export default useHarmonicIntervalFn;
