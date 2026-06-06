@@ -51,16 +51,25 @@ const useLocalStorage = <T>(
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [state, setState] = useState<T | undefined>(() => initializer.current(key));
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const stateRef = useRef(state);
+  stateRef.current = state;
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  useLayoutEffect(() => setState(initializer.current(key)), [key]);
+  useLayoutEffect(() => {
+    const nextState = initializer.current(key);
+    stateRef.current = nextState;
+    setState(nextState);
+  }, [key]);
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     const onStorageChange = (event: StorageEvent) => {
       if (event.storageArea !== localStorage || event.key !== key) return;
       try {
-        setState(event.newValue !== null ? deserializer(event.newValue) : undefined);
+        const nextState = event.newValue !== null ? deserializer(event.newValue) : undefined;
+        stateRef.current = nextState;
+        setState(nextState);
       } catch {
         // deserializer can throw on malformed values
       }
@@ -74,7 +83,7 @@ const useLocalStorage = <T>(
     (valOrFunc) => {
       try {
         const newState =
-          typeof valOrFunc === 'function' ? (valOrFunc as Function)(state) : valOrFunc;
+          typeof valOrFunc === 'function' ? (valOrFunc as Function)(stateRef.current) : valOrFunc;
         if (typeof newState === 'undefined') return;
         let value: string;
 
@@ -86,8 +95,10 @@ const useLocalStorage = <T>(
           else value = JSON.stringify(newState);
         else value = JSON.stringify(newState);
 
+        const nextState = deserializer(value);
         localStorage.setItem(key, value);
-        setState(deserializer(value));
+        stateRef.current = nextState;
+        setState(nextState);
       } catch {
         // If user is in private mode or has storage restriction
         // localStorage can throw. Also JSON.stringify can throw.
@@ -100,6 +111,7 @@ const useLocalStorage = <T>(
   const remove = useCallback(() => {
     try {
       localStorage.removeItem(key);
+      stateRef.current = undefined;
       setState(undefined);
     } catch {
       // If user is in private mode or has storage restriction
