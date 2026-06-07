@@ -24,7 +24,7 @@ const useIdle = (
 
     let lastEvent = 0;
     const onEvent = () => {
-      const now = Date.now();
+      const now = performance.now();
       if (now - lastEvent < 50) {
         return;
       }
