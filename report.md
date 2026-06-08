@@ -1,8 +1,8 @@
 # gh-build-size report
 
 - Repository: **kitsuyui/react-use**
-- Head: `64d4645f93efe8029f72ab986953a6eace213edb`
-- Generated at: 2026-06-05T14:47:35.753Z
+- Head: `cb2aa2509d221786548d0da0b09b3dd0f476c8df`
+- Generated at: 2026-06-08T20:13:32.489Z
 
 | File | Raw | Gzip | Brotli |
 | --- | ---: | ---: | ---: |
@@ -341,10 +341,10 @@
 | `dist/useList.mjs.map` | 5,947 B | 1,675 B | 1,490 B |
 | `dist/useLocalStorage.d.mts` | 487 B | 297 B | 247 B |
 | `dist/useLocalStorage.d.ts` | 460 B | 283 B | 232 B |
-| `dist/useLocalStorage.js` | 2,342 B | 828 B | 722 B |
-| `dist/useLocalStorage.js.map` | 5,082 B | 1,730 B | 1,552 B |
-| `dist/useLocalStorage.mjs` | 2,225 B | 802 B | 702 B |
-| `dist/useLocalStorage.mjs.map` | 5,078 B | 1,727 B | 1,541 B |
+| `dist/useLocalStorage.js` | 2,660 B | 872 B | 759 B |
+| `dist/useLocalStorage.js.map` | 5,648 B | 1,815 B | 1,622 B |
+| `dist/useLocalStorage.mjs` | 2,532 B | 846 B | 731 B |
+| `dist/useLocalStorage.mjs.map` | 5,647 B | 1,811 B | 1,623 B |
 | `dist/useLocation.d.mts` | 446 B | 237 B | 191 B |
 | `dist/useLocation.d.ts` | 445 B | 235 B | 189 B |
 | `dist/useLocation.js` | 1,980 B | 735 B | 606 B |
