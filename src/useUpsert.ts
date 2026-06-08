@@ -6,7 +6,7 @@ export interface UpsertListActions<T> extends Omit<ListActions<T>, 'upsert'> {
 }
 
 /**
- * @deprecated Use `useList` hook's upsert action instead
+ * @deprecated Use `useList` hook's upsert action instead. Planned for removal in v18.0.0.
  */
 export default function useUpsert<T>(
   predicate: (a: T, b: T) => boolean,
