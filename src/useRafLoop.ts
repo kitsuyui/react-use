@@ -9,7 +9,10 @@ export default function useRafLoop(
   const raf = useRef<number | null>(null);
   const rafActivity = useRef<boolean>(false);
   const rafCallback = useRef(callback);
-  rafCallback.current = callback;
+
+  useEffect(() => {
+    rafCallback.current = callback;
+  });
 
   const step = useCallback((time: number) => {
     if (rafActivity.current) {
