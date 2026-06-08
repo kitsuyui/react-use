@@ -166,6 +166,52 @@ describe(useLocalStorage, () => {
     expect(value!.fizz).toEqual('buzz');
   });
 
+  it('uses the latest value for repeated function updaters before rerendering', () => {
+    const { result, rerender } = renderHook(() =>
+      useLocalStorage<{ count: number }>('foo', { count: 0 })
+    );
+
+    const [, setCounter] = result.current;
+    act(() => {
+      setCounter((state) => ({ count: state!.count + 1 }));
+      setCounter((state) => ({ count: state!.count + 1 }));
+    });
+    rerender();
+
+    const [value] = result.current;
+    expect(value!.count).toEqual(2);
+    expect(localStorage.__STORE__.foo).toEqual('{"count":2}');
+  });
+
+  it('does not update localStorage when deserializer rejects the serialized value', () => {
+    const deserializer = (value: string): { ok: boolean } => {
+      const parsed = JSON.parse(value);
+      if (!parsed.ok) {
+        throw new Error('invalid value');
+      }
+      return parsed;
+    };
+    const { result, rerender } = renderHook(() =>
+      useLocalStorage<{ ok: boolean }>(
+        'foo',
+        { ok: true },
+        {
+          raw: false,
+          serializer: JSON.stringify,
+          deserializer,
+        }
+      )
+    );
+
+    const [, setFoo] = result.current;
+    act(() => setFoo({ ok: false }));
+    rerender();
+
+    const [value] = result.current;
+    expect(value).toEqual({ ok: true });
+    expect(localStorage.__STORE__.foo).toEqual('{"ok":true}');
+  });
+
   it('rejects nullish or undefined keys', () => {
     const { result } = renderHook(() => useLocalStorage(null as any));
     try {
