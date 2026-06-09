@@ -4941,33 +4941,33 @@
     {
       "path": "dist/useStateWithHistory.js",
       "sizes": {
-        "raw": 2835,
-        "gzip": 818,
-        "brotli": 703
+        "raw": 2883,
+        "gzip": 834,
+        "brotli": 719
       }
     },
     {
       "path": "dist/useStateWithHistory.js.map",
       "sizes": {
-        "raw": 6136,
-        "gzip": 1825,
-        "brotli": 1596
+        "raw": 6289,
+        "gzip": 1860,
+        "brotli": 1633
       }
     },
     {
       "path": "dist/useStateWithHistory.mjs",
       "sizes": {
-        "raw": 2605,
-        "gzip": 732,
-        "brotli": 645
+        "raw": 2653,
+        "gzip": 749,
+        "brotli": 663
       }
     },
     {
       "path": "dist/useStateWithHistory.mjs.map",
       "sizes": {
-        "raw": 6116,
-        "gzip": 1815,
-        "brotli": 1598
+        "raw": 6269,
+        "gzip": 1851,
+        "brotli": 1640
       }
     },
     {
@@ -5740,8 +5740,8 @@
     }
   ],
   "totals": {
-    "raw": 800276,
-    "gzip": 340336,
-    "brotli": 296752
+    "raw": 800678,
+    "gzip": 340440,
+    "brotli": 296865
   }
 }

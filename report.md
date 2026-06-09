@@ -1,8 +1,8 @@
 # gh-build-size report
 
 - Repository: **kitsuyui/react-use**
-- Head: `b9135fe59cfc4a0346baa9005ce862a53e4154e5`
-- Generated at: 2026-06-09T14:33:30.797Z
+- Head: `33effaa9b62df3831fdaf13bc54438fc11719978`
+- Generated at: 2026-06-09T14:35:25.967Z
 
 | File | Raw | Gzip | Brotli |
 | --- | ---: | ---: | ---: |
@@ -623,10 +623,10 @@
 | `dist/useStateValidator.mjs.map` | 2,312 B | 1,039 B | 901 B |
 | `dist/useStateWithHistory.d.mts` | 808 B | 369 B | 304 B |
 | `dist/useStateWithHistory.d.ts` | 806 B | 367 B | 298 B |
-| `dist/useStateWithHistory.js` | 2,835 B | 818 B | 703 B |
-| `dist/useStateWithHistory.js.map` | 6,136 B | 1,825 B | 1,596 B |
-| `dist/useStateWithHistory.mjs` | 2,605 B | 732 B | 645 B |
-| `dist/useStateWithHistory.mjs.map` | 6,116 B | 1,815 B | 1,598 B |
+| `dist/useStateWithHistory.js` | 2,883 B | 834 B | 719 B |
+| `dist/useStateWithHistory.js.map` | 6,289 B | 1,860 B | 1,633 B |
+| `dist/useStateWithHistory.mjs` | 2,653 B | 749 B | 663 B |
+| `dist/useStateWithHistory.mjs.map` | 6,269 B | 1,851 B | 1,640 B |
 | `dist/useThrottle.d.mts` | 181 B | 151 B | 129 B |
 | `dist/useThrottle.d.ts` | 154 B | 135 B | 110 B |
 | `dist/useThrottle.js` | 1,035 B | 421 B | 368 B |
