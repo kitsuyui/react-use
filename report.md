@@ -1,8 +1,8 @@
 # gh-build-size report
 
 - Repository: **kitsuyui/react-use**
-- Head: `0c136ef9fe24b84bc44bb8738c01a52ad68dc744`
-- Generated at: 2026-06-08T20:18:56.327Z
+- Head: `b9135fe59cfc4a0346baa9005ce862a53e4154e5`
+- Generated at: 2026-06-09T14:33:30.797Z
 
 | File | Raw | Gzip | Brotli |
 | --- | ---: | ---: | ---: |
@@ -149,10 +149,10 @@
 | `dist/useClickAway.mjs.map` | 1,411 B | 672 B | 588 B |
 | `dist/useCookie.d.mts` | 554 B | 333 B | 269 B |
 | `dist/useCookie.d.ts` | 553 B | 332 B | 259 B |
-| `dist/useCookie.js` | 1,783 B | 709 B | 626 B |
-| `dist/useCookie.js.map` | 3,480 B | 1,348 B | 1,172 B |
-| `dist/useCookie.mjs` | 1,719 B | 676 B | 574 B |
-| `dist/useCookie.mjs.map` | 3,495 B | 1,352 B | 1,190 B |
+| `dist/useCookie.js` | 2,076 B | 828 B | 696 B |
+| `dist/useCookie.js.map` | 3,988 B | 1,535 B | 1,347 B |
+| `dist/useCookie.mjs` | 2,012 B | 793 B | 672 B |
+| `dist/useCookie.mjs.map` | 4,003 B | 1,539 B | 1,353 B |
 | `dist/useCopyToClipboard.d.mts` | 353 B | 222 B | 180 B |
 | `dist/useCopyToClipboard.d.ts` | 352 B | 220 B | 181 B |
 | `dist/useCopyToClipboard.js` | 2,229 B | 798 B | 680 B |
