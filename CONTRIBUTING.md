@@ -50,8 +50,11 @@ bun run test:coverage
 bun run validate
 ```
 
-## Commit messages
+## Commit messages and release notes
 
-This repo uses semantic-release and conventional commit messages. Use prefixes
-such as `fix:`, `feat:`, `docs:`, or `chore:` when the change should be
-classified in release notes.
+Use concise conventional commit-style prefixes such as `fix:`, `feat:`,
+`docs:`, or `chore:` so release notes can be grouped consistently.
+
+Releases are published from GitHub Release events. When preparing a release,
+update `CHANGELOG.md` with the `@kitsuyui/react-use` changes included in that
+release.
