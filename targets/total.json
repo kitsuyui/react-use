@@ -2301,33 +2301,33 @@
     {
       "path": "dist/useInterval.js",
       "sizes": {
-        "raw": 555,
+        "raw": 567,
         "gzip": 310,
-        "brotli": 280
+        "brotli": 277
       }
     },
     {
       "path": "dist/useInterval.js.map",
       "sizes": {
-        "raw": 828,
-        "gzip": 451,
-        "brotli": 384
+        "raw": 855,
+        "gzip": 454,
+        "brotli": 389
       }
     },
     {
       "path": "dist/useInterval.mjs",
       "sizes": {
-        "raw": 487,
-        "gzip": 276,
-        "brotli": 245
+        "raw": 499,
+        "gzip": 278,
+        "brotli": 240
       }
     },
     {
       "path": "dist/useInterval.mjs.map",
       "sizes": {
-        "raw": 834,
-        "gzip": 450,
-        "brotli": 415
+        "raw": 861,
+        "gzip": 456,
+        "brotli": 398
       }
     },
     {
@@ -5740,8 +5740,8 @@
     }
   ],
   "totals": {
-    "raw": 800678,
-    "gzip": 340440,
-    "brotli": 296865
+    "raw": 800756,
+    "gzip": 340451,
+    "brotli": 296845
   }
 }

@@ -1,8 +1,8 @@
 # gh-build-size report
 
 - Repository: **kitsuyui/react-use**
-- Head: `33effaa9b62df3831fdaf13bc54438fc11719978`
-- Generated at: 2026-06-09T14:35:25.967Z
+- Head: `0672dd639e1c39c0062a919d3f4cfe9feacf8c8a`
+- Generated at: 2026-06-10T14:41:51.140Z
 
 | File | Raw | Gzip | Brotli |
 | --- | ---: | ---: | ---: |
@@ -293,10 +293,10 @@
 | `dist/useIntersection.mjs.map` | 1,426 B | 643 B | 570 B |
 | `dist/useInterval.d.mts` | 201 B | 166 B | 127 B |
 | `dist/useInterval.d.ts` | 174 B | 150 B | 127 B |
-| `dist/useInterval.js` | 555 B | 310 B | 280 B |
-| `dist/useInterval.js.map` | 828 B | 451 B | 384 B |
-| `dist/useInterval.mjs` | 487 B | 276 B | 245 B |
-| `dist/useInterval.mjs.map` | 834 B | 450 B | 415 B |
+| `dist/useInterval.js` | 567 B | 310 B | 277 B |
+| `dist/useInterval.js.map` | 855 B | 454 B | 389 B |
+| `dist/useInterval.mjs` | 499 B | 278 B | 240 B |
+| `dist/useInterval.mjs.map` | 861 B | 456 B | 398 B |
 | `dist/useIsomorphicLayoutEffect.d.mts` | 258 B | 164 B | 131 B |
 | `dist/useIsomorphicLayoutEffect.d.ts` | 231 B | 150 B | 120 B |
 | `dist/useIsomorphicLayoutEffect.js` | 397 B | 217 B | 202 B |
