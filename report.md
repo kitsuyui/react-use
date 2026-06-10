@@ -1,8 +1,8 @@
 # gh-build-size report
 
 - Repository: **kitsuyui/react-use**
-- Head: `763678d7103e972e9029f5e7e2d2321e112353fe`
-- Generated at: 2026-06-10T14:43:03.328Z
+- Head: `22b13c0d328a0e18bde8d1e7dc6797edb7d6c101`
+- Generated at: 2026-06-10T14:43:09.954Z
 
 | File | Raw | Gzip | Brotli |
 | --- | ---: | ---: | ---: |
@@ -281,10 +281,10 @@
 | `dist/useHoverDirty.mjs.map` | 1,651 B | 778 B | 704 B |
 | `dist/useIdle.d.mts` | 201 B | 168 B | 137 B |
 | `dist/useIdle.d.ts` | 174 B | 152 B | 116 B |
-| `dist/useIdle.js` | 1,470 B | 613 B | 520 B |
-| `dist/useIdle.js.map` | 2,469 B | 1,016 B | 929 B |
-| `dist/useIdle.mjs` | 1,333 B | 576 B | 500 B |
-| `dist/useIdle.mjs.map` | 2,469 B | 1,010 B | 903 B |
+| `dist/useIdle.js` | 1,477 B | 617 B | 522 B |
+| `dist/useIdle.js.map` | 2,476 B | 1,021 B | 935 B |
+| `dist/useIdle.mjs` | 1,340 B | 580 B | 505 B |
+| `dist/useIdle.mjs.map` | 2,476 B | 1,015 B | 924 B |
 | `dist/useIntersection.d.mts` | 302 B | 206 B | 162 B |
 | `dist/useIntersection.d.ts` | 275 B | 187 B | 146 B |
 | `dist/useIntersection.js` | 864 B | 398 B | 336 B |

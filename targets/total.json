@@ -2205,33 +2205,33 @@
     {
       "path": "dist/useIdle.js",
       "sizes": {
-        "raw": 1470,
-        "gzip": 613,
-        "brotli": 520
+        "raw": 1477,
+        "gzip": 617,
+        "brotli": 522
       }
     },
     {
       "path": "dist/useIdle.js.map",
       "sizes": {
-        "raw": 2469,
-        "gzip": 1016,
-        "brotli": 929
+        "raw": 2476,
+        "gzip": 1021,
+        "brotli": 935
       }
     },
     {
       "path": "dist/useIdle.mjs",
       "sizes": {
-        "raw": 1333,
-        "gzip": 576,
-        "brotli": 500
+        "raw": 1340,
+        "gzip": 580,
+        "brotli": 505
       }
     },
     {
       "path": "dist/useIdle.mjs.map",
       "sizes": {
-        "raw": 2469,
-        "gzip": 1010,
-        "brotli": 903
+        "raw": 2476,
+        "gzip": 1015,
+        "brotli": 924
       }
     },
     {
@@ -5740,8 +5740,8 @@
     }
   ],
   "totals": {
-    "raw": 802626,
-    "gzip": 340998,
-    "brotli": 297306
+    "raw": 802654,
+    "gzip": 341016,
+    "brotli": 297340
   }
 }
