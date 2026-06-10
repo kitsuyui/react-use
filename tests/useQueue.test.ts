@@ -49,3 +49,38 @@ it('types remove as possibly undefined', () => {
 
   expectTypeOf(result.current.remove).returns.toEqualTypeOf<number | undefined>();
 });
+
+it('respects maxSize: add is ignored when queue is at capacity', () => {
+  const { result } = renderHook(() => useQueue([1, 2], 3));
+
+  act(() => {
+    result.current.add(3);
+  });
+  expect(result.current.size).toBe(3);
+
+  act(() => {
+    result.current.add(4);
+  });
+  expect(result.current.size).toBe(3);
+  expect(result.current.last).toBe(3);
+});
+
+it('allows add again after remove when maxSize is set', () => {
+  const { result } = renderHook(() => useQueue([1, 2], 2));
+
+  act(() => {
+    result.current.add(3);
+  });
+  expect(result.current.size).toBe(2);
+
+  act(() => {
+    result.current.remove();
+  });
+  expect(result.current.size).toBe(1);
+
+  act(() => {
+    result.current.add(3);
+  });
+  expect(result.current.size).toBe(2);
+  expect(result.current.last).toBe(3);
+});
