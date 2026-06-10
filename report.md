@@ -1,8 +1,8 @@
 # gh-build-size report
 
 - Repository: **kitsuyui/react-use**
-- Head: `0672dd639e1c39c0062a919d3f4cfe9feacf8c8a`
-- Generated at: 2026-06-10T14:41:51.140Z
+- Head: `39bf100e4848dfdb75240f069b9d352a2d6ee917`
+- Generated at: 2026-06-10T14:42:00.087Z
 
 | File | Raw | Gzip | Brotli |
 | --- | ---: | ---: | ---: |
@@ -507,12 +507,12 @@
 | `dist/usePromise.js.map` | 1,199 B | 566 B | 499 B |
 | `dist/usePromise.mjs` | 683 B | 358 B | 298 B |
 | `dist/usePromise.mjs.map` | 1,185 B | 567 B | 523 B |
-| `dist/useQueue.d.mts` | 320 B | 230 B | 198 B |
-| `dist/useQueue.d.ts` | 319 B | 228 B | 182 B |
-| `dist/useQueue.js` | 637 B | 349 B | 304 B |
-| `dist/useQueue.js.map` | 1,198 B | 583 B | 514 B |
-| `dist/useQueue.mjs` | 582 B | 316 B | 267 B |
-| `dist/useQueue.mjs.map` | 1,201 B | 582 B | 509 B |
+| `dist/useQueue.d.mts` | 338 B | 240 B | 207 B |
+| `dist/useQueue.d.ts` | 337 B | 238 B | 213 B |
+| `dist/useQueue.js` | 734 B | 383 B | 336 B |
+| `dist/useQueue.js.map` | 1,401 B | 653 B | 577 B |
+| `dist/useQueue.mjs` | 679 B | 352 B | 303 B |
+| `dist/useQueue.mjs.map` | 1,404 B | 652 B | 576 B |
 | `dist/useRaf.d.mts` | 169 B | 146 B | 130 B |
 | `dist/useRaf.d.ts` | 142 B | 131 B | 113 B |
 | `dist/useRaf.js` | 978 B | 454 B | 426 B |
@@ -609,12 +609,12 @@
 | `dist/useStartTyping.js.map` | 2,060 B | 903 B | 835 B |
 | `dist/useStartTyping.mjs` | 1,090 B | 508 B | 454 B |
 | `dist/useStartTyping.mjs.map` | 2,059 B | 900 B | 831 B |
-| `dist/useStateList.d.mts` | 442 B | 250 B | 219 B |
-| `dist/useStateList.d.ts` | 441 B | 248 B | 219 B |
-| `dist/useStateList.js` | 1,586 B | 573 B | 531 B |
-| `dist/useStateList.js.map` | 3,374 B | 1,266 B | 1,109 B |
-| `dist/useStateList.mjs` | 1,467 B | 546 B | 529 B |
-| `dist/useStateList.mjs.map` | 3,350 B | 1,254 B | 1,132 B |
+| `dist/useStateList.d.mts` | 454 B | 257 B | 223 B |
+| `dist/useStateList.d.ts` | 453 B | 256 B | 220 B |
+| `dist/useStateList.js` | 1,773 B | 613 B | 547 B |
+| `dist/useStateList.js.map` | 3,792 B | 1,375 B | 1,216 B |
+| `dist/useStateList.mjs` | 1,654 B | 590 B | 557 B |
+| `dist/useStateList.mjs.map` | 3,768 B | 1,363 B | 1,199 B |
 | `dist/useStateValidator.d.mts` | 1,254 B | 623 B | 513 B |
 | `dist/useStateValidator.d.ts` | 1,253 B | 621 B | 510 B |
 | `dist/useStateValidator.js` | 843 B | 372 B | 319 B |

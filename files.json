@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-10T14:41:51.140Z",
+  "generated_at": "2026-06-10T14:42:00.087Z",
   "repository": "kitsuyui/react-use",
   "default_branch": "main",
   "publish_branch": "gh-build-size-assets",
   "event_name": "push",
-  "head_reference": "0672dd639e1c39c0062a919d3f4cfe9feacf8c8a",
+  "head_reference": "39bf100e4848dfdb75240f069b9d352a2d6ee917",
   "files": [
     {
       "path": "dist/chunk-BE-pF4vm.js",
@@ -4017,49 +4017,49 @@
     {
       "path": "dist/useQueue.d.mts",
       "sizes": {
-        "raw": 320,
-        "gzip": 230,
-        "brotli": 198
+        "raw": 338,
+        "gzip": 240,
+        "brotli": 207
       }
     },
     {
       "path": "dist/useQueue.d.ts",
       "sizes": {
-        "raw": 319,
-        "gzip": 228,
-        "brotli": 182
+        "raw": 337,
+        "gzip": 238,
+        "brotli": 213
       }
     },
     {
       "path": "dist/useQueue.js",
       "sizes": {
-        "raw": 637,
-        "gzip": 349,
-        "brotli": 304
+        "raw": 734,
+        "gzip": 383,
+        "brotli": 336
       }
     },
     {
       "path": "dist/useQueue.js.map",
       "sizes": {
-        "raw": 1198,
-        "gzip": 583,
-        "brotli": 514
+        "raw": 1401,
+        "gzip": 653,
+        "brotli": 577
       }
     },
     {
       "path": "dist/useQueue.mjs",
       "sizes": {
-        "raw": 582,
-        "gzip": 316,
-        "brotli": 267
+        "raw": 679,
+        "gzip": 352,
+        "brotli": 303
       }
     },
     {
       "path": "dist/useQueue.mjs.map",
       "sizes": {
-        "raw": 1201,
-        "gzip": 582,
-        "brotli": 509
+        "raw": 1404,
+        "gzip": 652,
+        "brotli": 576
       }
     },
     {
@@ -4833,49 +4833,49 @@
     {
       "path": "dist/useStateList.d.mts",
       "sizes": {
-        "raw": 442,
-        "gzip": 250,
-        "brotli": 219
+        "raw": 454,
+        "gzip": 257,
+        "brotli": 223
       }
     },
     {
       "path": "dist/useStateList.d.ts",
       "sizes": {
-        "raw": 441,
-        "gzip": 248,
-        "brotli": 219
+        "raw": 453,
+        "gzip": 256,
+        "brotli": 220
       }
     },
     {
       "path": "dist/useStateList.js",
       "sizes": {
-        "raw": 1586,
-        "gzip": 573,
-        "brotli": 531
+        "raw": 1773,
+        "gzip": 613,
+        "brotli": 547
       }
     },
     {
       "path": "dist/useStateList.js.map",
       "sizes": {
-        "raw": 3374,
-        "gzip": 1266,
-        "brotli": 1109
+        "raw": 3792,
+        "gzip": 1375,
+        "brotli": 1216
       }
     },
     {
       "path": "dist/useStateList.mjs",
       "sizes": {
-        "raw": 1467,
-        "gzip": 546,
-        "brotli": 529
+        "raw": 1654,
+        "gzip": 590,
+        "brotli": 557
       }
     },
     {
       "path": "dist/useStateList.mjs.map",
       "sizes": {
-        "raw": 3350,
-        "gzip": 1254,
-        "brotli": 1132
+        "raw": 3768,
+        "gzip": 1363,
+        "brotli": 1199
       }
     },
     {
