@@ -1,8 +1,8 @@
 # gh-build-size report
 
 - Repository: **kitsuyui/react-use**
-- Head: `22b13c0d328a0e18bde8d1e7dc6797edb7d6c101`
-- Generated at: 2026-06-10T14:43:09.954Z
+- Head: `da07a3e138b9750c8ca8b44cc4351852fb048138`
+- Generated at: 2026-06-10T14:43:55.950Z
 
 | File | Raw | Gzip | Brotli |
 | --- | ---: | ---: | ---: |
@@ -333,12 +333,12 @@
 | `dist/useLifecycles.js.map` | 506 B | 312 B | 277 B |
 | `dist/useLifecycles.mjs` | 306 B | 206 B | 168 B |
 | `dist/useLifecycles.mjs.map` | 506 B | 310 B | 276 B |
-| `dist/useList.d.mts` | 2,000 B | 705 B | 597 B |
-| `dist/useList.d.ts` | 1,998 B | 702 B | 594 B |
-| `dist/useList.js` | 2,222 B | 697 B | 635 B |
-| `dist/useList.js.map` | 5,974 B | 1,690 B | 1,513 B |
-| `dist/useList.mjs` | 2,068 B | 665 B | 617 B |
-| `dist/useList.mjs.map` | 5,947 B | 1,675 B | 1,490 B |
+| `dist/useList.d.mts` | 2,028 B | 731 B | 611 B |
+| `dist/useList.d.ts` | 2,026 B | 726 B | 612 B |
+| `dist/useList.js` | 2,250 B | 718 B | 652 B |
+| `dist/useList.js.map` | 6,030 B | 1,715 B | 1,519 B |
+| `dist/useList.mjs` | 2,096 B | 686 B | 604 B |
+| `dist/useList.mjs.map` | 6,003 B | 1,699 B | 1,505 B |
 | `dist/useLocalStorage.d.mts` | 487 B | 297 B | 247 B |
 | `dist/useLocalStorage.d.ts` | 460 B | 283 B | 232 B |
 | `dist/useLocalStorage.js` | 2,660 B | 872 B | 759 B |
@@ -693,12 +693,12 @@
 | `dist/useUpdateEffect.js.map` | 596 B | 339 B | 299 B |
 | `dist/useUpdateEffect.mjs` | 388 B | 224 B | 197 B |
 | `dist/useUpdateEffect.mjs.map` | 575 B | 335 B | 297 B |
-| `dist/useUpsert.d.mts` | 550 B | 326 B | 299 B |
-| `dist/useUpsert.d.ts` | 547 B | 323 B | 289 B |
-| `dist/useUpsert.js` | 443 B | 277 B | 234 B |
-| `dist/useUpsert.js.map` | 988 B | 539 B | 488 B |
-| `dist/useUpsert.mjs` | 429 B | 277 B | 246 B |
-| `dist/useUpsert.mjs.map` | 978 B | 536 B | 483 B |
+| `dist/useUpsert.d.mts` | 583 B | 351 B | 328 B |
+| `dist/useUpsert.d.ts` | 580 B | 349 B | 303 B |
+| `dist/useUpsert.js` | 476 B | 304 B | 250 B |
+| `dist/useUpsert.js.map` | 1,021 B | 566 B | 505 B |
+| `dist/useUpsert.mjs` | 462 B | 304 B | 261 B |
+| `dist/useUpsert.mjs.map` | 1,011 B | 562 B | 496 B |
 | `dist/useVibrate.d.mts` | 318 B | 207 B | 165 B |
 | `dist/useVibrate.d.ts` | 317 B | 206 B | 163 B |
 | `dist/useVibrate.js` | 928 B | 450 B | 384 B |

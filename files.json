@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-10T14:43:09.954Z",
+  "generated_at": "2026-06-10T14:43:55.950Z",
   "repository": "kitsuyui/react-use",
   "default_branch": "main",
   "publish_branch": "gh-build-size-assets",
   "event_name": "push",
-  "head_reference": "22b13c0d328a0e18bde8d1e7dc6797edb7d6c101",
+  "head_reference": "da07a3e138b9750c8ca8b44cc4351852fb048138",
   "files": [
     {
       "path": "dist/chunk-BE-pF4vm.js",
@@ -2625,49 +2625,49 @@
     {
       "path": "dist/useList.d.mts",
       "sizes": {
-        "raw": 2000,
-        "gzip": 705,
-        "brotli": 597
+        "raw": 2028,
+        "gzip": 731,
+        "brotli": 611
       }
     },
     {
       "path": "dist/useList.d.ts",
       "sizes": {
-        "raw": 1998,
-        "gzip": 702,
-        "brotli": 594
+        "raw": 2026,
+        "gzip": 726,
+        "brotli": 612
       }
     },
     {
       "path": "dist/useList.js",
       "sizes": {
-        "raw": 2222,
-        "gzip": 697,
-        "brotli": 635
+        "raw": 2250,
+        "gzip": 718,
+        "brotli": 652
       }
     },
     {
       "path": "dist/useList.js.map",
       "sizes": {
-        "raw": 5974,
-        "gzip": 1690,
-        "brotli": 1513
+        "raw": 6030,
+        "gzip": 1715,
+        "brotli": 1519
       }
     },
     {
       "path": "dist/useList.mjs",
       "sizes": {
-        "raw": 2068,
-        "gzip": 665,
-        "brotli": 617
+        "raw": 2096,
+        "gzip": 686,
+        "brotli": 604
       }
     },
     {
       "path": "dist/useList.mjs.map",
       "sizes": {
-        "raw": 5947,
-        "gzip": 1675,
-        "brotli": 1490
+        "raw": 6003,
+        "gzip": 1699,
+        "brotli": 1505
       }
     },
     {
@@ -5505,49 +5505,49 @@
     {
       "path": "dist/useUpsert.d.mts",
       "sizes": {
-        "raw": 550,
-        "gzip": 326,
-        "brotli": 299
+        "raw": 583,
+        "gzip": 351,
+        "brotli": 328
       }
     },
     {
       "path": "dist/useUpsert.d.ts",
       "sizes": {
-        "raw": 547,
-        "gzip": 323,
-        "brotli": 289
+        "raw": 580,
+        "gzip": 349,
+        "brotli": 303
       }
     },
     {
       "path": "dist/useUpsert.js",
       "sizes": {
-        "raw": 443,
-        "gzip": 277,
-        "brotli": 234
+        "raw": 476,
+        "gzip": 304,
+        "brotli": 250
       }
     },
     {
       "path": "dist/useUpsert.js.map",
       "sizes": {
-        "raw": 988,
-        "gzip": 539,
-        "brotli": 488
+        "raw": 1021,
+        "gzip": 566,
+        "brotli": 505
       }
     },
     {
       "path": "dist/useUpsert.mjs",
       "sizes": {
-        "raw": 429,
-        "gzip": 277,
-        "brotli": 246
+        "raw": 462,
+        "gzip": 304,
+        "brotli": 261
       }
     },
     {
       "path": "dist/useUpsert.mjs.map",
       "sizes": {
-        "raw": 978,
-        "gzip": 536,
-        "brotli": 483
+        "raw": 1011,
+        "gzip": 562,
+        "brotli": 496
       }
     },
     {
