@@ -5,7 +5,7 @@ To cause component re-render you have to use these methods instead of direct int
 
 We can ensure that actions object and actions itself will not mutate or change between renders, so there is no need to add it to useEffect dependencies and safe to pass them down to children.
 
-**Note:** `remove` action is deprecated and actually is a copy of `removeAt` action. Within closest updates it will gain different functionality.
+**Note:** `remove` action is deprecated and actually is a copy of `removeAt` action. Use `removeAt` instead. `remove` is planned for removal in v18.0.0.
 
 ## Usage
 
@@ -20,7 +20,7 @@ const Demo = () => {
       <button onClick={() => set([1, 2, 3])}>Set to [1, 2, 3]</button>
       <button onClick={() => push(Date.now())}>Push timestamp</button>
       <button onClick={() => updateAt(1, Date.now())}>Update value at index 1</button>
-      <button onClick={() => remove(1)}>Remove element at index 1</button>
+      <button onClick={() => removeAt(1)}>Remove element at index 1</button>
       <button onClick={() => filter(item => item % 2 === 0)}>Filter even values</button>
       <button onClick={() => sort((a, b) => a - b)}>Sort ascending</button>
       <button onClick={() => sort((a, b) => b - a)}>Sort descending</button>
@@ -64,7 +64,7 @@ const [list, {
 - **`sort`**_`: (compareFn?: (a: T, b: T) => number) => void;`_ &mdash; Sort list with given sorting function;
 - **`filter`**_`: (callbackFn: (value: T, index?: number, array?: T[]) => boolean, thisArg?: any) => void;`_ &mdash; Same as native Array's method;
 - **`removeAt`**_`: (index: number) => void;`_ &mdash; Removes item at given position. All items to the right from removed will be shifted;
-- **`remove`**_`: (index: number) => void;`_ &mdash; _**DEPRECATED:**_ Use removeAt method instead;
+- **`remove`**_`: (index: number) => void;`_ &mdash; _**DEPRECATED:**_ Use `removeAt` instead. Planned for removal in v18.0.0;
 - **`clear`**_`: () => void;`_ &mdash; Make the list empty;
 - **`reset`**_`: () => void;`_ &mdash; Reset list to initial value;
 
