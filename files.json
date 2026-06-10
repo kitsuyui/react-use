@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-10T14:42:00.087Z",
+  "generated_at": "2026-06-10T14:42:17.588Z",
   "repository": "kitsuyui/react-use",
   "default_branch": "main",
   "publish_branch": "gh-build-size-assets",
   "event_name": "push",
-  "head_reference": "39bf100e4848dfdb75240f069b9d352a2d6ee917",
+  "head_reference": "a36e6af52ac4dbd882cf71ce93a57b2316981a88",
   "files": [
     {
       "path": "dist/chunk-BE-pF4vm.js",
@@ -4833,49 +4833,49 @@
     {
       "path": "dist/useStateList.d.mts",
       "sizes": {
-        "raw": 454,
-        "gzip": 257,
-        "brotli": 223
+        "raw": 442,
+        "gzip": 250,
+        "brotli": 219
       }
     },
     {
       "path": "dist/useStateList.d.ts",
       "sizes": {
-        "raw": 453,
-        "gzip": 256,
-        "brotli": 220
+        "raw": 441,
+        "gzip": 248,
+        "brotli": 219
       }
     },
     {
       "path": "dist/useStateList.js",
       "sizes": {
-        "raw": 1773,
-        "gzip": 613,
-        "brotli": 547
+        "raw": 1586,
+        "gzip": 573,
+        "brotli": 531
       }
     },
     {
       "path": "dist/useStateList.js.map",
       "sizes": {
-        "raw": 3792,
-        "gzip": 1375,
-        "brotli": 1216
+        "raw": 3374,
+        "gzip": 1266,
+        "brotli": 1109
       }
     },
     {
       "path": "dist/useStateList.mjs",
       "sizes": {
-        "raw": 1654,
-        "gzip": 590,
-        "brotli": 557
+        "raw": 1467,
+        "gzip": 546,
+        "brotli": 529
       }
     },
     {
       "path": "dist/useStateList.mjs.map",
       "sizes": {
-        "raw": 3768,
-        "gzip": 1363,
-        "brotli": 1199
+        "raw": 3350,
+        "gzip": 1254,
+        "brotli": 1132
       }
     },
     {
