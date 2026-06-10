@@ -37,5 +37,9 @@ const Demo = () => {
 ## Reference
 
 ```js
-useInterval(callback, delay?: number)
+useInterval(callback, delay?: number | null)
 ```
+
+- `delay` defaults to `0` when omitted.
+- Set `delay` to `null` to pause the interval.
+- The latest callback is used without recreating the interval unless `delay` changes.
