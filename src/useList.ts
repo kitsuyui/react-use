@@ -48,7 +48,7 @@ export interface ListActions<T> {
    */
   removeAt: (index: number) => void;
   /**
-   * @deprecated Use removeAt method instead
+   * @deprecated Use `removeAt` instead. Planned for removal in v18.0.0.
    */
   remove: (index: number) => void;
 
@@ -144,7 +144,7 @@ function useList<T>(initialList: IHookStateInitAction<T[]> = []): [T[], ListActi
     };
 
     /**
-     * @deprecated Use removeAt method instead
+     * @deprecated Use `removeAt` instead. Planned for removal in v18.0.0.
      */
     (a as ListActions<T>).remove = a.removeAt;
 

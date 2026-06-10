@@ -31,7 +31,7 @@ export function useStateWithHistory<S, I extends S>(
 
   const isFirstMount = useFirstMountState();
   const [state, innerSetState] = useState<S>(initialState as S);
-  const history = useRef<S[]>((initialHistory ?? []) as S[]);
+  const history = useRef<S[]>(initialHistory ? [...initialHistory] : []);
   const historyPosition = useRef(0);
 
   // do the states manipulation only on first mount, no sense to load re-renders with useless calculations
@@ -62,11 +62,14 @@ export function useStateWithHistory<S, I extends S>(
         // is state has changed
         if (newState !== currentState) {
           // if current position is not the last - pop element to the right
-          if (historyPosition.current < history.current.length - 1) {
-            history.current = history.current.slice(0, historyPosition.current + 1);
-          }
+          const nextHistory =
+            historyPosition.current < history.current.length - 1
+              ? history.current.slice(0, historyPosition.current + 1)
+              : history.current;
 
-          historyPosition.current = history.current.push(newState as I) - 1;
+          history.current = [...nextHistory, newState as I];
+
+          historyPosition.current = history.current.length - 1;
 
           // if capacity is reached - shift first elements
           if (history.current.length > capacity) {
@@ -82,7 +85,7 @@ export function useStateWithHistory<S, I extends S>(
 
   const historyState = useMemo(
     () => ({
-      history: history.current,
+      history: [...history.current],
       position: historyPosition.current,
       capacity,
       back: (amount: number = 1) => {

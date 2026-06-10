@@ -9,7 +9,7 @@ permissions:
 
 jobs:
   check:
-    uses: kitsuyui/gh-actions-workflows/.github/workflows/spellcheck.yml@main
+    uses: kitsuyui/gh-actions-workflows/.github/workflows/spellcheck.yml@88f48ad6844fb6c902ec82614c9ca54d91551d25 # main
     with:
       files: 'README.md src tests .github package.json'
       config: _typos.toml

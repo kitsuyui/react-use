@@ -68,6 +68,31 @@ it('should repeatedly calls provided callback with a fixed time delay between ea
 	expect(callback).toHaveBeenCalledTimes(5);
 });
 
+it('should use the latest callback without resetting the interval', () => {
+	const initialCallback = jest.fn();
+	const nextCallback = jest.fn();
+	let currentCallback = initialCallback;
+	const { rerender } = renderHook(() => useInterval(currentCallback, 200));
+	const initialTimerCount = jest.getTimerCount();
+
+	currentCallback = nextCallback;
+	rerender();
+
+	expect(clearInterval).not.toHaveBeenCalled();
+	expect(jest.getTimerCount()).toBe(initialTimerCount);
+
+	jest.advanceTimersByTime(200);
+
+	expect(initialCallback).not.toHaveBeenCalled();
+	expect(nextCallback).toHaveBeenCalledTimes(1);
+});
+
+it('should keep an explicit zero delay', () => {
+	renderHook(() => useInterval(callback, 0));
+
+	expect(setInterval).toHaveBeenCalledWith(expect.any(Function), 0);
+});
+
 it('should clear interval on unmount', () => {
 	const { unmount } = renderHook(() => useInterval(callback, 200));
 	const initialTimerCount = jest.getTimerCount();

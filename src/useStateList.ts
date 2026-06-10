@@ -4,7 +4,7 @@ import useUpdate from './useUpdate';
 import useUpdateEffect from './useUpdateEffect';
 
 export interface UseStateListReturn<T> {
-  state: T;
+  state: T | undefined;
   currentIndex: number;
   setStateAt: (newIndex: number) => void;
   setState: (state: T) => void;
@@ -19,8 +19,14 @@ export default function useStateList<T>(stateSet: T[] = []): UseStateListReturn<
   const update = useUpdate();
   const index = useRef(0);
 
-  // If new state list is shorter that before - switch to the last element
+  // If new state list is empty, reset the next non-empty list to the first element.
+  // If new state list is shorter than before, switch to the last element.
   useUpdateEffect(() => {
+    if (!stateSet.length) {
+      index.current = 0;
+      return;
+    }
+
     if (stateSet.length <= index.current) {
       index.current = stateSet.length - 1;
       update();
@@ -67,11 +73,14 @@ export default function useStateList<T>(stateSet: T[] = []): UseStateListReturn<
     [stateSet]
   );
 
+  const hasStates = stateSet.length > 0;
+  const currentIndex = hasStates ? index.current : -1;
+
   return {
-    state: stateSet[index.current],
-    currentIndex: index.current,
-    isFirst: index.current === 0,
-    isLast: index.current === stateSet.length - 1,
+    state: hasStates ? stateSet[index.current] : undefined,
+    currentIndex,
+    isFirst: hasStates && currentIndex === 0,
+    isLast: hasStates && currentIndex === stateSet.length - 1,
     ...actions,
   };
 }

@@ -136,7 +136,7 @@
   - [`useStateList`](./docs/useStateList.md) &mdash; circularly iterates over an array.
   - [`useToggle` and `useBoolean`](./docs/useToggle.md) &mdash; tracks state of a boolean.
   - [`useCounter` and `useNumber`](./docs/useCounter.md) &mdash; tracks state of a number.
-  - [`useList`](./docs/useList.md) ~and [`useUpsert`](./docs/useUpsert.md)~ &mdash; tracks state of an array.
+  - [`useList`](./docs/useList.md) ~and [`useUpsert`](./docs/useUpsert.md) (deprecated; planned for removal in v18.0.0)~ &mdash; tracks state of an array.
   - [`useMap`](./docs/useMap.md) &mdash; tracks state of an object.
   - [`useSet`](./docs/useSet.md) &mdash; tracks state of a Set.
   - [`useQueue`](./docs/useQueue.md) &mdash; implements simple queue.

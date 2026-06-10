@@ -65,6 +65,27 @@ describe('useStateWithHistory', () => {
     expect(hook.result.current[0][2].history).toEqual([1, 2, 3]);
   });
 
+  it('should not mutate initial history input', () => {
+    const history = [1, 2, 3];
+
+    getHook(4, undefined, history);
+
+    expect(history).toEqual([1, 2, 3]);
+  });
+
+  it('should return history snapshots', () => {
+    const hook = getHook(0);
+    const previousHistory = hook.result.current[0][2].history;
+
+    act(() => {
+      hook.result.current[0][1](1);
+    });
+
+    expect(previousHistory).toEqual([0]);
+    expect(hook.result.current[0][2].history).toEqual([0, 1]);
+    expect(hook.result.current[0][2].history).not.toBe(previousHistory);
+  });
+
   it('should push initial state to initial history if last element not equals it', () => {
     const hook = getHook(1, undefined, [1, 2, 3]);
     expect(hook.result.current[0][2].history).toEqual([1, 2, 3, 1]);

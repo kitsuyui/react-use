@@ -12,4 +12,4 @@ permissions:
 
 jobs:
   gh-counter:
-    uses: kitsuyui/gh-actions-workflows/.github/workflows/gh-counter.yml@main
+    uses: kitsuyui/gh-actions-workflows/.github/workflows/gh-counter.yml@88f48ad6844fb6c902ec82614c9ca54d91551d25 # main
