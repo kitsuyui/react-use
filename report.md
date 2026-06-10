@@ -1,8 +1,8 @@
 # gh-build-size report
 
 - Repository: **kitsuyui/react-use**
-- Head: `a36e6af52ac4dbd882cf71ce93a57b2316981a88`
-- Generated at: 2026-06-10T14:42:17.588Z
+- Head: `763678d7103e972e9029f5e7e2d2321e112353fe`
+- Generated at: 2026-06-10T14:43:03.328Z
 
 | File | Raw | Gzip | Brotli |
 | --- | ---: | ---: | ---: |
@@ -609,12 +609,12 @@
 | `dist/useStartTyping.js.map` | 2,060 B | 903 B | 835 B |
 | `dist/useStartTyping.mjs` | 1,090 B | 508 B | 454 B |
 | `dist/useStartTyping.mjs.map` | 2,059 B | 900 B | 831 B |
-| `dist/useStateList.d.mts` | 442 B | 250 B | 219 B |
-| `dist/useStateList.d.ts` | 441 B | 248 B | 219 B |
-| `dist/useStateList.js` | 1,586 B | 573 B | 531 B |
-| `dist/useStateList.js.map` | 3,374 B | 1,266 B | 1,109 B |
-| `dist/useStateList.mjs` | 1,467 B | 546 B | 529 B |
-| `dist/useStateList.mjs.map` | 3,350 B | 1,254 B | 1,132 B |
+| `dist/useStateList.d.mts` | 454 B | 257 B | 223 B |
+| `dist/useStateList.d.ts` | 453 B | 256 B | 220 B |
+| `dist/useStateList.js` | 1,773 B | 613 B | 547 B |
+| `dist/useStateList.js.map` | 3,792 B | 1,375 B | 1,216 B |
+| `dist/useStateList.mjs` | 1,654 B | 590 B | 557 B |
+| `dist/useStateList.mjs.map` | 3,768 B | 1,363 B | 1,199 B |
 | `dist/useStateValidator.d.mts` | 1,254 B | 623 B | 513 B |
 | `dist/useStateValidator.d.ts` | 1,253 B | 621 B | 510 B |
 | `dist/useStateValidator.js` | 843 B | 372 B | 319 B |

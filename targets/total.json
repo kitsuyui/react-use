@@ -4829,49 +4829,49 @@
     {
       "path": "dist/useStateList.d.mts",
       "sizes": {
-        "raw": 442,
-        "gzip": 250,
-        "brotli": 219
+        "raw": 454,
+        "gzip": 257,
+        "brotli": 223
       }
     },
     {
       "path": "dist/useStateList.d.ts",
       "sizes": {
-        "raw": 441,
-        "gzip": 248,
-        "brotli": 219
+        "raw": 453,
+        "gzip": 256,
+        "brotli": 220
       }
     },
     {
       "path": "dist/useStateList.js",
       "sizes": {
-        "raw": 1586,
-        "gzip": 573,
-        "brotli": 531
+        "raw": 1773,
+        "gzip": 613,
+        "brotli": 547
       }
     },
     {
       "path": "dist/useStateList.js.map",
       "sizes": {
-        "raw": 3374,
-        "gzip": 1266,
-        "brotli": 1109
+        "raw": 3792,
+        "gzip": 1375,
+        "brotli": 1216
       }
     },
     {
       "path": "dist/useStateList.mjs",
       "sizes": {
-        "raw": 1467,
-        "gzip": 546,
-        "brotli": 529
+        "raw": 1654,
+        "gzip": 590,
+        "brotli": 557
       }
     },
     {
       "path": "dist/useStateList.mjs.map",
       "sizes": {
-        "raw": 3350,
-        "gzip": 1254,
-        "brotli": 1132
+        "raw": 3768,
+        "gzip": 1363,
+        "brotli": 1199
       }
     },
     {
@@ -5740,8 +5740,8 @@
     }
   ],
   "totals": {
-    "raw": 801392,
-    "gzip": 340681,
-    "brotli": 297083
+    "raw": 802626,
+    "gzip": 340998,
+    "brotli": 297306
   }
 }

@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-10T14:42:17.587Z",
+  "generated_at": "2026-06-10T14:43:03.328Z",
   "repository": "kitsuyui/react-use",
   "default_branch": "main",
   "publish_branch": "gh-build-size-assets",
   "event_name": "push",
   "base_label": "main",
-  "base_reference": "39bf100e4848dfdb75240f069b9d352a2d6ee917",
+  "base_reference": "a36e6af52ac4dbd882cf71ce93a57b2316981a88",
   "head_label": "main",
-  "head_reference": "a36e6af52ac4dbd882cf71ce93a57b2316981a88",
+  "head_reference": "763678d7103e972e9029f5e7e2d2321e112353fe",
   "targets": [
     {
       "id": "total",
@@ -736,19 +736,19 @@
       "commentable": true,
       "sizes": {
         "raw": {
-          "current": 801392,
-          "base": 802626,
-          "delta": -1234
+          "current": 802626,
+          "base": 801392,
+          "delta": 1234
         },
         "gzip": {
-          "current": 340681,
-          "base": 340998,
-          "delta": -317
+          "current": 340998,
+          "base": 340681,
+          "delta": 317
         },
         "brotli": {
-          "current": 297083,
-          "base": 297306,
-          "delta": -223
+          "current": 297306,
+          "base": 297083,
+          "delta": 223
         }
       },
       "violations": [],
