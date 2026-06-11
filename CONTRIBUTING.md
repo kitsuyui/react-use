@@ -39,6 +39,7 @@ Run the relevant checks locally:
 
 ```sh
 bun run lint
+bun run audit
 bun run test
 bun run build
 ```
