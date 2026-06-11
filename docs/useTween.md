@@ -22,11 +22,11 @@ const Demo = () => {
 ## Reference
 
 ```ts
-useTween(easing?: string, ms?: number, delay?: number): number
+useTween(easing?: string, durationMs?: number, delayMs?: number): number
 ```
 
 Returns a number that begins with 0 and ends with 1 when animation ends.
 
 - `easing` &mdash; one of the built-in easing names, defaults to `inCirc`.
-- `ms` &mdash; milliseconds for how long to keep re-rendering component, defaults to `200`.
-- `delay` &mdash; delay in milliseconds after which to start re-rendering component, defaults to `0`.
+- `durationMs` &mdash; milliseconds for how long to keep re-rendering component, defaults to `200`.
+- `delayMs` &mdash; delay in milliseconds after which to start re-rendering component, defaults to `0`.

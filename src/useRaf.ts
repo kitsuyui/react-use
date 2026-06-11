@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import useIsomorphicLayoutEffect from './useIsomorphicLayoutEffect';
 
-const useRaf = (ms: number = 1e12, delay: number = 0): number => {
+const useRaf = (durationMs: number = 1e12, delayMs: number = 0): number => {
   const [elapsed, set] = useState<number>(0);
 
   useIsomorphicLayoutEffect(() => {
@@ -11,7 +11,7 @@ const useRaf = (ms: number = 1e12, delay: number = 0): number => {
 
     const onFrame = (timestamp: DOMHighResTimeStamp) => {
       start = start ?? timestamp;
-      const time = Math.min(1, (timestamp - start) / ms);
+      const time = Math.min(1, (timestamp - start) / durationMs);
       set(time);
       loop();
     };
@@ -22,17 +22,17 @@ const useRaf = (ms: number = 1e12, delay: number = 0): number => {
       timerStop = setTimeout(() => {
         cancelAnimationFrame(raf);
         set(1);
-      }, ms);
+      }, durationMs);
       loop();
     };
-    const timerDelay = setTimeout(onStart, delay);
+    const timerDelay = setTimeout(onStart, delayMs);
 
     return () => {
       clearTimeout(timerStop);
       clearTimeout(timerDelay);
       cancelAnimationFrame(raf);
     };
-  }, [ms, delay]);
+  }, [durationMs, delayMs]);
 
   return elapsed;
 };

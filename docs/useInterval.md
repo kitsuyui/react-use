@@ -10,20 +10,20 @@ import {useInterval} from '@kitsuyui/react-use';
 
 const Demo = () => {
   const [count, setCount] = React.useState(0);
-  const [delay, setDelay] = React.useState(1000);
+  const [delayMs, setDelayMs] = React.useState(1000);
   const [isRunning, toggleIsRunning] = useBoolean(true);
 
   useInterval(
     () => {
       setCount(count + 1);
     },
-    isRunning ? delay : null
+    isRunning ? delayMs : null
   );
 
   return (
     <div>
       <div>
-        delay: <input value={delay} onChange={event => setDelay(Number(event.target.value))} />
+        delay (ms): <input value={delayMs} onChange={event => setDelayMs(Number(event.target.value))} />
       </div>
       <h1>count: {count}</h1>
       <div>
@@ -37,9 +37,9 @@ const Demo = () => {
 ## Reference
 
 ```js
-useInterval(callback, delay?: number | null)
+useInterval(callback, delayMs?: number | null)
 ```
 
-- `delay` defaults to `0` when omitted.
-- Set `delay` to `null` to pause the interval.
-- The latest callback is used without recreating the interval unless `delay` changes.
+- `delayMs` defaults to `0` when omitted.
+- Set `delayMs` to `null` to pause the interval.
+- The latest callback is used without recreating the interval unless `delayMs` changes.
