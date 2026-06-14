@@ -49,6 +49,10 @@
     "typecheck": "tsc --noEmit",
     "validate": "bun pm pack --dry-run >/dev/null"
   },
+  "overrides": {
+    "esbuild": "0.28.1",
+    "vite": "8.0.16"
+  },
   "dependencies": {
     "fast-shallow-equal": "^1.0.0",
     "tslib": "^2.1.0"
@@ -70,6 +74,7 @@
     "sort-package-json": "^3.6.1",
     "tsdown": "^0.20.3",
     "typescript": "^5.9.3",
+    "vite": "8.0.16",
     "vitest": "4.1.8"
   },
   "peerDependencies": {
