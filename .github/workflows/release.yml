@@ -65,5 +65,5 @@ jobs:
         if: github.event_name == 'release' && !github.event.release.prerelease
 
       - name: deploy (dry-run)
-        run: npm publish --access public --dry-run
+        run: npm publish --access public --dry-run --tag next
         if: github.event_name != 'release' || github.event.release.prerelease
