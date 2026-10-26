@@ -27,6 +27,11 @@ jobs:
           # https://nodejs.org/en/about/previous-releases
           node-version: '24.x'
           registry-url: 'https://registry.npmjs.org'
+          package-manager-cache: false
+
+      - name: Check npm version for Trusted Publishing
+        run: |
+          node -e 'const [major, minor, patch] = process.argv[1].split(".").map(Number); if (major < 11 || (major === 11 && (minor < 5 || (minor === 5 && patch < 1)))) process.exit(1)' "$(npm --version)"
 
       - name: install and build
         run: |
@@ -56,13 +61,9 @@ jobs:
 
       - name: deploy
         # https://docs.npmjs.com/generating-provenance-statements
-        run: NPM_CONFIG_PROVENANCE=true bun publish --access public
+        run: npm publish --access public
         if: github.event_name == 'release' && !github.event.release.prerelease
-        env:
-          NPM_CONFIG_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: deploy (dry-run)
-        run: NPM_CONFIG_PROVENANCE=true bun publish --access public --dry-run
+        run: npm publish --access public --dry-run
         if: github.event_name != 'release' || github.event.release.prerelease
-        env:
-          NPM_CONFIG_TOKEN: ${{ secrets.NPM_TOKEN }}
